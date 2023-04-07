@@ -1,0 +1,6 @@
+[ mysql-slave ]
+  
+ [ docker-registry ]
+ 
+ [ order ]
+ 10.255.1.2 consul_tags = internal

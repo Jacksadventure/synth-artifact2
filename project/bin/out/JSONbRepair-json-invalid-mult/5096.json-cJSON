@@ -1,0 +1,23 @@
+{
+  "jest": {
+    "testEnvironment": "n�de",
+    "transformIgnorePatterns": [
+      "/node_
+      �
+      odul
+      s/
+      " , "
+      <rootDir>/__tests__
+      " , "
+      <rootDiV>/ignored/
+      " ] , "
+      transform
+      " : { "
+      ^.
+      +
+      \
+      \
+      .js$
+       : \"
+      <rootDir>/Preprocessor.js
+      \" } } }qw_

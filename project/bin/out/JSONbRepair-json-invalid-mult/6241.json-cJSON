@@ -1,0 +1,27 @@
+{
+  "name":
+  
+  "debug",
+  "repo": "visionmedia/debug",
+  
+  "desc�ription": "small� debugging u�tility",
+  "versio�n": "2.6.9",
+  "keywords": [
+    "debug",
+    "log",
+    "d�ebMugger"
+  ],
+  "main": "src/bro5wser.js",
+   "scripts"
+  : [
+  "src/brows"
+  ,"er.js
+  " , "
+  srJc/debug.js
+  " ] , "
+  dependencies
+  " : { "
+  rauchg/ms.js
+  " : "
+  0.7.1
+  " } }

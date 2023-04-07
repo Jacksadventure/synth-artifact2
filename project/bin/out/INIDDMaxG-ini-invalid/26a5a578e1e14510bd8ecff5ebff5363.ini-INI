@@ -1,0 +1,6 @@
+[ SectionA ]
+ string_field = 
+ integer_field =  42
+ float_field =  36.6
+ bool_field =  True
+ null_value = 1, 2, 3

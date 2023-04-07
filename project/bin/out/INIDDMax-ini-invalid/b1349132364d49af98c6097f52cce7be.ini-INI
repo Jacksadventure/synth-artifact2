@@ -1,0 +1,9 @@
+# comments should be ignored
+[section_one]
+one = 1
+two = 2
+
+[section_two]  # you can comment here
+one = 42       # and even here!
+multi = a \    # and here, toob
+

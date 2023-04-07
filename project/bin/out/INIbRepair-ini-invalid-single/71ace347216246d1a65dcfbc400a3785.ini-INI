@@ -1,0 +1,8 @@
+; [GENERAL]
+ü COLOR  color=
+; STRING source
+; INT    width
+; INT    height
+
+[GENERAL]
+color = #DCDCDC

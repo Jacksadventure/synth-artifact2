@@ -1,0 +1,352 @@
+;############################################
+;
+;		Animated Vinyl Player 0.2
+;
+;############################################
+
+[Metadata]
+Name				= Animated Vinyl Player
+Author				= Karolis Vaikutis
+Information			= Shows an animated vinyl with artwork while song is playing.
+License				= Creative Commons BY-NC-SA 4.0
+Version				= 0.2
+;ReleaseDate		= Apr, 6 2015
+;ContactEmail		= karolis.vaikutis@gmail.com
+;ContactWeb			= http://blantas.deviantart.com/
+;LastUpdateDate		= Aug, 15 2015
+
+;############################################
+;		Update History
+;
+;	0.2 (Aug, 15 2015)
+;		- Added extra support for Spotify player. (Using http://rainmeter.net/forum/viewtopic.php?f=18&t=17077 plugin by .raptor.)
+;
+;	0.1 (Apr, 6 2015)
+;		- First public release.
+;
+;############################################
+;		Settings
+;
+;	MusicPlayer			- the player interface name. Supported players - http://docs.rainmeter.net/manual/plugins/nowplaying#playerlist .
+;	MusicPlayerGroup	- the player group. 1 - Spotify music player, 0 - rest.
+;	MusicPlayerMode		- the design of the skin. 0 - artwork and spinning vinyl, 1 - artwork only.
+;	MusicPlayerHeight	- the height of the skin. This option is still WIP, do no change it.
+;	TrackInfoStateN		- to control the visibility of meters showing track information. Can be changed in the context menu.
+;	AutoHideOptionN		- to control the visibility of the skin when there is no music playing. Can be changed in the context menu.
+;
+;############################################
+
+[Variables]
+MusicPlayer			=CAD
+MusicPlayerGroup	=0
+MusicPlayerMode		=0
+MusicPlayerHeight	= 248
+TrackInfoState1		=Hide
+TrackInfoState2		=Show
+AutoHideOption1		=On
+AutoHideOption2		=Off
+
+[Rainmeter]
+DynamicWindowSize=1
+Update=20
+
+;############################################
+;		Context Menu
+;############################################
+
+ContextTitle=Player Interface:	#MusicPlayer#
+ContextAction=[]
+ContextTitle2=Skin Design:	#MusicPlayerMode#
+ContextAction2=[]
+ContextTitle3=---
+ContextAction3=[]
+ContextTitle4=#TrackInfoState1# Track Information
+ContextAction4=[!WriteKeyValue Variables TrackInfoState1 "#TrackInfoState2#"][!WriteKeyValue Variables TrackInfoState2 "#TrackInfoState1#"][!SetOption Rainmeter ContextTitle "#TrackInfoState1# Track Information"][!Refresh]
+ContextTitle5=Autohide Skin	#AutoHideOption1#
+ContextAction5=[!WriteKeyValue Variables AutoHideOption1 "#AutoHideOption2#"][!WriteKeyValue Variables AutoHideOption2 "#AutoHideOption1#"][!SetOption Rainmeter ContextTitle "Autohide Skin	#AutoHideOption1#"][!Refresh]
+ContextTitle6=---
+ContextAction6=[]
+ContextTitle7=Change Player Interface:
+ContextAction7=[]
+ContextTitle8=AIP	AIMP
+ContextAction8=[!WriteKeyValue Variables MusicPlayer "AIMP"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+ContextTitle9=iTunes	iTunes
+ContextAction9=[!WriteKeyValue Variables MusicPlayer "iTunes"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+ContextTitle10=MediaMonkey	MediaMonkey
+ContextAction10=[!WriteKeyValue Variables MusicPlayer "MediaMonkey"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+ContextTitle11=Winamp	Winamp
+ContextAction11=[!WriteKeyValue Variables MusicPlayer "Winamp"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+ContextTitle12=WMP	WMP
+ContextAction12=[!WriteKeyValue Variables MusicPlayer "WMP"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+ContextTitle13=foobar, MusicBee, VLC	CAD
+ContextAction13=[!WriteKeyValue Variables MusicPlayer "CAD"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+ContextTitle14=Spotify	Spotify
+ContextAction14=[!WriteKeyValue Variables MusicPlayer "Spotify"][!WriteKeyValue Variables MusicPlayerGroup "1"][!Refresh]
+ContextTitle15=Others	WLM
+ContextAction15=[!WriteKeyValue Variables MusicPlayer "WLM"][!WriteKeyValue Variables MusicPlayerGroup "0"][!Refresh]
+
+;############################################
+;		Measures
+;############################################
+
+[GetMusicPlayerState0]
+Measure=Plugin
+Plugin=NowPlaying
+PlayerName=#MusicPlayer#
+PlayerType=STATE
+;Disabled=(#MusicPlayerGroup# = 1 ? 1 : 0)
+
+[GetSongSate0]
+Measure=Plugin
+Plugin=NowPlaying
+PlayerName=[GetMusicPlayerState0]
+PlayerType=Progress
+Disabled=(#MusicPlayerGroup# = 1 ? 1 : 0)
+
+[GetSongCover0]
+Measure=Plugin
+Plugin=NowPlaying
+PlayerName=[GetMusicPlayerState0]
+PlayerType=Cover
+Disabled=(#MusicPlayerGroup# = 1 ? 1 : 0)
+
+[GetTitle0]
+Measure=Plugin
+Plugin=NowPlaying
+PlayerName=[GetMusicPlayerState0]
+PlayerType=TITLE
+Disabled=(#MusicPlayerGroup# = 1 ? 1 : 0)
+
+[GetArtist0]
+Measure=Plugin
+Plugin=NowPlaying
+PlayerName=[GetMusicPlayerState0]
+PlayerType=ARTIST
+Disabled=(#MusicPlayerGroup# = 1 ? 1 : 0)
+
+;############################################
+;		Spotify Measures
+;############################################
+
+[GetMusicPlayerState1]
+Measure=Plugin
+Plugin=SpotifyPlugin.dll
+Type=Playing
+Disabled=(#MusicPlayerGroup# = 0 ? 1 : 0)
+
+[GetSongSate1]
+Measure=Plugin
+Plugin=SpotifyPlugin.dll
+Type=Progress
+Disabled=(#MusicPlayerGroup# = 0 ? 1 : 0)
+
+[GetSongCover1]
+Measure=Plugin
+Plugin=SpotifyPlugin.dll
+Type=AlbumArt
+Disabled=(#MusicPlayerGroup# = 0 ? 1 : 0)
+
+[GetTitle1]
+Measure=Plugin
+Plugin=SpotifyPlugin.dll
+Type=TrackName
+Disabled=(#MusicPlayerGroup# = 0 ? 1 : 0)
+
+[GetArtist1]
+Measure=Plugin
+Plugin=SpotifyPlugin.dll
+Type=ArtistName
+Disabled=(#MusicPlayerGroup# = 0 ? 1 : 0)
+
+;############################################
+;		End of Spotify Measures
+;############################################
+
+[TrackInformationVisibility]
+Measure=String
+String=#TrackInfoState1#
+Substitute="Show":"1","Hide":"0"
+
+[AutoHideSkinOption]
+Measure=String
+String=#AutoHideOption1#
+Substitute="Off":"0","On":"1"
+
+; Based on Transformation Matrix Guide by Alex2539 - http://docs.rainmeter.net/tips/transformation-matrix-guide
+
+[MeasureRotate]
+Measure=Calc
+Formula=(GetMusicPlayerState#MusicPlayerGroup# = 1 ? (MeasureRotate % 360) + 1 : MeasureRotate)
+MaxValue=360
+
+[MeasureSinAngle]
+Measure=Calc
+Formula=SIN(MeasureRotate/360*2*PI)
+
+[MeasureNegSinAngle]
+Measure=Calc
+Formula=-(MeasureSinAngle)
+
+[MeasureCosAngle]
+Measure=Calc
+Formula=COS(MeasureRotate/360*2*PI)
+
+; Spinning Artwork
+
+[MeasureTXCover]
+Measure=Calc
+; (Y + H/2) - MeasureCosAngle * (Y + H/2) - MeasureSinAngle * (X + H/2)
+Formula=129-MeasureCosAngle*129-MeasureSinAngle*252
+;Formula=((#MusicPlayerHeight#/2-#MusicPlayerHeight#/4.68) + #MusicPlayerHeight#/4.68) - MeasureCosAngle * ((#MusicPlayerHeight#/2-#MusicPlayerHeight#/4.68) + #MusicPlayerHeight#/4.68) - MeasureSinAngle * ((#MusicPlayerHeight#-#MusicPlayerHeight#/4.68) + #MusicPlayerHeight#/4.68)
+[MeasureTYCover]
+Measure=Calc
+; (X + H/2) - MeasureNegSinAngle * (Y + H/2) - MeasureCosAngle * (X + H/2)
+Formula=252-MeasureNegSinAngle*129-MeasureCosAngle*252 
+;Formula=((#MusicPlayerHeight#-#MusicPlayerHeight#/4.68) + #MusicPlayerHeight#/4.68) - MeasureNegSinAngle * ((#MusicPlayerHeight#/2-#MusicPlayerHeight#/4.68) + #MusicPlayerHeight#/4.68) - MeasureCosAngle * ((#MusicPlayerHeight#-#MusicPlayerHeight#/4.68) + #MusicPlayerHeight#/4.68) 
+
+;############################################
+;		Styles
+;############################################
+
+[DynamicMeter]
+Hidden=([GetMusicPlayerState#MusicPlayerGroup#] = 0 ? [AutoHideSkinOption] : 0)
+DynamicVariables=1
+RightMouseUpAction=[!SkinCustomMenu]
+
+[DynamicMeterExtra]
+Hidden=(#MusicPlayerGroup# = 0 ? ([GetMusicPlayerState#MusicPlayerGroup#] = 0 || #MusicPlayerMode# = 1 ? 1 : 0) : (#MusicPlayerGroup# = 1 ? (#MusicPlayerMode# = 1 ? 1 : ([GetMusicPlayerState#MusicPlayerGroup#] = 0 ? [AutoHideSkinOption] : 0)) : 0 )) 
+DynamicVariables=1
+RightMouseUpAction=[!SkinCustomMenu]
+
+[DynamicMeterTrackInformation]
+Hidden=(#MusicPlayerGroup# = 0 ? ([GetMusicPlayerState#MusicPlayerGroup#] = 0 ? 1 : [TrackInformationVisibility]) : (#MusicPlayerGroup# = 1 ? ([GetMusicPlayerState#MusicPlayerGroup#] = 0 ? ([TrackInformationVisibility] = 1 ? 1 : [AutoHideSkinOption]) : [TrackInformationVisibility] ) : 0 ))
+DynamicVariables=1
+RightMouseUpAction=[!SkinCustomMenu]
+
+;############################################
+;		Meters
+;############################################
+
+[VinylRotate]
+Meter=Rotator
+MeasureName=MeasureRotate
+;Meter=Image
+ImageName=vinyl_bg.png
+X=123
+;X=(#MusicPlayerHeight#-(#MusicPlayerHeight#)/2)
+;Y=0
+;Y=0
+OffsetX=(([VinylCase:W]+8)/2)
+OffsetY=(([VinylCase:H]+8)/2)
+W=(#MusicPlayerHeight#+8)
+H=(#MusicPlayerHeight#+8)
+H=([VinylInsideCase:H])
+;TransformationMatrix=
+AntiAlias=1
+LeftMouseUpAction=[!CommandMeasure GetMusicPlayerState0 "PlayPause"]
+; SpotifyPlugin can't be controlled with bangs, so we still use NowPlaying plugin!
+MeterStyle=DynamicMeterExtra
+
+[CoverRotate]
+Meter=Image
+MeasureName=GetSongCover#MusicPlayerGroup#
+MaskImageName=vinyl_mask_small.png
+X=199
+;X=(#MusicPlayerHeight#-#MusicPlayerHeight#/4.66)
+Y=76
+;Y=(#MusicPlayerHeight#/2-#MusicPlayerHeight#/4.66)
+W=106
+;W=(#MusicPlayerHeight#/2.33)
+H=106
+;H=(#MusicPlayerHeight#/2.33)
+TransformationMatrix=[MeasureCosAngle]; [MeasureSinAngle]; [MeasureNegSinAngle]; [MeasureCosAngle]; [MeasureTYCover]; [MeasureTXCover]
+AntiAlias=1
+MeterStyle=DynamicMeterExtra
+
+[VinylInsideCase]
+Meter=Image
+Imagename=mode_#MusicPlayerMode#.png
+X=(#MusicPlayerHeight#)
+Y=7
+W=17
+H=242
+;H=(#MusicPlayerHeight#-12)
+LeftMouseUpAction=[!WriteKeyValue Variables MusicPlayerMode "(1-#MusicPlayerMode#)"][!SetVariable MusicPlayerMode "(1-#MusicPlayerMode#)"][!UpdateMeter *][!Redraw]
+MeterStyle=DynamicMeter
+
+[VinylCase]
+Meter=Image
+Imagename=vinyl_box.png
+X=5
+Y=5
+W=#MusicPlayerHeight#
+H=#MusicPlayerHeight#
+;248
+MeterStyle=DynamicMeter
+
+[SongCover]
+Meter=Image
+MeasureName=GetSongCover#MusicPlayerGroup#
+X=4r
+Y=3r
+W=([VinylCase:W]-8)
+H=([VinylCase:H]-9)
+MeterStyle=DynamicMeter
+;Hidden=0
+
+[Reflection]
+Meter=Image
+ImageName=reflection.png
+X=-2r
+Y=-1r
+W=([VinylCase:W]-5)
+;H=186
+MeterStyle=DynamicMeter
+
+[ProgressBar]
+Meter=Bar
+MeasureName=GetSongSate#MusicPlayerGroup#
+X=2r
+Y=([SongCover:H]+5)
+W=([SongCover:W]-2)
+H=3
+BarColor=255,255,255,50
+BarOrientation=Horizontal
+MeterStyle=DynamicMeter
+
+[SongTitle]
+Meter=String
+MeasureName=GetTitle#MusicPlayerGroup#
+X=5r
+;Y=-50r
+Y=10
+W=227
+;H=62
+Text=%1
+ClipString=2
+;SolidColor=255,255,255
+FontSize=18
+FontColor=255,255,255,255
+FontStyle=Bold
+FontFace=Segoe UI
+StringAlign=LEFT
+StringEffect=Shadow
+AntiAlias=1
+Group=TrackInformation
+MeterStyle=DynamicMeterTrackInformation
+
+[SongArtist]
+Meter=String
+MeasureName=GetArtist#MusicPlayerGroup#
+X=4r
+Y=([SongTitle:X] + [SongTitle:H] - 8)
+;Text=Artist
+FontSize=9
+FontColor=255,255,255,230
+FontStyle=Bold
+FontFace=Segoe UI
+StringAlign=LEFT
+StringEffect=Shadow
+AntiAlias=1
+Group=TrackInformation
+MeterStyle=DynamicMeterTrackInformation

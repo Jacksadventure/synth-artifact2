@@ -1,0 +1,349 @@
+[DEFAULTS]
+entitiesarc = 5mm
+entitiesboxedarc = 15cm
+entitiesboxedarcounter = 5cm
+
+; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[sidefield]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+coltitle = \tcoltitle
+boxed title style = {%
+    boxrule=0pt,%
+    colframe=white,%
+},title = #2
+#1
+
+[maintext]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+coltitle = \tcoltitle
+boxed title style = {%
+    boxrule=0pt,%
+    colframe=white,%},
+title = #2
+#1
+
+[contactfields]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = green!50!black
+colback = green!50!black
+boxsep = 0pt
+boxrule = 0pt
+coltitle = \tcoltitle
+boxed title style = {%
+    boxrule=0pt,%
+    colframe=green!50!black,%
+},title = #2
+#1
+
+[educationfields]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = red!50!black
+boxsep = 0pt
+boxrule = 0pt
+#1
+
+[employmentfields]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+#1
+
+[responsabilityfields]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+#1
+
+[sideprojectsfields]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+#1
+
+; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+; % Entity Boxes
+; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[contactentities]
+arguments = breakable
+enhanced = true
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+boxed title style = {%
+    empty,%
+    boxrule=0pt,%
+}underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        green!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;
+},title = {#2},#1
+
+[educationentities]
+arguments = breakable
+enhanced = true
+width = \linewid
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+colbacktitle = red!45!white
+colframe = white
+boxsep = 0pt
+boxrule = 0pt
+boxed title style = {%
+    empty,%
+    boxrule=0pt,%
+
+underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        red!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;
+},title = {#2},#1
+
+[programmingentities]
+arguments = breakable
+enhanced = true
+width = \linewidth
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+left = 1mm
+right = 1mm
+top = 1mm
+bottom = 0.1mm
+colbacktitle = red!45!white
+colframe = white
+boxsep = 0pt
+boxrule = 0pt
+boxed title style = {%
+    empty,%
+    boxrule=0pt%
+
+underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        blue!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;
+},title = {#2},#1
+
+[responsabilityentities]
+arguments = breakable
+enhanced = true
+width = \linewidth
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+left = 1pt
+right = 1pt
+top = 1pt
+bottom = 1pt
+colbacktitle = orange!55!white
+boxsep = 0.1pt
+boxrule = 0.1pt
+boxed title style = {%
+    empty,%
+    boxrule=0pt%
+}underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        orange!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;},
+title = {#2},#1
+
+[employmententities]
+arguments = breakable
+enhanced = true
+width = \linewidth
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+left = 1pt
+right = 1pt
+top = 1pt
+bottom = 1pt
+colback = white
+colframe = white
+colbacktitle = orange!55!white
+boxsep = 0pt
+boxrule = 0pt
+boxed title style ={%
+    empty,%
+    boxrule=0pt%
+}underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        orange!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;},
+title = {#2},#1
+
+[sideprojectsentities]
+arguments = breakable
+enhanced = true
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+boxsep = 0pt
+boxrule = 0pt
+boxed title style ={%
+    empty,%
+    boxrule=0pt%
+
+underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        yellow!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;},
+title = {#2},#1
+
+[languageentities]
+arguments = breakable
+enhanced = true
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+boxsep = 0pt
+boxrule = 0pt
+colback = white
+colframe = white
+colbacktitle = yellow!45!white
+boxed title style ={%
+    empty,%
+    arc=\entitiesboxedarc,%
+    outer arc=\entitiesboxedarcouter,%
+    boxrule=0pt%
+}underlay boxed title = {%
+    \fill[%
+        fill opacity=0.6,%
+        yellow!50!black,%
+    ]%
+         (title.north west) -- (title.north east)%
+        -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+        -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+        -- +(0mm,-1mm) -- (title.south west) -- cycle;},
+title = {#2},#1
+
+[locationentries]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+boxsep = 0pt
+boxrule = 0pt
+colback = white
+colframe = white
+colbacktitle = black!45!white
+title = Location
+#1
+
+
+[detailsentities]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+boxsep = 0pt
+boxrule = 0pt
+colback = white
+colframe = black!50!white
+colbacktitle = black!45!white
+center title = true
+center upper = true
+center lower = true
+#1
+
+[startentities]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+boxsep = 0pt
+boxrule = 0pt
+colback = white
+colframe = white
+colbacktitle = black!45!white
+colupper = green!50!black
+collower = red!50!black
+center title = true
+center upper = true
+center lower = true
+title = Period
+#1
+
+[bendendentities]
+arguments = breakable
+enhanced = true
+skin = enhancedlast jigsaw
+attach boxed title to top left = true
+boxsep = 0pt
+boxrule = 0pt
+colback = white
+colframe = white
+colbacktitle = black!45!white
+colupper = green!50!black
+collower = red!50!black
+center title = true
+center upper = true
+center lower = true
+boxed title style ={%
+    empty,%
+    arc=\entitiesboxedarc,%
+    outer arc=\entitiesboxedarcouter,%
+    boxrule=0pt%
+}underlay boxed title = {%
+    \fill[black!50!black]%
+            (title.north west) -- (title.north east)%
+            -- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)%
+            -- ([xshift=0mm,yshift=0.5mm]frame.north east)%
+            -- +(0mm,-1mm) -- (title.south west) -- cycle;},
+title = {#2},#1
+#1

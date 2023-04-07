@@ -1,0 +1,8 @@
+[Coverter]
+ShowStatsDialog=0
+
+[Encoders.MP3]
+Bitrate=320
+BitrateMode=2
+ChannelsMode=0
+Quality=0

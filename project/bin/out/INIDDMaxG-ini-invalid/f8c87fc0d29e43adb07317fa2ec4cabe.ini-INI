@@ -1,0 +1,4 @@
+# Differences from mysql.conf # #comments can't be at middle of line
+ # single/double quotes are not stripped # leading spaces on line are not ignored !include directives treated as parameters
+ [ noequals ]
+ param1 = param3

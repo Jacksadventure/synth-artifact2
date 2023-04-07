@@ -1,0 +1,9 @@
+[tox]
+envlist = py26,py27,pep8
+
+[testenv]
+deps = iniparse>=0.5
+commands = /bin/bash -c 'cd tests && ./test.sh'
+
+[testenv:pep8]
+deps = flake8commands ¬ flake8 crudini setup.py

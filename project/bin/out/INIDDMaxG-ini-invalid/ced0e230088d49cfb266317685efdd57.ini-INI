@@ -1,0 +1,4 @@
+ = Value
+ [ App ]
+ Hello = World
+ This is another garbage value. # This is another comment.

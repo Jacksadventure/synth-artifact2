@@ -1,0 +1,1 @@
+{ "rules" :  , "eqeqeq" : "off" , "max-len" : "off" , "no-bitwise" : "off" , "no-multi-spaces" : "off" , "quotes" : "off" }

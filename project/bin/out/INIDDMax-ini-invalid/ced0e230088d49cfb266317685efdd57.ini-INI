@@ -1,0 +1,6 @@
+This is a garbage value, however, it won't break the INI parser when loaded.Key=Value ; Although this key doesn't have a section, it can still be accessed by the INI parser.
+
+[App]
+Hello=WorldThis is another garbage value.
+; This is not a garbage value, this is a comment.
+# This is another comment.

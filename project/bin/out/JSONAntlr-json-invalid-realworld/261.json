@@ -1,0 +1,1 @@
+{ "root" : true , "extends" : "../../../.eslintrc-browser.json" , "env" : { "jasmine" : true } , "rules" : { "no-invalid-this" : "off" , "no-throw-literal" : "off" , "no-unused-vars" : "off" } , "globals" : { "module" : false , "inject" : true } }

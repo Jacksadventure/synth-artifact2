@@ -1,0 +1,6 @@
+; [GENERAL] STRING source
+; INT    size
+; COLOR  color
+
+[GENERAL]
+color = #EDEDED

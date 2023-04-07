@@ -1,0 +1,8 @@
+#This section provides the general configuration of the application
+ [ GeneralConfiguration ]
+ #Update rate in msecs =  100
+ #Maximun errors before quit =  2
+ ¸#Users allowed to access the system =  pass
+ [ Users ]
+ ricky =  rickypass
+ patty =  pattypass

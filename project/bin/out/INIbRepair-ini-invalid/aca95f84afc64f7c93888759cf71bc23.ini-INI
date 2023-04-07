@@ -1,0 +1,359 @@
+[Rainmeter]
+Update=-1
+AccurateText=1
+DynamicWindowSize=1
+BackgroundMode=2
+SolidColor=255,255,255,255
+
+OnRefreshAction=[!RefreshGroup #SkinGroup#]
+LeftMouseUpAction=[!UpdateMeasure SetLeftMouseUpAction]
+
+ContextTitle="Edit variables"
+ContextAction=["#@#Variables.inc"]
+
+@Include=#@#Variables.inc
+@Include2=Variables.inc
+
+[Variables]
+State=1
+Section=0
+
+-1=-1
+S=!SetOptionGroup
+SO=!SetOption
+U=!UpdateMeasureGroup
+UM=!UpdateMeasure
+
+HT=HeaderTab
+WV=WriteVariableRounded
+
+SetHeaderTabOptions=#SetHeaderTabNames#[#S# #HT# X 22R][#SO# HeaderTab1 X 16][#S# #HT# Y "([HeaderTitleBar:H] + 8)"][#S# #HT# FontFace "Segoe UI Semilight"][#S# #HT# FontSize 11][#S# #HT# FontColor 180,180,180][#S# #HT# SolidColor 255,255,255,1][#S# #HT# AntiAlias 1]
+
+SetHeaderTabHoverActions=[#S# #HT# MouseOverAction """[#SO# #*CURRENTSECTION*# FontColor 0,0,0][!UpdateMeter #*CURRENTSECTION*#][!Redraw]"""][#S# #HT# MouseLeaveAction """[#SO# #*CURRENTSECTION*# FontColor 180,180,180][!UpdateMeter #*CURRENTSECTION*#][!Redraw]"""][#SO# #HT##State# FontColor 0,0,0][#SO# #HT##State# MouseLeaveAction "[]"]
+
+SetStringOptions=[#S# String Padding 16,0,0,0][#S# String Y 16R][#S# String FontFace "Segoe UI Semilight"][#S# String FontSize 11][#S# String SolidColor 255,255,255,1][#S# String AntiAlias 1]
+
+SetBarOptions=[#S# Bars X 232][#S# Bars Y 6r][#S# Bars W 128][#S# Bars H 9][#S# Bars BarColor 153,153,153][#S# Bars BarOrientation Horizontal]
+
+SetBarLeftMouseDownAction=[#S# Bars LeftMouseDownAction """[#SO# #WV# Formula "([/#*CURRENTSECTION*#:MaxValue] * $MouseX:%$ * 0.01)"][!SetVariable Section #*CURRENTSECTION*#][#UM# #WV#]"""]
+
+SetRoundingOptions=[#SO# #WV# IfCondition "(#Section# = -1)"][#SO# #WV# IfTrueAction """[#SO# WriteVariable Formula "Round([*#WV#*], 1)"]"""][#SO# #WV# IfFalseAction """[#SO# WriteVariable Formula "Round([*#WV#*])"]"""][#SO# #WV# IfCondition2 "(#WV# >= 0)"][#SO# #WV# IfTrueAction2 """[#UM# WriteVariable]"""]
+
+SetStateSub=[#SO# StateReference Substitute """#StateSubstitute#"""][#UM# StateReference]
+
+SetSubString=[#S# Sub String [StateReference]]
+
+SetRedrawOnUpdateAction=[#SO# Redraw OnUpdateAction """#SetSubs#[#S# Bars SolidColor "204,204,204,([/#**CURRENTSECTION**#] = -1 ? 0 : 255)"]#SetTextSub##SetOptionsByState#[!UpdateMeter *][!Redraw]#SetVarSub#"""]
+
+SetVarSubEscaped=[#S# Sub OnUpdateAction """[#SO# #**CURRENTSECTION**# Substitute #Var#**CURRENTSECTION**##]"""][#U# Sub][#U# Sub]
+
+SetVarSub=[#S# Sub OnUpdateAction """[#SO# #*CURRENTSECTION*# Substitute #Var#*CURRENTSECTION*##]"""][#U# Sub][#U# Sub]
+
+SetCalcFormula=[#S# Sub OnUpdateAction """[#SO# #*CURRENTSECTION*# String #[#*CURRENTSECTION*#]#]"""][#U# Sub][#U# Sub][#S# Calc Formula [//#*CURRENTSECTION*#]][#U# Calc][#S# Calc Paused 1][#S# Sub String [StateReference]]
+
+SetCalcMaxValueSub=[#S# Sub OnUpdateAction """[#SO# #*CURRENTSECTION*# Substitute #CalcMV#*CURRENTSECTION*##]"""][#U# Sub][#U# Sub][#S# Calc MaxValue [//#*CURRENTSECTION*#]][#U# Calc]
+
+SetStringLMDA=[#S# String LeftMouseDownAction """[#SO# /#*CURRENTSECTION*# Substitute #StringLMDA/#*CURRENTSECTION*##][#UM# /#*CURRENTSECTION*#][#SO# /#*CURRENTSECTION*# OnUpdateAction [/#*CURRENTSECTION*#]][#UM# /#*CURRENTSECTION*#]"""]
+
+SetHelpTextStringSub=[#SO# /#*CURRENTSECTION*# Substitute #HelpText/#*CURRENTSECTION*##][#UM# /#*CURRENTSECTION*#][#SO# HelpText Text [/#*CURRENTSECTION*#]][!UpdateMeter HelpText][!Redraw]#SetVarSubEscaped#
+
+SetHelpTextBarSub=[#SO# ///#*CURRENTSECTION*# Substitute #HelpText///#*CURRENTSECTION*##][#UM# ///#*CURRENTSECTION*#][#SO# HelpText Text [///#*CURRENTSECTION*#]][!UpdateMeter HelpText][!Redraw]#SetVarSubEscaped#
+
+SetHelpText=[#S# String MouseOverAction """#SetHelpTextStringSub#"""][#S# Bars MouseOverAction """#SetHelpTextBarSub#"""][#S# String MouseLeaveAction """[#SO# HelpText Text " "][!UpdateMeter HelpText][!Redraw]"""][#S# Bars MouseLeaveAction """[#SO# HelpText Text " "][!UpdateMeter HelpText][!Redraw]"""]
+
+SetTextSub=[#S# Sub OnUpdateAction """[#SO# #*CURRENTSECTION*# Substitute #Text#*CURRENTSECTION*##]"""][#U# Sub][#U# Sub][#S# String Text [/#*CURRENTSECTION*#]]
+
+SetSubs=#SetVarSub##SetCalcFormula##SetCalcMaxValueSub##SetStringLMDA##SetHelpText#
+
+[Init]
+Measure=Calc
+OnUpdateAction=#SetHeaderTabOptions##SetHeaderTabHoverActions##SetStringOptions##SetBarOptions##SetBarLeftMouseDownAction##SetRoundingOptions##SetStateSub##SetSubString##SetRedrawOnUpdateAction#
+
+[StateReference]
+Measure=String
+String=#State#
+
+[MatchActions]
+Measure=String
+
+[SetLeftMouseUpAction]
+Measure=Calc
+Formula=(SetLeftMouseUpAction + 1)
+OnChangeAction=[!Refresh]
+
+[WriteVariableRounded]
+Measure=Calc
+Formula=(-1)
+IfConditionMode=1
+
+[WriteVariable]
+Measure=Calc
+OnChangeAction=[!WriteKeyValue Variables [///#Section#] [WriteVariable] "#@#Variables.inc"]
+
+[HeaderTab1]
+Meter=String
+Group=HeaderTab
+LeftMouseDownAction=[!WriteKeyValue Variables State 1]
+[HeaderTab2]
+Meter=String
+Group=HeaderTab
+LeftMouseDownAction=[!WriteKeyValue Variables State 2]
+[HeaderTab3]
+Meter=String
+Group=HeaderTab
+LeftMouseDownAction=[!WriteKeyValue Variables State 3]
+[HeaderTab4]
+Meter=String
+Group=HeaderTab
+LeftMouseDownAction=[!WriteKeyValue Variables State 4]
+[HeaderTab5]
+Meter=String
+Group=HeaderTab
+LeftMouseDownAction=[!WriteKeyValue Variables State 5]
+
+[HeaderTitleBar]
+Meter=Image
+W=(#CURRENTCONFIGWIDTH# + 16)
+H=36
+SolidColor=161,186,220
+DynamicVariables=1
+
+[HeaderTitleText]
+Meter=String
+Text="Settings - #ROOTCONFIG#"
+FontColor=255,255,255
+X=16
+Y=9
+FontFace=Segoe UI
+FontSize=9
+AntiAlias=1
+
+[HeaderTitleCloseButton]
+Meter=String
+Text="✕"
+X=(#CURRENTCONFIGWIDTH# - 31)
+FontSize=11
+FontColor=255,255,255
+SolidColor=161,186,220
+Padding=18,9,18,8
+AntiAlias=1
+DynamicVariables=1
+LeftMouseDownAction=[!DeactivateConfig]
+
+[Separator]
+Meter=Image
+Y=([HeaderTab1:Y] + [HeaderTab1:H] + 10)
+W=(#CURRENTCONFIGWIDTH# + 16)
+H=1
+SolidColor=230,230,230
+DynamicVariables=1
+
+[HeaderTabIndicator]
+Meter=Image
+X=[HeaderTab#State#:X]
+Y=-1r
+W=[HeaderTab#State#:W]
+H=2
+SolidColor=161,186,220
+DynamicVariables=1
+
+[///1]
+Measure=String
+Group=Sub
+[//1]
+Meter=String
+Group=String
+[/1]
+Measure=Calc
+Group=Calc
+[1]
+Meter=Bar
+Group=Bars
+MeasureName=/1
+
+[///2]
+Measure=String
+Group=Sub
+[//2]
+Meter=String
+Group=String
+[/2]
+Measure=Calc
+Group=Calc
+[2]
+Meter=Bar
+Group=Bars
+MeasureName=/2
+
+[///3]
+Measure=String
+Group=Sub
+[//3]
+Meter=String
+Group=String
+[/3]
+Measure=Calc
+Group=Calc
+[3]
+Meter=Bar
+Group=Bars
+MeasureName=/3
+
+[///4]
+Measure=String
+Group=Sub
+[//4]
+Meter=String
+Group=String
+[/4]
+Measure=Calc
+Group=Calc
+[4]
+Meter=Bar
+Group=Bars
+MeasureName=/4
+
+[///5]
+Measure=String
+Group=Sub
+[//5]
+Meter=String
+Group=String
+[/5]
+Measure=Calc
+Group=Calc
+[5]
+Meter=Bar
+Group=Bars
+MeasureName=/5
+
+[///6]
+Measure=String
+Group=Sub
+[//6]
+Meter=String
+Group=String
+[/6]
+Measure=Calc
+Group=Calc
+[6]
+Meter=Bar
+Group=Bars
+MeasureName=/6
+
+[///7]
+Measure=String
+Group=Sub
+[//7]
+Meter=String
+Group=String
+[/7]
+Measure=Calc
+Group=Calc
+[7]
+Meter=Bar
+Group=Bars
+MeasureName=/7
+
+[///8]
+Measure=String
+Group=Sub
+[//8]
+Meter=String
+Group=String
+[/8]
+Measure=Calc
+Group=Calc
+[8]
+Meter=Bar
+Group=Bars
+MeasureName=/8
+
+[///9]
+Measure=String
+Group=Sub
+[//9]
+Meter=String
+Group=String
+[/9]
+Measure=Calc
+Group=Calc
+[9]
+Meter=Bar
+Group=Bars
+MeasureName=/9
+
+[///10]
+Measure=String
+Group=Sub
+[//10]
+Meter=String
+Group=String
+[/10]
+Measure=Calc
+Group=Calc
+[10]
+Meter=Bar
+Group=Bars
+MeasureName=/10
+
+[///11]
+Measure=String
+Group=Sub
+[//11]
+Meter=String
+Group=String
+[/11]
+Measure=Calc
+Group=Calc
+[11]
+Meter=Bar
+Group=Bars
+MeasureName=/11
+
+[///12]
+Measure=String
+Group=Sub
+[//12]
+Meter=String
+Group=String
+[/12]
+Measure=Calc
+Group=Calc
+[12]
+Meter=Bar
+Group=Bars
+MeasureName=/12
+
+[///13]
+Measure=String
+Group=Sub
+[//13]
+Meter=String
+Group=String
+[/13]
+Measure=Calc
+Group=Calc
+[13]
+Meter=Bar
+Group=Bars
+MeasureName=/13
+
+[HelpText]
+Meter=String
+Text=" "
+X=16
+Y=32R
+FontFace=Segoe UI
+FontSize=9
+ClipString=2
+ClipStringW=#CURRENTCONFIGWIDTH#
+AntiAlias=1
+
+[Footer]
+Meter=Image
+Y=R
+H=24
+
+[Redraw]
+Measure=Calc

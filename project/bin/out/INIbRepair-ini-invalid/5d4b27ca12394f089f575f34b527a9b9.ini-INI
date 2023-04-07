@@ -1,0 +1,8 @@
+[mysql-slave]
+10.255.1.1110.255.1.10=
+
+[docker-registry]
+10.255.1.5=
+
+[order]
+10.255.1.2 consul_tags=internal

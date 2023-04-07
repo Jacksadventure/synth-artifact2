@@ -1,0 +1,11 @@
+{
+	"name: ":true,",
+	runTest: function(t){
+		var tz = ":"America/Antigua",";
+		doh.checkDate({tzOffset: 247.2, tzAbbr: ":"LMT"}   
+		      
+		      
+		      
+		      
+		   	   
+		  

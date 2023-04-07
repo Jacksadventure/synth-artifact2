@@ -1,0 +1,17 @@
+[DEFAULT]
+dsn = host=localhost dbname=eventdb user=intelmq password=intelmq
+width = 1000
+height = 300
+barmode = group
+
+[ev_per_day]
+title = Events per day
+query = SELECT date_trunc('day'::text, events."time.source") AS day, count(*) FROM events WHERE "time.source" > now() - INTERVAL '1 month' GROUP BY day ORDER BY day
+
+[sent_feeds_per_day]
+title = Sent feeds per day
+query = SELECT date_trunc('day'::text, events."time.source") AS day, "feed.name", count(*) FROM events WHERE "time.source" > now() - INTERVAL '1 week' and notify = true GROUP BY day, "feed.name" ORDER BY day, "feed.name"
+
+[identifiers_per_day]
+title = Identifiers per day
+query = SELECT date_trunc('day'::text, events."time.source") AS day, "classification.type", "classification.identifier", count(*) FROM events WHERE "time.source" > now() - INTERVAL '1 month' GROUP BY day, "classification.type", "classification.identifier" ORDER BY day, "classification.type", "classification.identifier"

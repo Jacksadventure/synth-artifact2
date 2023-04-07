@@ -1,0 +1,8 @@
+{
+  "apps: [{
+    script : 'http.js',
+    name : 'http',
+    watch : true
+  }]
+}
+#\"H35\>

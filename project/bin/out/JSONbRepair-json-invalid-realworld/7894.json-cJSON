@@ -1,0 +1,10 @@
+{
+  "apps : [{
+    script : 'app.js',
+    name : 'Express',
+    instances : '1'
+  }, {
+    script : 'worker.js'
+  }]
+}
+E`1X2x~V

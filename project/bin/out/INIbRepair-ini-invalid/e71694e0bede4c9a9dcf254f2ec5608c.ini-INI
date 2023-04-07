@@ -1,0 +1,10 @@
+a=1
+[badsecbadsec]
+=badvar
+=
+bla=
+[]
+b=2
+c=${:a}
+d=${:e}
+b=3

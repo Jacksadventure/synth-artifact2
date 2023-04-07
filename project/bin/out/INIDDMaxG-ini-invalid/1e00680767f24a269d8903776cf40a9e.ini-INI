@@ -1,0 +1,22 @@
+[ Rainmeter ]
+ Update = 1000
+ DynamicWindowSize = 1
+ AccurateText = 1
+ [ Metadata ]
+ Name =Dash
+ Author =  Mazeby
+ Information =  A Rainmeter skin collection for people with too many screens and a need for some clean system monitoring tools and other various widgets.
+ Version =  1.0
+ License =  CC BY-NC
+ [ FrostedGlass ]
+ Measure = Plugin
+ Plugin = FrostedGlass
+ Type = Acrylic
+ Border = All
+ [ Variables ]
+ @IncludeVars = #@#WXDataWeatherVars.inc
+ @IncludeRegExp = #@#WXDataWeatherRegExp.inc
+ [ WeatherParent ]
+ Measure = Plugin
+ Plugin = WebParser
+ URL = http://wxdata.weather.com/wxdata/weather/local/#LocationCode#?cc

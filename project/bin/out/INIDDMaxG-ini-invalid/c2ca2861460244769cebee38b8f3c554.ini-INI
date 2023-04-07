@@ -1,0 +1,5 @@
+[ fltsim.0 ]
+ title = CS 777-200 Captain Paint0
+ sim =csx772_GE
+ model = 200ER_GE
+ panel = sound

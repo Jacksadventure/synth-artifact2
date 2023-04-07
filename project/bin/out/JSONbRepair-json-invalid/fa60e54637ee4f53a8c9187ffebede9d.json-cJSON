@@ -1,0 +1,11 @@
+{
+	"name: ":true,",
+	runTest: function(t){
+		var tz = ":"Pacific/Enderbury",";
+		doh.checkDate({tzOffset: 720, tzAbbr: ":"PHOT"}   
+		      
+		      
+		   	   
+		      
+		      
+		 

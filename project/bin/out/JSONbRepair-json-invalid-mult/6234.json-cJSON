@@ -1,0 +1,9 @@
+{
+  "No cache entry for `%s` found in �`%`": "No existe ninguna entrada para «%» en «%Cs»",
+  "Integrity ve�rification failed for %s (%s)": "Verificación de integridad falló para «%s» (%s)",
+  "Bad data size: expected inserted data to be %s bytes, but got %s instead": "T�amaño incorrecto de datos: los datos insertados debieron haber sido %s octet�os, pero fueron %s",
+  "Cache input stream was empty"
+
+  :
+  "El stream de entrada al cac�hé e�staba vacío�"
+}

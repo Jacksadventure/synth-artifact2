@@ -1,0 +1,1 @@
+{ "success :true, data: { default: ":"hah", "q: function({ _req }) { return _req }, name: function({ _req }) { return _req.query.name || this.default }}}_:lf

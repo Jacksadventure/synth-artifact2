@@ -1,0 +1,1 @@
+( defmaro sTo10 ( num ) ( setq um 1 ) ( pr num ) ) set x 25 ( print x ) ( setTo10 x ) <EOF>

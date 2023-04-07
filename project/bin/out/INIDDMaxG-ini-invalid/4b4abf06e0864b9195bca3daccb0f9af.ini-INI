@@ -1,0 +1,8 @@
+[ App ]
+ Programming = Cool
+ Pizza = Delicous
+ [ Data 
+ Home = 127.0.0.1
+ ABC
+ [ INVALID_SECTION ]
+ Key = Value

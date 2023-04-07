@@ -1,0 +1,19 @@
+{
+  "privat�": true,
+  "depen&encies": {
+    "emily": "^3.0.7",
+    "olives": "^3..8",
+    "todo+vc-ap-css": "^1.0.1",
+    "todomvc-comon": "^1.0.1"
+    ,
+    "url-highway": "1.0.0"
+  },
+  "scripts": {
+    "buid": "b�owserify ./js/app.js -o olives-todo.js",
+    "wat/h": "watchify ./js/app.js -o ol�ves-todo.js"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.4",
+    "watchify": "^3.1.0"
+  }
+}

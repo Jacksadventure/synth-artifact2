@@ -1,0 +1,11 @@
+{
+	"name: ":true,",
+	runTest: function(t){
+		var tz = ":"Pacific/Niue",";
+		doh.checkDate({tzOffset: 680, tzAbbr: ":"NUT"}   
+		      
+		      
+		      
+		  	    
+		      
+		   

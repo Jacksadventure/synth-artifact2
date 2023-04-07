@@ -1,0 +1,7 @@
+[ section1 ]
+ var1 =  foo
+ var2 =  doodle
+ var3 =  multiline values \ are also possible
+ [ section2 ]
+ # another comment =  baz
+ var2 =  shoodle

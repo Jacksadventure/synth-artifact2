@@ -1,0 +1,203 @@
+File names, FailReason for each subject and file sizes in Bytes for each file. Empty=Success
+File name,Size,ANTLR,INI
+/testfiles/ini-invalid-single/507f98b2c58047eaaa2b2b7420b4c8aa.ini,33,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/59a8685104584a2c9df4200876f4796b.ini,46,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/38437b051324451d9e66aa8523d98d5a.ini,1378,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/3b74a444352349328916504f97681103.ini,195,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/327b9b9dc29040c4bd8a6442a5c7ed2d.ini,68,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/f60796b1aa5544b089d52f8c225aad84.ini,14,,Reported Incomplete
+/testfiles/ini-invalid/922390da26ac442aa5003d3632559677.ini,85,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/4269915eb132401bb97b2db3a8b8f6d4.ini,74,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/a2361ebdefa147eeb06a30f134f33393.ini,52239,,
+/testfiles/ini-invalid-mult/6525efe77abe45ab90286870fba59ef9.ini,755,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/1a2a89f9637047f3af9d4821a3026622.ini,678,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/8d87ec95ccbc45a6bc82df245508cd80.ini,7551,,
+/testfiles/ini-invalid/91a794160a734d3c813e12c499d3493c.ini,251,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/4fb3e32ec778440ba740770d29f38b3d.ini,238,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/8983ac67661a4c1493ec0bdd06a4e0e1.ini,384,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/282de391b914459a93babb3b5aa991e7.ini,19787,,
+/testfiles/ini-invalid-mult/15027701cec74115ac3b0b7857520ae5.ini,815,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b29f8ed7f9344b298d8f0033c577885d.ini,192,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/5b0696535a464ab1ba0315a25ded5566.ini,649,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/650b74f71bec4e2391dc331481e5fb14.ini,430,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/a5f0651048064af99adc2b7d0fd997b7.ini,3962,,
+/testfiles/ini-invalid/26a5a578e1e14510bd8ecff5ebff5363.ini,191,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/847d39f10b7c49e5995f3c990a576484.ini,132,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b150e6bc62ab485a83b95def02a49b4c.ini,249,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/71ace347216246d1a65dcfbc400a3785.ini,75,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/ced0e230088d49cfb266317685efdd57.ini,246,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/9c6601fc87f04c1c9b63d87cba40d45a.ini,520,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/396b6133aeeb4e5a87d34a908155edcc.ini,5787,,
+/testfiles/ini-invalid/08886baf8f8f41b0a42ebac7c672f8e8.ini,189,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/716ee960c13a4bd0a754d05c4e27b2dd.ini,214,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/c6adb4d4da0946e6908c260039780a30.ini,69,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/1dad70d84bfb4596b2296fb4c82e1ef7.ini,4422,,
+/testfiles/ini-invalid/34cd2701a4f14671b0d5556536d57fab.ini,50,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/78834115320e49918c376d5109a684a5.ini,247,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/78834115320e49918c376d5109a684a5.ini,250,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/cdefebe268ab4cd3b3b4ec8469a5cd5c.ini,839,,
+/testfiles/ini-invalid/c590f92b7f7747d2ab5d9b52f47b3f7c.ini,4,,Reported Incomplete
+/testfiles/ini-invalid-single/5f69c3fa7bfc41f89c316f0b467b2e8b.ini,51,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/35a62177fd524cb794c91a6a6f760c28.ini,544,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/4ff53a02ba134bc3aa892daa55b9bfe3.ini,44,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/a028a1fc70bf44e8954b49ea2079e599.ini,292,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/d2aa86baed034368a3dd64f191428b26.ini,592,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/2f56e48b3d254b11af1781829435a491.ini,1948,,
+/testfiles/ini-invalid-mult/51c7eecba3c54a9c90bbfbc808db3c26.ini,77,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/2679f986d5e9442dbf5d87671df76cbe.ini,26,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/c3722dc6f3b54d22aa63e84ea2534f34.ini,109,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/3bb4d88e43a0492cab0cbb544fa8aca2.ini,765,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b1349132364d49af98c6097f52cce7be.ini,118,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/04b78aa09feb4986a5081572e6177328.ini,660,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/3bb4d88e43a0492cab0cbb544fa8aca2.ini,765,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/54a80bdc3ecc41569f798aa786c58fb1.ini,404,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/eb801f66acf24002a6856069162d38ee.ini,201,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/16524b2f5e33465d90d7ede55f788090.ini,1969,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/a151d5f6a1014242ba88bdffe555d347.ini,55,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/21cb41024aa04ab5b7a72f1c3015cbc1.ini,161,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b2d50ca57ad74f03b5361e328af9740d.ini,22,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/0af5a86b599e487f9cb008cec87d9c3f.ini,131,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/15e85720f2504b5bad79116e2b76b1b1.ini,365,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/9634a98b7a41407dbdaf03cf8bd74056.ini,13,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/4bec67f1c14249c8aeec9b2e7aee293f.ini,834,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/fd793c950b954d4a991667cc0b59f152.ini,54,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/26b98eab60ba454dad5c456316161247.ini,477,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/102810848728410eaa2926e982e3da81.ini,50,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/65f8a36b4c7341d387e8fc3a2bc87b4f.ini,180,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/4b4abf06e0864b9195bca3daccb0f9af.ini,212,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/2fa5a2bf8a8341f98c059d197af640b2.ini,5962,,
+/testfiles/ini-invalid-mult/6bbf163a7b7d4fcc93c265663502cfb3.ini,152,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/334a4fd72a184ffe8fd43c9d26a4048e.ini,449,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/ef826e93e287436a82e14036aac5ed65.ini,46664,,
+/testfiles/ini-invalid/74e224deb132400586d5c061364a9ac2.ini,460,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/d2aa86baed034368a3dd64f191428b26.ini,596,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/33780e3b92c541c39f9854e4eab31923.ini,14036,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/6cf54ba20f6c49438fcfab030c5e9db5.ini,117,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/7368656aa83d493e817cf6f9f3c1c7b3.ini,8,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/22f5aae0472b4fd299fb17a1ab0e5446.ini,62,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/8f390243353e42488fd623d4d1e626be.ini,202,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/17397f8878cf48938d91fa9dc2f7e220.ini,104,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/6525efe77abe45ab90286870fba59ef9.ini,765,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/17397f8878cf48938d91fa9dc2f7e220.ini,104,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/92bcfd8cc82f4f17972689d8e4a60591.ini,346,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/62b3283f4e3d451b93ddb20a456d3f6b.ini,61,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/f9882f7a7f8e4dc8a6899c7f73de4d3a.ini,10336,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/5b0a05b5a23942c681c87f3162a031fa.ini,1193,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/a31348c201ff43a6a604968204a9d8a7.ini,108,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/c2ca2861460244769cebee38b8f3c554.ini,25797,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/27d46c1be9344fa1b0ed55137f8be636.ini,485,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/7f500e4d426c443cb9b6e24577f0212d.ini,2244,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/248d59e5d5c544d3b3e5fde86ae32fab.ini,394,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/71ace347216246d1a65dcfbc400a3785.ini,73,,Reported Incomplete
+/testfiles/ini-invalid-mult/54acb241c87e4014b1fd59bb9cde707e.ini,840,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/5b0696535a464ab1ba0315a25ded5566.ini,655,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/f9feca937d2b4626aca73b51f9a274ba.ini,6369,,
+/testfiles/ini-invalid/59f4a15848594056a675732528913835.ini,3534,,
+/testfiles/ini-invalid/1e00680767f24a269d8903776cf40a9e.ini,41857,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/26b98eab60ba454dad5c456316161247.ini,487,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/44781a384cf14d95abec149a000f3403.ini,276,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/d7c3595d12f14cc381f413be6d1d38ac.ini,30556,,Reported Incomplete
+/testfiles/ini-invalid/1ca68fd56e444be4bb0b08ac2247c7a7.ini,61,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/aeae35a827904b8cb30907db3612c1f6.ini,21458,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/05606e4eb3d84e2cbb626a16d9946ddb.ini,78,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/6374dff6bed8411f956393aa949c2ac2.ini,52356,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/248d59e5d5c544d3b3e5fde86ae32fab.ini,391,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/507f98b2c58047eaaa2b2b7420b4c8aa.ini,45,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/d7c7f85073134aa4a05327cd06be730c.ini,140,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b9ee83210b9648c6babcdf46206b0abe.ini,17736,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/1a748ad35c4e433ca33698872f10bcf0.ini,235,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/caed9f496e6c40789ec0e1ee2f06c4db.ini,4185,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/34156eb2bb344d33a1e3c3fd7343ebb0.ini,613,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/7ea20fb9ca5e44c5a197c43a9d6f7ef3.ini,3506,,
+/testfiles/ini-invalid-single/4932e254b68b4d25908eeffeb7866e38.ini,25,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/03d9d18ef6004208abcb3c7f02710d40.ini,64,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/75822dd358784dc686cca39493271d41.ini,457,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/27d46c1be9344fa1b0ed55137f8be636.ini,489,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/48efc6eb126541e4af834fa253f3ae42.ini,1185,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/cf60f47905fd410ab864aaea0f7807da.ini,797,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/44781a384cf14d95abec149a000f3403.ini,281,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/2679f986d5e9442dbf5d87671df76cbe.ini,30,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/02aaf66820894d1b833271da95740b64.ini,615,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/04764e65915e4931ab1704b7557920c0.ini,94772,,
+/testfiles/ini-invalid-single/43d41527a7de4b3a9167afb780d2d677.ini,1369,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/0f01517c98814fbe8f931c492c6a0fbe.ini,16,,Reported Incomplete
+/testfiles/ini-invalid-mult/5f69c3fa7bfc41f89c316f0b467b2e8b.ini,59,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/6bbf163a7b7d4fcc93c265663502cfb3.ini,151,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/15e85720f2504b5bad79116e2b76b1b1.ini,356,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/341449945dc446c3b73c5e072851c62d.ini,711,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b02ce30346ec42e19a98f005db7ec41f.ini,9795,,
+/testfiles/ini-invalid-single/11b22fcb485f4a5291f05eccaa576823.ini,106,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/54acb241c87e4014b1fd59bb9cde707e.ini,840,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/21cb41024aa04ab5b7a72f1c3015cbc1.ini,151,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/5b0a05b5a23942c681c87f3162a031fa.ini,1204,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/59a8685104584a2c9df4200876f4796b.ini,44,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/1e977052ac3845068e0482fd6900b05d.ini,149,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/911570f26e0445fab679c271852c0ae0.ini,1417,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/93e99a9ef1e045afb67057001089438b.ini,41,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/f8c87fc0d29e43adb07317fa2ec4cabe.ini,266,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/20a0b99cd2764501bdf5388be8f5bc8f.ini,803,,
+/testfiles/ini-invalid/dce4da3038344ef5b9ad38315ed24f64.ini,590,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/8596a423f3234a2e9ad5c081ab3aa3fb.ini,216,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/54a80bdc3ecc41569f798aa786c58fb1.ini,393,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/479d0752cbe94bd99a329f6738b3009c.ini,20561,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/75822dd358784dc686cca39493271d41.ini,462,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/04b78aa09feb4986a5081572e6177328.ini,658,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/05606e4eb3d84e2cbb626a16d9946ddb.ini,63,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b8ca2ea8f6af47b0ba5b5749cdb1956e.ini,783,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/95c0e7f4c98b40ca9c99c100fd324cfc.ini,45,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/8d5b7c12498e4a4c9bd472c6940690a6.ini,6570,,
+/testfiles/ini-invalid/4473b36138f14f208728139231e13d53.ini,118,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/2168b66ad1ac41d685876feb07f248a6.ini,69,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/aa007a540ad34b4da2c030ff7a3f1692.ini,3369,,
+/testfiles/ini-invalid/e7188ca963744abf8ebf5b292b15646e.ini,3785,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/716ee960c13a4bd0a754d05c4e27b2dd.ini,221,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/1e977052ac3845068e0482fd6900b05d.ini,136,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/43d41527a7de4b3a9167afb780d2d677.ini,1376,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/650b74f71bec4e2391dc331481e5fb14.ini,418,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/341449945dc446c3b73c5e072851c62d.ini,715,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/ae475ca623e748b2af9d3337f23c2726.ini,29285,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/941abc9fafb44ed8a0a7a6a0935a62fd.ini,16027,,
+/testfiles/ini-invalid/5d4b27ca12394f089f575f34b527a9b9.ini,99,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/92c7c6ae5af2412c91c3f7188ac601a7.ini,18501,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/5227364499d44eef89017fc867614c0a.ini,37,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/e066ae1698064b1d9a9773cd9a043824.ini,2246,,
+/testfiles/ini-invalid/61187accb8db4c7ca25d9de6b07a387c.ini,284,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/03d9d18ef6004208abcb3c7f02710d40.ini,63,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/51c7eecba3c54a9c90bbfbc808db3c26.ini,75,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/9c66bf7ac2884e7298ca5dc96efc0521.ini,196,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/8983ac67661a4c1493ec0bdd06a4e0e1.ini,398,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/cee0c8dec6b344abb0f4419685016bd5.ini,7270,,
+/testfiles/ini-invalid-single/15027701cec74115ac3b0b7857520ae5.ini,819,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/02aaf66820894d1b833271da95740b64.ini,611,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/965190f4836a40e89f06ce5133da95aa.ini,466,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/7010be0e664d4c91aa92815c09db3f1d.ini,613,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/34156eb2bb344d33a1e3c3fd7343ebb0.ini,601,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/aca95f84afc64f7c93888759cf71bc23.ini,15510,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/7010be0e664d4c91aa92815c09db3f1d.ini,611,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/a151d5f6a1014242ba88bdffe555d347.ini,44,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/4ff53a02ba134bc3aa892daa55b9bfe3.ini,42,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/772d9763e5f14cdf83a3e3e06d64b504.ini,13830,,
+/testfiles/ini-invalid-single/1a2a89f9637047f3af9d4821a3026622.ini,667,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/844b47644dd0474ca19ee3f008ddbf37.ini,579,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/ea208c63c517425eabeca531b2285b0c.ini,17,,Reported Incomplete
+/testfiles/ini-invalid/f8ccef3f096f45ae93c1914b569d0d63.ini,2171,,
+/testfiles/ini-invalid/e71694e0bede4c9a9dcf254f2ec5608c.ini,50,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/4269915eb132401bb97b2db3a8b8f6d4.ini,66,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/49c1489732b54d029f7be56e505b3ffb.ini,352,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/65f8a36b4c7341d387e8fc3a2bc87b4f.ini,188,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/4bec67f1c14249c8aeec9b2e7aee293f.ini,822,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/b0b652742413472a872d930f53071e48.ini,22731,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/e99de5f990cb4030a0d3e5a4b62e44c6.ini,68184,,
+/testfiles/ini-invalid-mult/1a748ad35c4e433ca33698872f10bcf0.ini,237,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/95c0e7f4c98b40ca9c99c100fd324cfc.ini,57,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/94a3b18d1b344ef5b26a9d223ae53fba.ini,6010,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/0af5a86b599e487f9cb008cec87d9c3f.ini,127,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-mult/11b22fcb485f4a5291f05eccaa576823.ini,109,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/c59e8d8e75b34a4fad363931e7b79fcb.ini,203,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/6cf54ba20f6c49438fcfab030c5e9db5.ini,101,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/334a4fd72a184ffe8fd43c9d26a4048e.ini,456,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid-single/35a62177fd524cb794c91a6a6f760c28.ini,541,,Reported an incorrect input with exit code 1
+/testfiles/ini-invalid/cc5cd7e27af34182ad929ac4d5e7162d.ini,16094,,
+/testfiles/ini-invalid/f7cde9ac5f9345ad9b94c013a6dc3333.ini,15662,,
+/testfiles/ini-invalid-mult/4932e254b68b4d25908eeffeb7866e38.ini,24,,Reported Incomplete
+/testfiles/ini-invalid/7404821f097545b7a3fbd9fb06520c14.ini,2575,,

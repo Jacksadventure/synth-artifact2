@@ -1,0 +1,8 @@
+; [GENERAL]
+; INT   radius
+; INT   border.width
+; COLOR border.color
+
+[GENERAL]
+radius        = 60
+border.width  ] 1border.color  = #A0A0A0

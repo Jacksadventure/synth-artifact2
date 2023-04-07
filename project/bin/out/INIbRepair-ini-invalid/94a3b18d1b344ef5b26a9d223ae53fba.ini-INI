@@ -1,0 +1,50 @@
+[DEFAULTS]
+entitiesarc = 5mm
+entitiesboxedarc = 15cm
+entitiesboxedarcounter = 5cm
+
+; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[sidefield]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+coltitle = \tcoltitle
+boxed title style = {%
+    boxrule=0pt,%
+    colframe=white,%
+},title = #2
+#1
+
+[maintext]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = white
+colback = white
+boxsep = 0pt
+boxrule = 0pt
+coltitle = \tcoltitle
+boxed title style = {%
+    boxrule=0pt,%
+    colframe=white,%
+},title = #2
+#1
+
+[contactfields]
+arguments = breakable
+enhanced = true
+attach boxed title to top left = true
+colframe = green!50!black
+colback = green!50!black
+boxsep = 0pt
+boxrule = 0pt
+coltitle = \tcoltitle
+boxed title style = {%
+    boxrule=0pt,%
+    colframe=green!50!black,%
+},3

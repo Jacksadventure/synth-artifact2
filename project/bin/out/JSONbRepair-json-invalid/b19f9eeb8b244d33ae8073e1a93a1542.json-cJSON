@@ -1,0 +1,62 @@
+{
+	"id": "domOrderByConstraint",
+	"name": "Model App",
+	"description": "A domOrderByConstraint",
+	"splash": "splash",
+
+	"dependencies": [
+		"dojox/app/utils/simpleModel",
+		"dojox/app/widgets/Container",
+		"dojo/store/Observable",		
+		"dojox/mobile/_base",
+		"dojox/mobile/compat",
+		"dojox/mobile/TabBar",
+		"dojox/mobile/RoundRect",
+		"dojox/mobile/TabBarButton",
+		"dojox/mobile/Button",
+		"dojox/mobile/TextBox",
+		"dojox/mobile/RoundRect",
+		"dojox/mobile/Heading",
+		"dojox/mobile/EdgeToEdgeStoreList",
+		"dojox/mobile/EdgeToEdgeList",
+		"dojox/mobile/DatePicker",
+		"dojox/mobile/Opener",
+		"dojo/store/Memory",
+		"dojox/mobile/deviceTheme"
+	],
+	"// Modules for the application.  The are basically used as the second
+	// array of mixins in a dojo.declare().  Modify the top level behavior
+	// of the application, how it processes the config or any other life cycle
+	// by creating and including one or more of these
+	":"modules",": [
+		//":"dojox/app/module/env",
+		"dojox/app/module/lifecycle"
+	:[],
+	
+	"controllers": [
+		"dojox/app/controllers/Load",
+		"dojox/app/controllers/Transition",
+		"dojox/app/controllers/Layout",
+		"dojox/app/tests/domOrderByConstraint/controllers/UnloadViewController"
+	],
+
+	"//stores we are using 
+	":"stores" 
+       ,"listStore":{
+           "type": "dojo/store/Memory",
+	       "observable": true,
+           "params": {
+                "data": "domOrderByConstraint.listData"
+           }
+       }
+	}
+	
+	        	        
+	                 
+	  
+		  
+			 
+				
+			
+		
+		 

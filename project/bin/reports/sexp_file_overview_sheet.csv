@@ -1,0 +1,152 @@
+File names, FailReason for each subject and file sizes in Bytes for each file. Empty=Success
+File name,Size,ANTLR,SExpParser
+/testfiles/sexp-invalid-mult/01e11bc5f55348ce8fde032be8b26672.lisp,38,,Reported Incomplete
+/testfiles/sexp-invalid-single/0b0cdb500783415cb1cdcc9390415d58.lisp,71,,Reported Incomplete
+/testfiles/sexp-invalid-single/095dacec0c6b456ba43dad2cb6e59f82.lisp,13,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/016b2b78a27848219ecabe1de4a29021.lisp,5142,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0b0d3e38fd14408cb9b6a2736871aa22.lisp,38,,Reported Incomplete
+/testfiles/sexp-invalid-single/02f0bc50c3564ed3b2176313904760d8.lisp,25,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/06b600297a4f4676ba93622ed77049ea.lisp,284,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/05a37ed9483d427e99a48e6eb3d5b487.lisp,952,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/03a81a26667345058cd3b11eb34f90c2.lisp,107,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/084f1d849cdd4e29a1bf961a4c50b95d.lisp,1497,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0d20b074b5ca4beda67afa507f3e8848.lisp,371,,Reported Incomplete
+/testfiles/sexp-invalid-single/06bed6114877426ba58bfb4faac5c678.lisp,42,,Reported Incomplete
+/testfiles/sexp-invalid/0004b322813e4d3b9878789413327f0e.lisp,10656,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/202bcea09a5e4a3c8575aa7dc040c64d.lisp,359,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00d6d106ec564412a7109329c9aaf429.lisp,7028,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0a657c248bab48bfb5804042d8d6ef29.lisp,246,,Reported Incomplete
+/testfiles/sexp-invalid-single/03d5563b4f6e4735bed326bb3e56488c.lisp,41,,Reported Incomplete
+/testfiles/sexp-invalid-single/06c69f7afe84404a9eef9938583eaf43.lisp,144,,Reported Incomplete
+/testfiles/sexp-invalid-mult/049292e9a3c244c48d1f19e410eab767.lisp,1315,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0c3d884bbeb4464ba4192b5a53461ee4.lisp,153,,Reported Incomplete
+/testfiles/sexp-invalid-single/0758fe85bf75456e9e2b80485ab00d5d.lisp,211,,Reported Incomplete
+/testfiles/sexp-invalid/21c3a283207749cda218db68f6d77e46.lisp,674,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1eb16cfe72674c16b1d0644e134ac9f1.lisp,1020,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/007eef5388aa493a8947a5d15f61f863.lisp,482,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00924371b7474871b3deef71b6e6f3dd.lisp,21388,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1b36662829024af694d1e4bb1e38bd1c.lisp,1416,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0424d987e4df4cbfa327ad35cb3eedb3.lisp,402,,Reported Incomplete
+/testfiles/sexp-invalid/0099242d9cf44dc4be480e58f65ae729.lisp,1418,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/069ca063d61d42a7adfa190e22d740aa.lisp,39,,Reported Incomplete
+/testfiles/sexp-invalid-mult/04f0e02d71be490faf99beba44b8a23e.lisp,13,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1f02adbddcf84f868e24ae63f36ab218.lisp,829,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/08e5c2804efc4459a5088161ee7f5457.lisp,54,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0105e3b1bcbb490d93bd3a2795704eac.lisp,2662,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/004708c00a014b4898520973524e1775.lisp,11850,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/07715f4e764c419db75e06828628fa74.lisp,24,,Reported Incomplete
+/testfiles/sexp-invalid-single/0203059e1b32433da3a3573239f467a7.lisp,56,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00f22488d6ee4a569f4241caef4b9ee9.lisp,204,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/08d73f8da6b04c01ba832d06b0df05a0.lisp,120,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1ea193ba4f294072b628c9268cfe10b7.lisp,4506,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/06bed6114877426ba58bfb4faac5c678.lisp,49,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0716bab024024f2cbb937b79c295a07f.lisp,346,,Reported Incomplete
+/testfiles/sexp-invalid/00dc710d728b4ee8bcf51617198eddd4.lisp,5600,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/008083ae0559438ea8c922310dde9ecc.lisp,282,,Reported Incomplete
+/testfiles/sexp-invalid-single/08e5c2804efc4459a5088161ee7f5457.lisp,55,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00cdbe1d236b42d3a39331d42e9c3651.lisp,351,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/01611e5541d5426e83e859259624e38d.lisp,6194,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/06904a68dd4c4c068ff7ef7fca52ca28.lisp,46,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/030aa5dfde994218af150b852419b2aa.lisp,108,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0070c87bc7654c53afd2b0fbde6566e7.lisp,274,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0c3d884bbeb4464ba4192b5a53461ee4.lisp,139,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0014eb373559468f8a584a213a9ab683.lisp,3584,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/04111f5523534f1aa05b3542a66b4db7.lisp,37,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0ab1336013864dd79e125879a26bc16b.lisp,1751,,Reported Incomplete
+/testfiles/sexp-invalid-single/01e9585e8ed14a7f9ff64b8753abaef8.lisp,71,,Reported Incomplete
+/testfiles/sexp-invalid/012c1e50ea134ffca73b7d77f4720599.lisp,20,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/06c69f7afe84404a9eef9938583eaf43.lisp,145,,Reported Incomplete
+/testfiles/sexp-invalid/00abec1aaf474cb8bf689dffa19f9d50.lisp,7341,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/04eaa8b211e44621998759b4d586d2c3.lisp,137,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/000ce06aa05f44878454812124d611e2.lisp,448,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/01e9585e8ed14a7f9ff64b8753abaef8.lisp,72,,Reported Incomplete
+/testfiles/sexp-invalid/000f16da0b7b496c88597b944832db78.lisp,6285,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0c7b228f860a4b72b9830995320cb947.lisp,554,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0c38002778474475b951196e21fb1a66.lisp,184,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/04a6533e7f0046129820d3e77f412f49.lisp,249,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1e08a759f7394785b2adb24d539fb783.lisp,467,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/20423f67641341c48d4200fae061ad05.lisp,399,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/061cccf1fbad40c8a16f550b4793af72.lisp,30,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/016fd8fb045f41ff95f78572cf13b128.lisp,9386,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/05a37ed9483d427e99a48e6eb3d5b487.lisp,953,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00600aaaea3349cc900981ddf2f8be5c.lisp,7271,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0ab1336013864dd79e125879a26bc16b.lisp,1746,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0aa56bb3e14d4443b1383029dd1bd44b.lisp,103,,Reported Incomplete
+/testfiles/sexp-invalid-single/04f0e02d71be490faf99beba44b8a23e.lisp,18,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1ef239ab57af48e28ba51decc95c772d.lisp,125,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/049292e9a3c244c48d1f19e410eab767.lisp,1315,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00d896aac461421a9453607ee5bf565a.lisp,8635,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0014a15aa8ae465a84a8393228db4999.lisp,4499,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0af54540b2b94159ba1dc4f59dd5b97d.lisp,717,,Reported Incomplete
+/testfiles/sexp-invalid-single/08eab81d2d63423d90ab24e7b10464d2.lisp,482,,Reported Incomplete
+/testfiles/sexp-invalid/01541793e15d4d6abcf5abcfc9a85e05.lisp,6192,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0079e58ea65d459c937c719ecb2511c7.lisp,6187,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0ddb12b4f00046d9b7bc7aa35d5d2de2.lisp,12,,Reported Incomplete
+/testfiles/sexp-invalid-mult/02f0bc50c3564ed3b2176313904760d8.lisp,39,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/084f1d849cdd4e29a1bf961a4c50b95d.lisp,1491,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0424d987e4df4cbfa327ad35cb3eedb3.lisp,398,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0aa56bb3e14d4443b1383029dd1bd44b.lisp,104,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/05637b6be3cf463ea80b0d023a668015.lisp,56,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0070c87bc7654c53afd2b0fbde6566e7.lisp,286,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/04111f5523534f1aa05b3542a66b4db7.lisp,37,,Reported Incomplete
+/testfiles/sexp-invalid-mult/03d5563b4f6e4735bed326bb3e56488c.lisp,35,,Reported Incomplete
+/testfiles/sexp-invalid-mult/069ca063d61d42a7adfa190e22d740aa.lisp,39,,Reported Incomplete
+/testfiles/sexp-invalid-single/008083ae0559438ea8c922310dde9ecc.lisp,281,,Reported Incomplete
+/testfiles/sexp-invalid-single/05637b6be3cf463ea80b0d023a668015.lisp,54,,Reported Incomplete
+/testfiles/sexp-invalid-mult/09d9ec0f8f64452680457530acc44626.lisp,168,,Reported Incomplete
+/testfiles/sexp-invalid/014ff0b88e594bc9989bf836fc775ee1.lisp,6764,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/06b600297a4f4676ba93622ed77049ea.lisp,282,,Reported Incomplete
+/testfiles/sexp-invalid-mult/08d73f8da6b04c01ba832d06b0df05a0.lisp,121,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00042245ed6c428b95f41833e5f849e8.lisp,3945,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0b0d3e38fd14408cb9b6a2736871aa22.lisp,27,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0bbc8c884d704217b029d84d4668b5da.lisp,23,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00e11bf887d847b0b6b330c7251f026c.lisp,1674,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/13496a3159e445139f241e57a9702caa.lisp,420,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0c7b228f860a4b72b9830995320cb947.lisp,566,,Reported Incomplete
+/testfiles/sexp-invalid-single/085591729ad9482a9a7d0ba5c6903376.lisp,140,,Reported Incomplete
+/testfiles/sexp-invalid/00c2323608e64f00b64279b45978444d.lisp,9404,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/04eaa8b211e44621998759b4d586d2c3.lisp,129,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/09d9ec0f8f64452680457530acc44626.lisp,173,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/01e11bc5f55348ce8fde032be8b26672.lisp,32,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0716bab024024f2cbb937b79c295a07f.lisp,339,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/03a81a26667345058cd3b11eb34f90c2.lisp,109,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/030aa5dfde994218af150b852419b2aa.lisp,98,,Reported Incomplete
+/testfiles/sexp-invalid-single/05a0188ca0274ce5a92b6e7319940537.lisp,329,,Reported Incomplete
+/testfiles/sexp-invalid-single/0a657c248bab48bfb5804042d8d6ef29.lisp,249,,Reported Incomplete
+/testfiles/sexp-invalid-single/0c38002778474475b951196e21fb1a66.lisp,183,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/07715f4e764c419db75e06828628fa74.lisp,37,,Reported Incomplete
+/testfiles/sexp-invalid-mult/08eab81d2d63423d90ab24e7b10464d2.lisp,471,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/05a0188ca0274ce5a92b6e7319940537.lisp,332,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0085705fe42546039d52afdcde4f6c2d.lisp,1311,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0ddb12b4f00046d9b7bc7aa35d5d2de2.lisp,14,,Reported Incomplete
+/testfiles/sexp-invalid/00435f4b428e40a9a46727e82eb9d341.lisp,5880,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0b773e43be8f4904a1168406f6ef1353.lisp,138,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/06dcb2d6bdff40fca94dc79c9848f623.lisp,60,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0078132714a547e4836a4ea592747658.lisp,4710,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/0a2bfc94e30a430db07b3874676003aa.lisp,398,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0b773e43be8f4904a1168406f6ef1353.lisp,153,,Reported Incomplete
+/testfiles/sexp-invalid/0057c53dcff24cc19747fed60ce64503.lisp,198,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/09a46e29587c4621a89bb18be4fc072e.lisp,21,,Reported Incomplete
+/testfiles/sexp-invalid-single/06dcb2d6bdff40fca94dc79c9848f623.lisp,69,,Reported Incomplete
+/testfiles/sexp-invalid-single/061cccf1fbad40c8a16f550b4793af72.lisp,16,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1d94c34cab1e4a9f8bcd599d915789de.lisp,7567,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/04a6533e7f0046129820d3e77f412f49.lisp,244,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/085591729ad9482a9a7d0ba5c6903376.lisp,147,,Reported Incomplete
+/testfiles/sexp-invalid/00679b48128848e2b501e3f5d1ded200.lisp,475,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/09a46e29587c4621a89bb18be4fc072e.lisp,22,,Reported Incomplete
+/testfiles/sexp-invalid-mult/0a2bfc94e30a430db07b3874676003aa.lisp,388,,Reported Incomplete
+/testfiles/sexp-invalid/00324d41d7ed4e28bb474dc0728e0f39.lisp,4181,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1ed01534186846159cd584bc673bbf62.lisp,1566,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0af54540b2b94159ba1dc4f59dd5b97d.lisp,711,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0758fe85bf75456e9e2b80485ab00d5d.lisp,211,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00d4f55227d64b25a0ab52d0e38eee55.lisp,7187,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-single/06904a68dd4c4c068ff7ef7fca52ca28.lisp,55,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/00afc7aab44d425cacc75de299d56f1b.lisp,1009,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0bbc8c884d704217b029d84d4668b5da.lisp,34,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/1d7fc015a2724d2e8d788dd3ee66c494.lisp,322,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid/0075e98bc8844fd19fe629ecc356826a.lisp,595,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0b0cdb500783415cb1cdcc9390415d58.lisp,64,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0203059e1b32433da3a3573239f467a7.lisp,47,,Reported Incomplete
+/testfiles/sexp-invalid/014a323333694a05ba301ea489c8c9a7.lisp,23469,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/0d20b074b5ca4beda67afa507f3e8848.lisp,374,,Reported an incorrect input with exit code 1
+/testfiles/sexp-invalid-mult/095dacec0c6b456ba43dad2cb6e59f82.lisp,24,,Reported an incorrect input with exit code 1

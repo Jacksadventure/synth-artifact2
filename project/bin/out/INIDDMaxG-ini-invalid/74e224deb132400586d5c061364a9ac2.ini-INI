@@ -1,0 +1,9 @@
+[ normal ]
+ foo =  http://en.wikipedia.org/wiki/Foobar
+ [ escaped ]
+ tabs =  There is a tab\tcharacter in here somewhere
+ carriage return = 
+ newline =  Trust newline!\nAlways there when you need him.\nSplittin' those lines.
+ null =  Who'd be silly enough to put\0 a null character in the middle of a string? \
+ Stroustrup would not approve! =  This string \\t contains \\n no \\r special \\0 characters!
+ quoted = "Escaping works\tinside quoted strings!"

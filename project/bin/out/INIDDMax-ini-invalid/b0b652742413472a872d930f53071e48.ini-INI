@@ -1,0 +1,319 @@
+; ==================================================
+; | All Natural - Fichier de Configuration (v1.36) |
+; ==================================================
+
+; Contient les paramètres de configuration pour les fonctionnalités et réglages optionnels.
+; Pour Activer/Désactiver les différentes options : 1 signifie qu'elle est activée et 0 qu'elle est désactivée.
+
+; Les multiplicateurs (x) sont des valeurs par lesquelles la valeur initiale de ce que vous changez est multipliée.
+; Ainsi, les valeurs supérieures à 1 sont une augmentation, tandis que les valeurs inférieures à 1 sont une réduction. Cependant, les valeurs ne doivent pas être négatives.
+
+; Les paramètres des valeurs par défaut sont donnés entre parenthèses, après la description du paramètre. 
+; ATous les paramètres peuvent être personnalisés en fonction des goûts de chacun.
+
+; Veuillez s'il vous plaît lire le Lisez-moi pour plus d'information à propos des options du fichier .ini.
+
+
+; ======================================================================================
+; | Sélection de mods de météo : Spécifier quels mods de météo vous souhaitez utiliser |
+; ======================================================================================
+
+; Par défaut, All Natural utilise chaque climat disponible pour maximiser la diversité.
+; Vous pouvez utiliser n'importe quelle combinaison que vous souhaitez. Vous pouvez même régler toutes les valeurs à 0 afin de n'utiliser que les types de temps Vanilla.     set ANVars.UseEW to 1         ;Activer/Désactiver la météo d'Enhanced Weather en jeu. Utiliser une valeur de 1 ou 0. (1)     set ANVars.UseNW to 1         ;Activer/Désactiver la météo de Natural Weather en jeu. Utiliser une valeur de 1 ou 0. (1)    set ANVars.UseAWS to 1         ;Activer/Désactiver la météo d'Atmospheric Weather System (AWS) en jeu. Utiliser une valeur de 1 ou 0. (1)set ANVars.UseSIExtra to 1         ;Activer/Désactiver la météo additionnelle (non-vanilla) pour SI en jeu. Utiliser une valeur de 1 ou 0. (1)
+
+
+; =====================================================================
+; | Nuits plus sombres : Niveau de luminosité de la nuit configurable |
+; =====================================================================
+
+; Le multiplicateur de la luminosité contrôle directement à quel point les nuits sont sombres. La valeur de 1.00 est la luminosité Vanilla.
+; Chaque soustraction de 0.10 réduit la luminosité de 10%. Donc une valeur 0.50 signifie que les nuits sont 50% plus sombres. Une valeur de 0.20 donne des nuits 80% plus sombres.
+
+; Le paramètre NormalizeLuminance contrôle à quel point les nuits ont une teinte bleutée. Les nuits Vanilla sont fortement teintées de bleu.
+; Les valeurs peuvent être comprises entre 0.00 et 1.00, où 0.00 est la valeur Vanilla, et 1.00 supprime complètement la teinte bleutée vanilla la nuit.
+; Chaque ajout de 0.10 à la valeur par défaut Vanilla de 0.00 réduit la teinte bleutée de 10%.
+; Donc une valeur de 0.50 signifie que les nuits ont une teinte 50% moins bleue, une valeur de 0.80 donne des nuits 80% moins bleutées, et une valeur de 1.00 donne des nuits sans teinte bleutée du tout.
+
+; Si vous aimez la teinte bleutée Vanilla et des nuits lumineuses, ne modifiez pas les paramètres ci-dessous.
+
+; -----------------------------------------------------------------------------------------------------------------------------------
+; | Exemple de valeurs | Valeurs | Nuits 50% + sombres   | Nuits 50% plus sombres | Nuits 80% plus sombres | Nuits 80% plus sombres |
+; |   Tamriel et SI    | Vanilla | avec teinte bleutée   | pas de teinte bleutée  | avec teinte bleutée    | pas de teinte bleutée  |
+; -----------------------------------------------------------------------------------------------------------------------------------
+; | Luminance          |  1.00   |        0.50           |        0.50            |        0.20            |        0.20            |
+; | NormalizeLuminance |  0.00   |        0.00           |        1.00            |        0.00            |        1.00            |
+; -----------------------------------------------------------------------------------------------------------------------------------
+
+; Pour Tamriel
+; ==============
+
+           set ANVars.Luminance to 1.00       Multiplicateur de la luminosité de la nuit. (1.00)  set ANVars.NormalizeLuminance to 0.00; Contrôle l'atténuation de la teinte bleutée d'Oblivion Vanilla la nuit. (0.00); Pour les Shivering Isles; ==========================
+
+         set ANVars.SILuminance to 1.00      ; Multiplicateur de la luminosité de la nuit. (1.00)
+set ANVars.SINormalizeLuminance to 0.00       Contrôle l'atténuation de la teinte bleutée d'Oblivion Vanilla la nuit. (0.00); ===================================================================================================
+; | Phases lunaires, Nuits plus sombres pour Tamriel : Niveau de luminosité de la nuit configurable |
+; ===================================================================================================
+
+; En plus de pouvoir ajuster les paramètres de luminosité et de NormalizeLuminance ci-dessus, vous pouvez faire en sorte que la phase lunaire actuelle
+; affecte les niveaux de luminosité de la nuit. Cette fonctionnalité est par défaut Désactivé. 
+; Augmenter le paramètre MaxMoonPhaseMod d'une valeur de 0.25 à une plus grande fera en sorte que les phases lunaires auront un impact plus fort sur la luminosité des nuits.
+; Une valeur de 0.25 a un effet sympa et subtil en jeu, donc modifier cette valeur n'est pas recommandée à moins que vous ne sachiez réellement ce que vous faites.set ANVars.UseMoonPhaseModifier to 0        ; Activer/Désactiver la modification de la luminosité des nuits en fonction des phases lunaires et de la visibilité de la lune. Utiliser une valeur de 1 ou 0. (0)
+     set ANVars.MaxMoonPhaseMod to 0.25     ; Contrôle à quel point peut être sombre la modification maximum due à une phase lunaire du multiplicateur de luminosité. (0.25)
+
+
+; =================================================================
+; | Volatilité de la météo - Ajuster la durée moyenne des climats |
+; =================================================================
+
+; Cela modifie la probabilité de combien de temps durent les climats. Les valeurs sont en heures, 
+; les valeurs ci-dessous étant les durées les plus probables, et des périodes plus courtes et plus longues ayant moins de chance.
+; Cela vous permet de modifier les chances de durée des climats, en faveur de durées plus ou moins longues.
+; 9 heures est la durée par défaut de tous les types de temps. Il y a une durée minimum de 1 et une maximum de 17 heures, donc les valeurs entre 1 et 17 sont correctes.
+
+; Donc, par exemple si vous n'aimez pas le temps brumeux, vous pourriez régler "ANVars.FogLength to 1".
+; Et si par exemple vous appréciez vraiment les orages dans les Shivering Isles, vous pourriez régler "ANVars.SIStormLength to 17".
+
+; Pour Tamriel
+; ==============
+
+         set ANVars.ClearLength to 9         ; Durée moyenne d'un temps Ensoleillé. (9)
+        set ANVars.CloudyLength to 9         ; Durée moyenne d'un temps Nuageux. (9)
+      set ANVars.OvercastLength to 9         ; Durée moyenne d'un temps Couvert. (9)
+           set ANVars.FogLength to 9         ; Durée moyenne d'un temps Brumeux. (9)
+          set ANVars.RainLength to 9         ; Durée moyenne d'un temps Pluvieux. (9)
+         set ANVars.StormLength to 9         ; Durée moyenne d'un temps Orageux. (9)
+          set ANVars.SnowLength to 9         ; Durée moyenne d'un temps Neigeux. (9)
+
+; Pour les Shivering Isles
+; ==========================
+
+       set ANVars.SIClearLength to 9         ; Durée moyenne d'un temps Ensoleillé. (9)
+      set ANVars.SICloudyLength to 9         ; Durée moyenne d'un temps Nuageux. (9)
+    set ANVars.SIOvercastLength to 9         ; Durée moyenne d'un temps Couvert. (9)
+         set ANVars.SIFogLength to 9         ; Durée moyenne d'un temps Brumeux. (9)
+        set ANVars.SIRainLength to 9         ; Durée moyenne d'un temps Pluvieux. (9)
+       set ANVars.SIStormLength to 9         ; Durée moyenne d'un temps Orageux. (9)
+       set ANVars.SIManiaLength to 9         ; Durée moyenne d'un temps de Mania. (9)
+
+
+; =========================================================================
+; | Nuages en temps réel : ajuste la vitesse des nuages à votre timescale |
+; =========================================================================
+
+; Si vous utilisez une échelle de temps personnalisée plus lente comme 10 au lieu de celle Vanilla de 30, les nuages se déplaceront beaucoup trop vite.
+; Réglez ce paramètre ci-dessous sur 1 si vous utilisez une échelle de temps plus lente que celle Vanilla et n'aimez pas la manière par défaut dont les nuages se déplacent.
+
+; Ce paramètre permet également aux nuages de se déplacer super vite lorsque vous faites des vidéos de style timelapse, avec par exemple une échelle de temps de 3000-6000.
+
+           set ANVars.TCEnabled to 0         ; Activer/Désactiver les nuages en temps réel. Utiliser une valeur de 1 ou 0. (0)
+
+
+; ========================================================================================
+; | Transitions Améliorées : Ajuster les vitesses de transition des climats dans Tamriel |
+; ========================================================================================
+
+; Cela change la vitesse de transitions des climats, une fois que la météo a commencé à changer.
+; Il ne change pas la durée des climats eux-mêmes.
+
+           set ANVars.TTEnabled to 0         ; Activer/Désactiver Transitions Améliorées. Utiliser une valeur de 1 ou 0. (0)
+
+; Une valeur de 1.00 est le temps de transition par défaut. Une valeur de 0.50 à une transition 50% plus lente. Une valeur de 2.00 aurait une transition deux fois plus rapide.
+; Donc si vous pensez que les transitions des temps sont trop rapides, augmentez le multiplicateur. S'il est trop lent, ralentissez-le.
+
+      set ANVars.ClearDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Ensoleillés. (1.00)
+     set ANVars.CloudyDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Nuageux. (1.00)
+        set ANVars.FogDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Brumeux. (1.00)
+   set ANVars.OvercastDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Couverts. (1.00)
+       set ANVars.RainDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Pluvieux. (1.00)
+       set ANVars.SnowDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Neigeux. (1.00)
+      set ANVars.StormDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Orageux. (1.00)
+    set ANVars.SpecialDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour l'orage de Kvatch et les temps des Portes d'Oblivion. (1.00)
+
+
+; ======================================================================================================================
+; | Transitions Améliorées - Shivering Isles : Ajuster les vitesses de transition des climats dans les Shivering Isles |
+; ======================================================================================================================
+
+; Cela change la vitesse de transitions des climats, une fois que la météo a commencé à changer.
+; Il ne change pas la durée des climats eux-mêmes.
+
+         set ANVars.TTSIEnabled to 0         ; Activer/Désactiver Transitions Améliorées pour SI. Utiliser une valeur de 1 ou 0. (0)
+
+; Une valeur de 1.00 est le temps de transition par défaut. Une valeur de 0.50 à une transition 50% plus lente. Une valeur de 2.00 aurait une transition deux fois plus rapide.
+; Donc si vous pensez que les transitions des temps sont trop rapides, augmentez le multiplicateur. S'il est trop lent, ralentissez-le.
+
+    set ANVars.SIClearDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Ensoleillés. (1.00)
+   set ANVars.SICloudyDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Nuageux. (1.00)
+      set ANVars.SIFogDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Brumeux. (1.00)
+ set ANVars.SIOvercastDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Couverts. (1.00)
+     set ANVars.SIRainDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Pluvieux. (1.00)
+    set ANVars.SIStormDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps Orageux. (1.00)
+    set ANVars.SIManiaDeltaMult to 1.00      ; Multiplicateur de la vitesse de transition pour les temps de Mania. (1.00)
+
+
+; =======================================================================================================
+; | Distance du Brouillard : Ajuster la distance à partir de laquelle le brouillard apparaît en Tamriel |
+; =======================================================================================================
+
+; Oblivion a toujours eu du brouillard à distance, qui apparaît comme une brume grise.
+; La plupart des climats règlent la distance du brouillard de façon lointaine afin que vous puissiez voir assez loin.
+; Vous pouvez ajuster les multiplicateurs de brouillard ci-dessous pour amener le brouillard plus proche ou bien plus loin.
+
+; Cette fonctionnalité est pleinement compatible avec la fonctionnalité StreamSight de Streamline. Cependant, ce paramètre est statique
+; contrairement à SteamSight, qui ajuste la distance du brouillard au vol basé sur les performances requises.
+; Certains utilisateurs ont opté pour désactiver StreamSight et compte seulement sur la modification des valeurs ci-dessous.
+
+; Si vous possédez un PC très performant et désirez être capable de voir très très loin, réglez tous les multiplicateurs à 2.00 (deux fois plus loin) ou même 3.00.
+
+; Si vous voulez améliorer les performances et diminuer la distance de vue, réglez tous les multiplicateurs à 0.50 (50% plus proche) ou même de 0.20 à 0.40.
+
+; Les valeurs du mod 'Redbag - Fog' modifient la distance du brouillard pour chaque climat de façon à ce que le brouillard soit légèrement plus proche pour créer un sentiment d'un monde légèrement plus petit.
+
+; Le paramètre 'Encore plus proche' a été créé par alt3rn1ty pour correspondre approximativement à une valeur de UGridsDistantCount de 12 dans le fichier 'Oblivion.ini'.
+
+; Le paramètre 'Très proche (fan de Morrowind)' amène le brouillard très proche du joueur comme dans le jeu Morrowind. Certains joueurs qui utilise ce paramètre ressentent le monde qui les entoure beaucoup plus grand.
+; L'utilisation d'une faible valeur comme 0.50 améliorera également les performances et surtout retirera le besoin de mods de LOD ou de VWD, améliorant encore plus les performances.
+; Régler les temps Ensoleillé, Nuageux, et Orageux à 0.50 fait à peu près la même chose que régler uGridsDistantCount à 18 dans le fichier 'Oblivion.ini'.
+
+           set ANVars.FDEnabled to 0         ; Activer/Désactiver la modification de la Distance du Brouillard. Utiliser une valeur de 1 ou 0. (0)
+
+; -------------------------------------------------------------------------------------------------------------------------
+; | Exemples de valeurs        | Vanilla | Plus proche comme le mod | Encore plus proche | Très proche (fan de Morrowind) |
+; | pour le brouillard         |         | 'Redbag - Fog'           |                    |
+; -------------------------------------------------------------------------------------------------------------------------
+; | ANVars.ClearFogDist        |   1.00  |       0.90               |     0.62           |              0.30              |
+; | ANVars.CloudyFogDist       |   1.00  |       0.75               |     0.60           |              0.35              |
+; | ANVars.FogFogDist          |   1.00  |       0.60               |     0.60           |              0.60              |
+; | ANVars.OvercastFogDist     |   1.00  |       0.80               |     0.59           |              0.50              |
+; | ANVars.RainFogDist         |   1.00  |       0.70               |     0.58           |              0.40              |
+; | ANVars.SnowFogDist         |   1.00  |       0.60               |     0.54           |              0.40              |
+; | ANVars.StormFogDist        |   1.00  |       0.65               |     0.57           |              0.35              |
+; | ANVars.SpecialFogDist      |   1.00  |       0.70               |     0.60           |              0.35              |
+; -------------------------------------------------------------------------------------------------------------------------
+
+        set ANVars.ClearFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Ensoleillés. (1.00)
+       set ANVars.CloudyFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Nuageux. (1.00)
+          set ANVars.FogFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Brumeux. (1.00)
+     set ANVars.OvercastFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Couverts. (1.00)
+         set ANVars.RainFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Pluvieux. (1.00)
+         set ANVars.SnowFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Neigeux. (1.00)
+        set ANVars.StormFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Orageux. (1.00)
+      set ANVars.SpecialFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps des Portes d'Oblivion. (1.00)
+
+
+; =====================================================================================================================
+; | Distance du Brouillard des Shivering Isles : Ajuster la distance à partir de laquelle le brouillard apparaît dans les Shivering Isles |
+; =====================================================================================================================
+
+         set ANVars.FDSIEnabled to 0         ; Activer/Désactiver la modification pour SI de la Distance du Brouillard. Utiliser une valeur de 1 ou 0. (0)
+
+; -------------------------------------------------------------------------------------------------------------------------
+; | Exemples de valeurs        | Vanilla | Plus proche comme le mod | Encore plus proche | Très proche (fan de Morrowind) |
+  | pour les valeurs de SI     |         | 'Redbag - Fog'           |                    |                                |
+; -------------------------------------------------------------------------------------------------------------------------
+; | ANVars.SIClearFogDist      |   1.00  |         0.90             |        0.62        |              0.30              |
+; | ANVars.SICloudyFogDist     |   1.00  |         0.75             |        0.60        |              0.35              |
+; | ANVars.SIFogFogDist        |   1.00  |         0.60             |        0.60        |              0.60              |
+; | ANVars.SIOvercastFogDist   |   1.00  |         0.80             |        0.59        |              0.50              |
+; | ANVars.SIRainFogDist       |   1.00  |         0.70             |        0.58        |              0.40              |
+; | ANVars.SIStormFogDist      |   1.00  |         0.65             |        0.57        |              0.35              |
+; | ANVars.SIManiaFogDist      |   1.00  |         0.70             |        0.60        |              0.35              |
+; --------------------------------------------------------------------------------------------------------------------------
+
+      set ANVars.SIClearFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Ensoleillés. (1.00)
+     set ANVars.SICloudyFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Nuageux. (1.00)
+        set ANVars.SIFogFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Brumeux. (1.00)
+   set ANVars.SIOvercastFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Couverts. (1.00)
+       set ANVars.SIRainFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Pluvieux. (1.00)
+      set ANVars.SIStormFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps Orageux. (1.00)
+      set ANVars.SIManiaFogDist to 1.00      ; Multiplicateur de la distance du brouillard pour les temps de Mania. (1.00)
+
+
+; ================================================================================
+; | Couleurs Améliorées : Ajuste la couleur des teintes des climats dans Tamriel |
+; ================================================================================
+
+; Par défaut All Natural essaie de faire en sorte que tous les climats aient des couleurs uniformes afin de correspondre au mieux aux climats Vanilla.
+; Les vieux mods comme 'Natural Weather' ont teinté leurs climats afin qu'ils soient plus orange et rouge, pour créer un aspect apaisant et chaleureux.
+; Si vous souhaitez altérer les couleurs, vous pouvez modifier la coloration de chaque type de climats en ajustant les valeurs ci-dessous.
+; Des exemples de valeurs sont donnés pour correspondre à celles de 'Natural Weather' et aussi diminuer la luminosité pour les mauvais temps afin de les rendre plus triste/sinistre.
+
+; Prenez également note que vous pouvez augmenter (ou diminuer) la luminosité de n'importe quel climat en augmentant (ou diminuant) uniformément les paramètres Rouge-Vert-Bleu.
+; Par exemple, si vous souhaitez un temps Ensoleillé très lumineux, mais pas de modifications de la couleur, ajuster toutes les trois valeurs à 2.00 (deux fois plus lumineux).
+
+           set ANVars.CTEnabled to 0         ; Activer/Désactiver Couleurs Améliorées pour Tamriel. Utiliser une valeur de 1 ou 0. (0)
+
+; -----------------------------------------     ---------------------------------------             -----------------  ------------  -------------  -------------  --------------  ------------------------------  -----------------------------
+; | Plage des variables de 0.00 à 1.00.   |     |    Description - Couleurs 101 :     |             | Par défaut -  |  | Jaune de |  |  Teinte   |  |  Temps    |  |  Mauvais   |  | Jaune de Natural Weather + |  | Teinte rouge rosé +       |
+; |   0.00 = pas de luminosité du tout    |     | Rouge= rouge pur. Vert= 50 % Jaune  |             | Valeurs des   |  | Natural  |  |  Rouge    |  |  Neigeux  |  |   Temps    |  | Temps Neigeux plus bleu +  |  | Temps Neigeux plus bleu + |
+; |    1.00 est la luminosité par défaut. |     |   et 50 % Bleu. Bleu = bleu pur.    |             | couleurs      |  | Weather  |  |   Rosé    |  | Plus bleu |  | plus foncé |  | Mauvais temps plus foncé   |  | Mauvais temps plus foncé  |
+; -----------------------------------------    ----------------------------------------             -----------------  ------------  -------------  -------------  --------------  ------------------------------  -----------------------------
+
+              set ANVars.ClearR to 1.00      ; Multiplicateur du rouge pour le temps Ensoleillé.          1.00            1.00           1.00                                                 1.00                            1.00
+              set ANVars.ClearG to 1.00      ; Multiplicateur du vert pour le temps Ensoleillé.           1.00            1.00           0.75        pas de modif    pas de modif             1.00                            0.75
+              set ANVars.ClearB to 1.00      ; Multiplicateur du bleu pour le temps Ensoleillé.           1.00            0.55           0.50                                                 0.55                            0.50
+
+             set ANVars.CloudyR to 1.00      ; Multiplicateur du rouge pour le temps Nuageux.             1.00            1.00           1.00                                                 1.00                            1.00
+             set ANVars.CloudyG to 1.00      ; Multiplicateur du vert pour le temps Nuageux.              1.00            1.00           0.75        pas de modif    pas de modif             1.00                            0.75
+             set ANVars.CloudyB to 1.00      ; Multiplicateur du bleu pour le temps Nuageux.              1.00            0.55           0.50                                                 0.55                            0.50
+
+                set ANVars.FogR to 1.00      ; Multiplicateur du rouge pour le temps Brumeux.             1.00                                                          0.80                  0.80                            0.80
+                set ANVars.FogG to 1.00      ; Multiplicateur du vert pour le temps Brumeux.              1.00         pas de modif   pas de modif   pas de modif       0.80                  0.80                            0.80
+                set ANVars.FogB to 1.00      ; Multiplicateur du bleu pour le temps Brumeux.              1.00                                                          0.80                  0.80                            0.80
+
+           set ANVars.OvercastR to 1.00      ; Multiplicateur du rouge pour le temps Couvert.             1.00            1.00           1.00                           0.75                  0.75                            0.75
+           set ANVars.OvercastG to 1.00      ; Multiplicateur du vert pour le temps Couvert.              1.00            1.00           0.85        pas de modif       0.75                  0.75                            0.65
+           set ANVars.OvercastB to 1.00      ; Multiplicateur du bleu pour le temps Couvert.              1.00            0.70           0.70                           0.75                  0.60                            0.55
+
+               set ANVars.RainR to 1.00      ; Multiplicateur du rouge pour le temps Pluvieux.            1.00                                                          0.50                  0.50                            0.50
+               set ANVars.RainG to 1.00      ; Multiplicateur du vert pour le temps Pluvieux.             1.00         pas de modif   pas de modif   pas de modif       0.50                  0.50                            0.50
+               set ANVars.RainB to 1.00      ; Multiplicateur du bleu pour le temps Pluvieux.             1.00                                                          0.50                  0.50                            0.50
+
+               set ANVars.SnowR to 1.00      ; Multiplicateur du rouge pour le temps Neigeux.             1.00                                                          0.85                  0.85                            0.85
+               set ANVars.SnowG to 1.00      ; Multiplicateur du vert pour le temps Neigeux.              1.00         pas de modif   pas de modif       0.85       pas de modif              0.85                            0.85
+               set ANVars.SnowB to 1.00      ; Multiplicateur du bleu pour le temps Neigeux.              1.00                           1.00                                                 1.00                            1.00
+
+              set ANVars.StormR to 1.00      ; Multiplicateur du rouge pour le temps Orageux              1.00                                                          0.30                  0.30                            0.30
+              set ANVars.StormG to 1.00      ; Multiplicateur du vert pour le temps Orageux               1.00         pas de modif   pas de modif     pas de modif     0.30                  0.30                            0.30
+              set ANVars.StormB to 1.00      ; Multiplicateur du bleu pour le temps Orageux               1.00                                                          0.30                  0.30                            0.30
+
+
+; ======================================================================================
+; | Couleurs Améliorées : Ajuste la couleur des teintes des temps dans Shivering Isles |
+; ======================================================================================
+
+         set ANVars.CTSIEnabled to 0         ; Activer/Désactiver Couleurs Améliorées pour SI. Utiliser une valeur de 1 ou 0. (0)
+
+; -----------------------------------------     ---------------------------------------             -----------------  ------------  -------------  ---------------  -------------------------------  ------------------------------
+; | Plage des variables de 0.00 à 1.00.   |     |    Description - Couleurs 101 :     |             | Par défaut -  |  | Jaune de |  |  Teinte   |  |   Mauvais   |  |  Jaune de Natural Weather + |  | Teinte rouge rosé +        | 
+; |   0.00 = pas de luminosité du tout    |     | Rouge= rouge pur. Vert= 50 % Jaune  |             | Valeurs des   |  | Natural  |  |  Rouge    |  |   Temps     |  |   Mauvais temps plus foncé  |  | Mauvais temps plus foncé   |  
+; |    1.00 est la luminosité par défaut. |     |   et 50 % Bleu. Bleu = bleu pur.    |             | couleurs      |  | Weather  |  |   Rosé    |  | plus foncé  |  |                             |  |                            |  
+; -----------------------------------------    ----------------------------------------             -----------------  ------------  -------------  ---------------  -------------------------------  ------------------------------
+
+            set ANVars.SIClearR to 1.00      ; Multiplicateur du rouge pour le temps Ensoleillé.       1.00                1.00          1.00                                    1.00                            1.00
+            set ANVars.SIClearG to 1.00      ; Multiplicateur du vert pour le temps Ensoleillé.        1.00                1.00          0.75         pas de modif               1.00                            0.75
+            set ANVars.SIClearB to 1.00      ; Multiplicateur du bleu pour le temps Ensoleillé.        1.00                0.55          0.50                                    0.55                            0.50
+
+           set ANVars.SICloudyR to 1.00      ; Multiplicateur du rouge pour le temps Nuageux.          1.00        	   1.00          1.00                                    1.00                            1.00
+           set ANVars.SICloudyG to 1.00      ; Multiplicateur du vert pour le temps Nuageux.           1.00                1.00          0.75         pas de modif               1.00                            0.75
+           set ANVars.SICloudyB to 1.00      ; Multiplicateur du bleu pour le temps Nuageux.           1.00                0.55          0.50                                    0.55                            0.50
+
+              set ANVars.SIFogR to 1.00      ; Multiplicateur du rouge pour le temps Brumeux.          1.00                                              0.80                    0.80                            0.80
+              set ANVars.SIFogG to 1.00      ; Multiplicateur du vert pour le temps Brumeux.           1.00           pas de modif   pas de modif        0.80                    0.80                            0.80
+              set ANVars.SIFogB to 1.00      ; Multiplicateur du bleu pour le temps Brumeux.           1.00                                              0.80                    0.80                            0.80
+     
+         set ANVars.SIOvercastR to 1.00      ; Multiplicateur du rouge pour le temps Couvert.          1.00                1.00          1.00            0.75                    0.75                            0.75
+         set ANVars.SIOvercastG to 1.00      ; Multiplicateur du vert pour le temps Couvert.           1.00                1.00          0.85            0.75                    0.75                            0.65
+         set ANVars.SIOvercastB to 1.00      ; Multiplicateur du bleu pour le temps Couvert.           1.00                0.70          0.70            0.75                    0.60                            0.55
+
+             set ANVars.SIRainR to 1.00      ; Multiplicateur du rouge pour le temps Pluvieux.         1.00                                              0.50                    0.50                            0.50
+             set ANVars.SIRainG to 1.00      ; Multiplicateur du vert pour le temps Pluvieux.          1.00           pas de modif   pas de modif        0.50                    0.50                            0.50
+             set ANVars.SIRainB to 1.00      ; Multiplicateur du bleu pour le temps Pluvieux.          1.00                                              0.50                    0.50                            0.50
+
+            set ANVars.SIStormR to 1.00      ; Multiplicateur du rouge pour le temps Orageux.          1.00                                              0.30                    0.30                            0.30
+            set ANVars.SIStormG to 1.00      ; Multiplicateur du vert pour le temps Orageux.           1.00           pas de modif   pas de modif        0.30                    0.30                            0.30
+            set ANVars.SIStormB to 1.00      ; Multiplicateur du bleu pour le temps Orageux.           1.00                                              0.30                    0.30                            0.30
+
+            set ANVars.SIManiaR to 1.00      ; Multiplicateur du rouge pour le temps de Mania.         1.00
+            set ANVars.SIManiaG to 1.00      ; Multiplicateur du vert pour le temps de Mania.          1.00           pas de modif   pas de modif     pas de modif            pas de modif                    pas de modif
+            set ANVars.SIManiaB to 1.00      ; Multiplicateur du bleu pour le temps de Mania.          1.00

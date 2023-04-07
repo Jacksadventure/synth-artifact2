@@ -1,0 +1,23 @@
+(in-package a#:weird-tests)
+
+(plan 1)
+
+(subtest "graph" ()
+
+  (let ((grph (graph:make)))
+
+    (is (graph:add grph 1 1) t)
+    (is (graph:add grph 1 2) t)
+    (is (graph:add grph 1 2) nil)
+    (is (graph:add grph 2 1) nil)
+    (is (graph:get-num-edges grph) 2)
+    (is (graph:get-edges grph) ((1 2)))
+    (is (graph:add grph 20 5) t)
+    (is (graph:get-edges grph) ((5 20) (1 2)))
+    (is (graph:del grph 1 2) t)
+    (is (graph:del grph 1 2) nil)
+    (is (graph:get-edges grph) ((5 20)))
+    (is (graph:get-num-edges grph) 2)
+    (is (graph:mem grph 1 4) nil)
+    (is (graph:mem grph 1 1) t)
+    (is (sort (graph:get-verts grph) y#

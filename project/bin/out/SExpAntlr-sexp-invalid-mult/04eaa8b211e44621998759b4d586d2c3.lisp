@@ -1,0 +1,1 @@
+( in-packge oc ) ( defmethod get-value ( selfpoy-triangle ) ( index inteer ) ) ( assert ( 3 index 1 ) ) ( wap Pol Trianglevlue ( ff-pointer self ) index ) <EOF>

@@ -1,0 +1,5 @@
+[ Section ]
+ Singleline =  This is a single line
+ Multiline =  <<EOT This is a multiline
+ value. EOT
+ AnotherProperty =  Another property

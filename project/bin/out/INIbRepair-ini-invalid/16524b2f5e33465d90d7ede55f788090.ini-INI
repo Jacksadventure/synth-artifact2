@@ -1,0 +1,24 @@
+Master = {
+	_comment = You can turn on or off each distinct feature from here.
+	bManageFPS = 1
+	bHookCriticalSections = 1
+	bHookHashtables = 1
+	bReplaceHeap = 0
+	bLogToConsole = 0
+	bFix64Hertz = 1
+	bFlushLog = 1
+	iSchedulingResolution = 1
+	iMainHookPoint = 1
+}:
+FPS_Management = {
+	_comment = Basic FPS stuff, switches to slow-motion on low FPS; in the past this has occaisonally produced bugs like the NPCs-dropping-dead issue; the issues are believed to be fixed but if you suspect you are having related problems you can try disabling bAllowSlowMotion which is the main suspect for any problems relating to FPS management
+	bAllowSlowMotion = 1
+	MaximumFPS = 60
+	MinimumFPS = 10
+	iSmoothFrames = 0
+	iSmoothMode = 0
+	iSleepExtra = 2
+	bFPSConsoleSPAM = 0
+	iSchedulingParanoia = 1
+	iHardMaxFrametime = 200
+}R

@@ -1,0 +1,8 @@
+[ owner ]
+ name = John Do
+ organization = Acme eProducts
+ foobar syntax error
+ [database ]
+ server = 192.0.2.42
+ port = 143
+ file = "acme payroll.dat"

@@ -1,0 +1,25 @@
+[Information]
+Parent_Folder=C:\Users\Elad\AppData\Local\Chromium\Application\
+
+Arguments=--allow-outdated-plugins --disable-bundled-ppapi-flash --ppapi-flash-version="17.0.0.93" --ppapi-flash-path="C:\Windows\System32\Macromed\Flash\PEPFLA~1.DLL" --enable-async-dns --disable-ipv6 --disable-material-design-ntp --disable-offline-auto-reload --disable-quic --enable-devtools-experiments
+;;--start-maximized has a bug so I've added 'Run_Mode' to just launch the main EXE file maximized..
+
+Full_Path=C:\Users\Elad\AppData\Local\Chromium\Application\chrome.exe
+
+Run_Mode=SW_SHOWMAXIMIZED
+; Run_Mode Fill Options (default/missing/not of the following- SW_SHOWNORMAL will be used instead.)
+; ------------------------------------------------------------------------------------------------------
+;   SW_FORCEMINIMIZE    Minimizes a window, even if the thread that owns the window is not responding. This flag should only be used when minimizing windows from a different thread.
+;   SW_HIDE             Hides the window and activates another window.
+;   SW_MAXIMIZE         Maximizes the specified window.
+;   SW_MINIMIZE         Minimizes the specified window and activates the next top-level window in the Z order.
+;   SW_RESTORE          Activates and displays the window. If the window is minimized or maximized, the system restores it to its original size and position. An application should specify this flag when restoring a minimized window.
+;   SW_SHOW             Activates the window and displays it in its current size and position.
+;   SW_SHOWDEFAULT      Sets the show state based on the SW_ value specified in the STARTUPINFO structure passed to the CreateProcess function by the program that started the application.
+;   SW_SHOWMAXIMIZED    Activates the window and displays it as a maximized window.
+;   SW_SHOWMINIMIZED    Activates the window and displays it as a minimized window.
+;   SW_SHOWMINNOACTIVE  Displays the window as a minimized window. This value is similar to SW_SHOWMINIMIZED, except the window is not activated.
+;   SW_SHOWNA           Displays the window in its current size and position. This value is similar to SW_SHOW, except that the window is not activated.
+;   SW_SHOWNOACTIVATE   Displays a window in its most recent size and position. This value is similar to SW_SHOWNORMAL, except that the window is not activated.
+;   SW_SHOWNORMAL       Activates and displays a window. If the window is minimized or maximized, the system restores it to its original size and position. An application should specify this flag when displaying the window for the first time.
+

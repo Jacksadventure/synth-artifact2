@@ -1,0 +1,4 @@
+[Section]
+Singleline = This is a single line
+Multiline = <<EOT
+This is a multiline value.EOTAnotherProperty = Another property

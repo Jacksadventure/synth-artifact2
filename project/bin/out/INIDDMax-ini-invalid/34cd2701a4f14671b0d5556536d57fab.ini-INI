@@ -1,0 +1,3 @@
+[alias]
+	tree = !git --no-pager log --graph \[section]
+	test

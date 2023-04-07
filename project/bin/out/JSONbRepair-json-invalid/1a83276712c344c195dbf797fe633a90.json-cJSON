@@ -1,0 +1,12 @@
+{
+	"name: ":",
+	runTest: function(t){
+		var tz = ","Africa/Kinshasa":";
+		doh.checkDate({tzOffset: -60, tzAbbr: ","WAT" :2147483648000, "tz, 1);
+		doh.checkDate({tzOffset: -60, tzAbbr: ":"WAT"}   
+		      
+		      
+		      
+		      
+	
+

@@ -1,0 +1,29 @@
+#
+# This is the config file, and
+# a '#' or ';' character indicates
+# a comment
+#
+
+; core variables
+[core]
+	; Don't trust file modes
+	filemode = false
+
+; Our diff algorithm
+[diff]
+	external = /usr/local/bin/diff-wrapper
+	renames = true
+
+; Proxy settings
+[core]
+	gitProxy="ssh" for "kernel.org"
+	gitProxy=default-proxy ; for the rest
+
+; User settings
+[user]
+	name = ms
+	email = ms@localhost.localdomain
+
+; HTTP
+[http]
+	sslVerify]

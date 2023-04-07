@@ -1,0 +1,1 @@
+{ "privat�" : true , "depen&encies" : { "emily" : "^3.0.7" ,"olives" : 8 , "url-highway" : "1.0.0" } , "scripts" : { ": " : "watchify ./js/app.js -o ol�ves-todo.js" } , "devDependencies" : { "browserify" : "^9.0.4" , "watchify" : "^3.1.0" } }

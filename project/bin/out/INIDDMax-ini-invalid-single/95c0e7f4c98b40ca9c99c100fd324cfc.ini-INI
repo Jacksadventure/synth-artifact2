@@ -1,0 +1,6 @@
+; comment[foo] ; section
+bar=1 ; name=value
+
+[bar]
+name = Bob
+age: 42

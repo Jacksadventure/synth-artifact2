@@ -1,0 +1,1 @@
+{ "apps" : [ { "exec_interpreter" : "exec_mode" , "instances" , "log_date_format" , "max_memory_restart" , "merge_logs" , "name" , "script" , "cwd" , "node_args" , "ignore_watch" , "log" ] , "watch" : true }

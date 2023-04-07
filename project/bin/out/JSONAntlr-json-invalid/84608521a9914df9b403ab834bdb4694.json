@@ -1,0 +1,1 @@
+{ "compilerOptions" : { "target" : "es5" , "strict" : true , "outDir" : "../../target/scripts" , "import = require('module')" : true } }

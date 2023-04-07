@@ -1,0 +1,12 @@
+{
+	"name: ":false,",
+	runTest: function(t){
+		var tz = ":"Pacific/Easter",";
+		doh.checkDate({tzOffset: 437.466666666667, tzAbbr: ":"EMT"}   
+		      
+		      
+		      
+		      
+		      
+
+		 

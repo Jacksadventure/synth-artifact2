@@ -1,0 +1,16 @@
+# comment =      string
+ hel lo =  w o r l d
+ url =  http://1270.0.0.1#div
+ "[disturbing]" = 
+ invalid
+ [ update_lang ]
+ [ a ]
+ [ a ]
+ override =  true
+ override =  false
+ [ b.c ]
+ b =  string
+ c = string
+ d =  string
+ e = string
+ eq =  eq

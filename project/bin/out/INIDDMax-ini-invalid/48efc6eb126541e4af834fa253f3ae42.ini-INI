@@ -1,0 +1,18 @@
+; Enhanced Economy - Harvest.ini
+; =====================
+;
+; Version: 5.4.3
+; Author: Ole Boe / TheNiceOne
+; 
+
+; Defines areas where harvesting of plants should be illegal.
+; All settings except tnoEE.fId and tnoEE.wId can be reused between consecutive calls to "SetStage tnoEE 20"
+; tnoEE.fId is only used if it should be legal for the player to harvest the crop by becoming member of the faction given
+; tnoEE.wId is only used if the worldspace of the crop is not Tamriel
+; The format of fId/wId is "<esp/esm name>|<formId>"
+
+; Open Cities Reborn - Chorrolset tnoEE.mod to sv_Construct "Open Cities Reborn - Chorrol.esp"set tnoEE.fId to sv_Construct "Oblivion.esm|022296"		; Mages guildset tnoEE.crop_x to -56951set tnoEE.crop_y to 97011set tnoEE.crop_z to 14962SetStage tnoEE 20set tnoEE.mod to sv_Construct "Open Cities Reborn - Full Merge.esp"set tnoEE.fId to sv_Construct "Oblivion.esm|022296"		; Mages guild
+; Repeat positions from last callSetStage tnoEE 20set tnoEE.mod to sv_Construct "Open Cities Reborn - Chorrol.esp"set tnoEE.crop_x to -71120set tnoEE.crop_y to 97715set tnoEE.crop_z to 14481SetStage tnoEE 20set tnoEE.mod to sv_Construct "Open Cities Reborn - Full Merge.esp"
+; Repeat positions from last callSetStage tnoEE 20
+
+; Faregyl Villageset tnoEE.mod to sv_Construct "Faregyl.esp"set tnoEE.crop_x to 17155set tnoEE.crop_y to 600set tnoEE.crop_z to 1041SetStage tnoEE 20

@@ -1,0 +1,1 @@
+{ "@platforms" : [ "android" , "iPhone" , "iPad" ] , "id" : "H5201A237" , "name" : "爱宠之家" , "version" : { "name" : "1.8.1" , "code" : "83" } , "description" : "爱宠之家" , "icons" : { "72" : "icon.png" } , "launch_path" : "login.html" ,    "email" : "" , "url" : "http://www.dcloud.io" }

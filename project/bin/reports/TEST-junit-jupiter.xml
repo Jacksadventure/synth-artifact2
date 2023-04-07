@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="240" skipped="8" failures="0" errors="0" time="0.984" hostname="Orndalis" timestamp="2022-03-18T12:03:45">
+<properties>
+<property name="file.encoding" value="US-ASCII"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="/home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/fsynth.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-jdk"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="java.version" value="17.0.2"/>
+<property name="java.version.date" value="2022-01-18"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="ANSI_X3.4-1968"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="5.15.25-1-lts"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-jdk/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="/home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/fsynth.jar -X"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="ANSI_X3.4-1968"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="user.country" value="US"/>
+<property name="user.dir" value="/home/lukas/uni/hiwi/bFuzzerRepairer/project/bin"/>
+<property name="user.home" value="/home/lukas"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="lukas"/>
+<property name="user.timezone" value="Europe/Berlin"/>
+</properties>
+<testcase name="testIncompleteSExpr11(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr11(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI13(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI13(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[8]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#8]
+display-name: 8: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/15e85720f2504b5bad79116e2b76b1b1.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testFromFile3()" classname="fsynth.program.test.unittest.InputFormatTest" time="0.004">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile3()]
+display-name: JSON boolean without Extension
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[38]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#38]
+display-name: 38: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/6525efe77abe45ab90286870fba59ef9.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson1(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson9(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson9(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteTinyC1(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsIncomplete]/[test-template:testIncompleteTinyC1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[18]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#18]
+display-name: 18: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f9e6f878e075137020b0e4418c16b118.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson11_garbage4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson11_garbage4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[37]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#37]
+display-name: 37: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/650b74f71bec4e2391dc331481e5fb14.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[25]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#25]
+display-name: 25: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/44781a384cf14d95abec149a000f3403.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[13]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#13]
+display-name: 13: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/21cb41024aa04ab5b7a72f1c3015cbc1.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson14_null1(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson14_null1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage2()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage2()]
+display-name: Simple JSON File with garbage 2
+]]></system-out>
+</testcase>
+<testcase name="testValidINI2(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteINI1(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncomplete" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncomplete]/[test-template:testIncompleteINI1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidSExpr4(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsValid]/[test-template:testValidSExpr4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidJson6(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[7]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#7]
+display-name: 7: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/15027701cec74115ac3b0b7857520ae5.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson12(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson12(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[39]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#39]
+display-name: 39: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/65f8a36b4c7341d387e8fc3a2bc87b4f.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[27]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#27]
+display-name: 27: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/4bec67f1c14249c8aeec9b2e7aee293f.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="getJsonKey()" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[method:getJsonKey()]
+display-name: getJsonKey()
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson15(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson15(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[29]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#29]
+display-name: 29: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ec244e8cc5853f7b3459d4fcc7daf4c2.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[17]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#17]
+display-name: 17: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e2b88d2793a00dd0a1995fd2565342e5.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[26]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#26]
+display-name: 26: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/4932e254b68b4d25908eeffeb7866e38.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[14]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#14]
+display-name: 14: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/248d59e5d5c544d3b3e5fde86ae32fab.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[6]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#6]
+display-name: 6: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/11b22fcb485f4a5291f05eccaa576823.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testECMA404_5(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testECMA404_5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI14(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI14(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr10(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr10(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage1()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.03">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage1()]
+display-name: Simple JSON File with garbage 1
+]]></system-out>
+</testcase>
+<testcase name="testJsonWhitespace1()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonWhitespace1()]
+display-name: JSON File with Whitespaces 1
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteINI4(Subjects)" classname="fsynth.program.test.unittest.INIOracleTestsIncomplete" time="0">
+<skipped><![CDATA[INIH does not support quoted values in INI files]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncomplete]/[test-template:testIncompleteINI4(fsynth.program.subject.Subjects)]
+display-name: Incomplete String Value
+]]></system-out>
+</testcase>
+<testcase name="testBinarySearchJson1(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsBinarySearch" time="0.011">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsBinarySearch]/[test-template:testBinarySearchJson1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[11]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#11]
+display-name: 11: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/1a748ad35c4e433ca33698872f10bcf0.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[47]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#47]
+display-name: 47: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/8983ac67661a4c1493ec0bdd06a4e0e1.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[35]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#35]
+display-name: 35: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/5b0a05b5a23942c681c87f3162a031fa.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr6(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[5]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#5]
+display-name: 5: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/0af5a86b599e487f9cb008cec87d9c3f.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[23]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#23]
+display-name: 23: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/4269915eb132401bb97b2db3a8b8f6d4.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidINI3(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidJson5(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[50]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#50]
+display-name: 50: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e1918264e68cc742b823c90b21f63964.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidSExpr3(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsValid]/[test-template:testValidSExpr3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testFromFile2()" classname="fsynth.program.test.unittest.InputFormatTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile2()]
+display-name: JSON Dict without Extension
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson11(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson11(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[49]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#49]
+display-name: 49: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/a151d5f6a1014242ba88bdffe555d347.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson16(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson16(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[4]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#4]
+display-name: 4: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/05606e4eb3d84e2cbb626a16d9946ddb.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[48]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#48]
+display-name: 48: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/95c0e7f4c98b40ca9c99c100fd324cfc.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#1]
+display-name: 1: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/dd1c0e1a8117f569694f113305a9a032.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[36]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#36]
+display-name: 36: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/5f69c3fa7bfc41f89c316f0b467b2e8b.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[19]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#19]
+display-name: 19: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f03c5cec3d87f0844e13ba9c4cd7cd37.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[24]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#24]
+display-name: 24: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/43d41527a7de4b3a9167afb780d2d677.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[12]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#12]
+display-name: 12: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/1e977052ac3845068e0482fd6900b05d.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI5(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage7()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage7()]
+display-name: ECMA JSON with null as root and appended garbage
+]]></system-out>
+</testcase>
+<testcase name="testECMA404_4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testECMA404_4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI15(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI15(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="toStringTest()" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[method:toStringTest()]
+display-name: toStringTest()
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage3()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage3()]
+display-name: Simple JSON File with garbage 3
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson14_null3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson14_null3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[41]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#41]
+display-name: 41: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ff21ea78c5ffd528e7bc640c76fbc4ca.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[18]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#18]
+display-name: 18: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/334a4fd72a184ffe8fd43c9d26a4048e.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson5(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI7(Subjects)" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0">
+<skipped><![CDATA[According to Wikipedia, this seems to be valid]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI7(fsynth.program.subject.Subjects)]
+display-name: Bracket in Value 2
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteTinyC3(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsIncomplete]/[test-template:testIncompleteTinyC3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[2]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#2]
+display-name: 2: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/efe07d515f1ef758cb564f0186199ec0.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidJson4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[19]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#19]
+display-name: 19: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/341449945dc446c3b73c5e072851c62d.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[40]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#40]
+display-name: 40: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e7aa03a2d736853af718feb925ce011f.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson10(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson10(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson17(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson17(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI8(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI8(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI4(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testFromFile4()" classname="fsynth.program.test.unittest.InputFormatTest" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile4()]
+display-name: No JSON 1
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[3]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#3]
+display-name: 3: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/fd23de76a537323e39ea610a768e0737.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[50]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#50]
+display-name: 50: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/d2aa86baed034368a3dd64f191428b26.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidINI16(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI16(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson14_null2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson14_null2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[28]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#28]
+display-name: 28: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/4ff53a02ba134bc3aa892daa55b9bfe3.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[43]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#43]
+display-name: 43: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/dcab71d568275d772047cbab47a97311.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[16]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#16]
+display-name: 16: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/26b98eab60ba454dad5c456316161247.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[31]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#31]
+display-name: 31: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/d89ae260cb9e0a00d8b1448da6b2ce73.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson6(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[4]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#4]
+display-name: 4: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f168f2f055be9849475911aa88a9b0a3.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[15]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#15]
+display-name: 15: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/2679f986d5e9442dbf5d87671df76cbe.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidJson3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteINI2(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncomplete]/[test-template:testIncompleteINI2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI1(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson10_garbage3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson10_garbage3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr9(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr9(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[30]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#30]
+display-name: 30: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f8d3fe0c7f9995c1cbde303dbe111eba.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson18(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson18(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[29]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#29]
+display-name: 29: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/507f98b2c58047eaaa2b2b7420b4c8aa.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testJsonWhitespace2()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonWhitespace2()]
+display-name: JSON File with Whitespaces 2
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[17]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#17]
+display-name: 17: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/27d46c1be9344fa1b0ed55137f8be636.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[9]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#9]
+display-name: 9: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/17397f8878cf48938d91fa9dc2f7e220.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[42]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#42]
+display-name: 42: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f9210dbac1e064902126801e05c2c33f.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[5]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#5]
+display-name: 5: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e39d529bc7015ec6eaa2b54060d369e4.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr7(Subjects)" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0">
+<skipped><![CDATA[Comments are currently not supported by all subjects]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr7(fsynth.program.subject.Subjects)]
+display-name: Incomplete Real-World LISP Source File with code line commented out
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI3(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI9(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI9(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testECMA404_6(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testECMA404_6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[3]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#3]
+display-name: [3] grv, GRAPHVIZ
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[21]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#21]
+display-name: 21: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/df2635637298a79cfe3ef6262492ce1f.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTinyC1(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTinyC1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[45]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#45]
+display-name: 45: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e2b39c37087833d258ad9a012995f259.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson5(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[33]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#33]
+display-name: 33: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e6d674fdf964c5afce4e74d393ffc469.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr1(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[41]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#41]
+display-name: 41: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/6cf54ba20f6c49438fcfab030c5e9db5.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[6]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#6]
+display-name: 6: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/def425b85260acc0f7a6259831d37085.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson7(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson7(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteTinyC5(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsIncomplete]/[test-template:testIncompleteTinyC5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI12(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI12(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testECMA404_1(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testECMA404_1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidJson2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[4]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#4]
+display-name: [4] ini, INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr5(Subjects)" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0">
+<skipped><![CDATA[Comments are currently not supported by all subjects]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr5(fsynth.program.subject.Subjects)]
+display-name: Incomplete Real-World LISP Source File
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteINI5(Subjects)" classname="fsynth.program.test.unittest.INIOracleTestsIncomplete" time="0">
+<skipped><![CDATA[INIH does not support quoted values in INI files]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncomplete]/[test-template:testIncompleteINI5(fsynth.program.subject.Subjects)]
+display-name: Incomplete String
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr8(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr8(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[32]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#32]
+display-name: 32: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ea98c1e914dd459eb86996d2ca99bbb6.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testJsonSimple2()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonSimple2()]
+display-name: Simple JSON File 2
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson1_garbage1(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.035">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson1_garbage1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[20]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#20]
+display-name: 20: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e1c07ab7609479202fb03e9f8085804e.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testBinarySearchJson4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsBinarySearch" time="0.01">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsBinarySearch]/[test-template:testBinarySearchJson4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[8]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#8]
+display-name: 8: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/da06e564702c8fa3165d64219abae6ff.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[44]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#44]
+display-name: 44: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e8ae38b9b426acc956f05b9e33ad1b80.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson16(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson16(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[42]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#42]
+display-name: 42: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/7010be0e664d4c91aa92815c09db3f1d.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[7]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#7]
+display-name: 7: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e581cd3de513b8da1293be1ca9871f11.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[30]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#30]
+display-name: 30: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/51c7eecba3c54a9c90bbfbc808db3c26.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI2(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI6(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI10(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI10(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage5()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.025">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage5()]
+display-name: Complex JSON File with garbage 1
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson14_null4(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson14_null4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson9_garbage2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson9_garbage2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson6(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[9]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#9]
+display-name: 9: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f3c72ccf24dd61c1a9c5bdf7216739e7.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[23]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#23]
+display-name: 23: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/dde6f3e8342d2db7ec0672026363d8ed.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[11]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#11]
+display-name: 11: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f2a58825dce52705b57d3226c5ff8d51.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[47]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#47]
+display-name: 47: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ec6295b3be871c32fb13d09ec44ecc12.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[35]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#35]
+display-name: 35: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/eb8f9d51a9d325ac4de750fabb963302.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr2(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[48]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#48]
+display-name: 48: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e70362e00d35d657666d6735be76c3f2.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testFromFile5()" classname="fsynth.program.test.unittest.InputFormatTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile5()]
+display-name: No JSON 2
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson8(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson8(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteTinyC4(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsIncomplete]/[test-template:testIncompleteTinyC4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[1]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: [1] cjs, CJSON
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI9(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI9(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage4()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage4()]
+display-name: Simple JSON File with garbage 4
+]]></system-out>
+</testcase>
+<testcase name="testValidJson1(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[2]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#2]
+display-name: [2] jjq, JQ
+]]></system-out>
+</testcase>
+<testcase name="testBinarySearchJson5(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsBinarySearch" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsBinarySearch]/[test-template:testBinarySearchJson5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[10]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#10]
+display-name: 10: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f2797c5dcd82275fb0cfcab64f04a9cf.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson15(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.005">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson15(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[34]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#34]
+display-name: 34: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e273975e2715ff5d2f3ff1040c5f28cb.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[22]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#22]
+display-name: 22: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ebe8997df416bfe3763fbb6b3d806801.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[46]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#46]
+display-name: 46: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f77b5dd2ce5604108c3c369a1c362014.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI1(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson12(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson12(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI7(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI7(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[40]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#40]
+display-name: 40: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/6bbf163a7b7d4fcc93c265663502cfb3.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[7]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#7]
+display-name: [7] xxx, INVALID
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson7(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson7(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[25]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#25]
+display-name: 25: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f6cc4e6f67c806376fb4596a9b7f3227.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[13]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#13]
+display-name: 13: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/df9a8a5d2e129ec5ac4e809b4333265e.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr13(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr13(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[33]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#33]
+display-name: 33: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/59a8685104584a2c9df4200876f4796b.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[38]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#38]
+display-name: 38: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/fc21cfbea2474f618e667f5f2d18cbb9.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testBinarySearchJson2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsBinarySearch" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsBinarySearch]/[test-template:testBinarySearchJson2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[21]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#21]
+display-name: 21: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/35a62177fd524cb794c91a6a6f760c28.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[26]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#26]
+display-name: 26: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ed098c718bfe381fac3214222e682427.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[3]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#3]
+display-name: 3: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/04b78aa09feb4986a5081572e6177328.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr3(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testFromFile7()" classname="fsynth.program.test.unittest.InputFormatTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile7()]
+display-name: JSON with garbage 2
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[45]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#45]
+display-name: 45: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/75822dd358784dc686cca39493271d41.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI10(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI10(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testJsonGarbage6()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonGarbage6()]
+display-name: ECMA JSON with boolean as root and appended garbage
+]]></system-out>
+</testcase>
+<testcase name="testECMA404_3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testECMA404_3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidJson8(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson8(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteTinyC7(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsIncomplete" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsIncomplete]/[test-template:testIncompleteTinyC7(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[12]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#12]
+display-name: 12: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e98f0653097c09cb8361933668838f5e.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[36]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#36]
+display-name: 36: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f85be888c266bf2723e2594e347efff3.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[24]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#24]
+display-name: 24: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/de1f48029931c33632a8650afa9689b2.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[22]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#22]
+display-name: 22: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/3bb4d88e43a0492cab0cbb544fa8aca2.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[49]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#49]
+display-name: 49: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/f8e3a93fd340f77b9348830250cc14e8.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[10]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#10]
+display-name: 10: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/1a2a89f9637047f3af9d4821a3026622.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[37]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#37]
+display-name: 37: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e9fd0c2aa6a72bfdef18109126dfdd7d.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[2]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#2]
+display-name: 2: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/03d9d18ef6004208abcb3c7f02710d40.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson13(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson13(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[46]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#46]
+display-name: 46: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/78834115320e49918c376d5109a684a5.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[34]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#34]
+display-name: 34: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/5b0696535a464ab1ba0315a25ded5566.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidINI4(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI8(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.004">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI8(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI12(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI12(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[5]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#5]
+display-name: [5] cvp, CSVPARSER
+]]></system-out>
+</testcase>
+<testcase name="testJsonSimple1()" classname="fsynth.program.test.unittest.AppendedGarbageDetectorTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.AppendedGarbageDetectorTests]/[method:testJsonSimple1()]
+display-name: Simple JSON File 1
+]]></system-out>
+</testcase>
+<testcase name="testFromFile1()" classname="fsynth.program.test.unittest.InputFormatTest" time="0.023">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile1()]
+display-name: Simple JSON
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr12(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr12(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson8(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.026">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson8(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[16]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#16]
+display-name: 16: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e84a7a55ed395c0c0ecc3abbcf439d9e.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[43]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#43]
+display-name: 43: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/716ee960c13a4bd0a754d05c4e27b2dd.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteINI3(Subjects)" classname="fsynth.program.test.unittest.INIOracleTestsIncomplete" time="0">
+<skipped><![CDATA[INIH does not support quoted values in INI files]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncomplete]/[test-template:testIncompleteINI3(fsynth.program.subject.Subjects)]
+display-name: Incomplete String Key
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[31]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.004">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#31]
+display-name: 31: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/54a80bdc3ecc41569f798aa786c58fb1.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#1]
+display-name: 1: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/02aaf66820894d1b833271da95740b64.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[28]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#28]
+display-name: 28: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/dedf5b8f78ea5279dee2684f0d5f4920.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteSExpr4(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsIncomplete]/[test-template:testIncompleteSExpr4(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteTinyC6(Subjects)[1]" classname="fsynth.program.test.unittest.TinyCOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsIncomplete]/[test-template:testIncompleteTinyC6(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (TinyC)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidSExpr2(Subjects)" classname="fsynth.program.test.unittest.SExprOracleTestsValid" time="0">
+<skipped><![CDATA[Line Comments, hashes and ticks not supported by sexp-parser]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsValid]/[test-template:testValidSExpr2(fsynth.program.subject.Subjects)]
+display-name: Valid Real-World LISP Source File with line comment
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI11(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0.011">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI11(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testECMA404_2(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testECMA404_2(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="fromJSONKey(String, Subjects)[6]" classname="fsynth.program.test.unittest.SubjectTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SubjectTest]/[test-template:fromJSONKey(java.lang.String, fsynth.program.subject.Subjects)]/[test-template-invocation:#6]
+display-name: [6] tnc, TINYC
+]]></system-out>
+</testcase>
+<testcase name="testValidSExpr1(Subjects)[1]" classname="fsynth.program.test.unittest.SExprOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.SExprOracleTestsValid]/[test-template:testValidSExpr1(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (SExpParser)
+]]></system-out>
+</testcase>
+<testcase name="testValidJson7(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsValid]/[test-template:testValidJson7(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testIncompleteJson13(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncomplete" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncomplete]/[test-template:testIncompleteJson13(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testBinarySearchJson3(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsBinarySearch" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsBinarySearch]/[test-template:testBinarySearchJson3(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[14]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#14]
+display-name: 14: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e9caa3ea66b000c4332e58399ab4a444.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectJson14(Subjects)[1]" classname="fsynth.program.test.unittest.JsonOracleTestsIncorrect" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.JsonOracleTestsIncorrect]/[test-template:testIncorrectJson14(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (cJSON)
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[44]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#44]
+display-name: 44: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/71ace347216246d1a65dcfbc400a3785.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[27]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#27]
+display-name: 27: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e250bce557c54aed4fd5b49489e6741c.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[32]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#32]
+display-name: 32: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/54acb241c87e4014b1fd59bb9cde707e.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[15]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#15]
+display-name: 15: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/e061eef4352334d3ee290fec2baa0b33.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[20]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#20]
+display-name: 20: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/ini-valid/34156eb2bb344d33a1e3c3fd7343ebb0.ini for INI
+]]></system-out>
+</testcase>
+<testcase name="testValidTestfiles(Subjects, Path)[39]" classname="fsynth.program.test.unittest.TinyCOracleTestsValid" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.TinyCOracleTestsValid]/[test-template:testValidTestfiles(fsynth.program.subject.Subjects, java.nio.file.Path)]/[test-template-invocation:#39]
+display-name: 39: Valid file /home/lukas/uni/hiwi/bFuzzerRepairer/project/bin/testfiles/tinyc-valid/ebaabc8938b058e8663af28e1fc377e8.c for TinyC
+]]></system-out>
+</testcase>
+<testcase name="testFromFile6()" classname="fsynth.program.test.unittest.InputFormatTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.InputFormatTest]/[method:testFromFile6()]
+display-name: JSON with garbage 1
+]]></system-out>
+</testcase>
+<testcase name="testValidINI5(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI5(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testValidINI11(Subjects)[1]" classname="fsynth.program.test.unittest.INIOracleTestsValid" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsValid]/[test-template:testValidINI11(fsynth.program.subject.Subjects)]/[test-template-invocation:#1]
+display-name: 1: (INI)
+]]></system-out>
+</testcase>
+<testcase name="testIncorrectINI6(Subjects)" classname="fsynth.program.test.unittest.INIOracleTestsIncorrect" time="0">
+<skipped><![CDATA[According to Wikipedia, this seems to be valid]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:fsynth.program.test.unittest.INIOracleTestsIncorrect]/[test-template:testIncorrectINI6(fsynth.program.subject.Subjects)]
+display-name: Bracket in Value
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>

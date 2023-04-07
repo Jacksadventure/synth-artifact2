@@ -1,0 +1,11 @@
+{
+	"name: ":true,",
+	runTest: function(t){
+		var tz = ":"Asia/Beirut",";
+		doh.checkDate({tzOffset: -120, tzAbbr: ":"EET"}   
+		      
+		      
+		      
+		  	    
+		      
+		 

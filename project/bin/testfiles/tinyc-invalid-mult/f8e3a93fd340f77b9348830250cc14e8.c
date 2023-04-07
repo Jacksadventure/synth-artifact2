@@ -1,0 +1,1 @@
+q=q=ù-q-q+q-q-q+q+q-q-q+q-q-q+q+q-q-q+q+q-q-q+q-q-q+q+q-q+q-q-q+q-q-q+q+q-q-q+q-q+q+q-q-q+q-q-q+q+q-q-q+q+q-q+q-q-q+q’q-q+q+q-q-q+q-Ä+q+q-q-q+q!qØq+q+q-q-q+q-q;

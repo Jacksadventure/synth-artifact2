@@ -1,0 +1,14 @@
+# another comment line
+ [ mySection ]
+ number = 42
+ number2 = 
+ bool = false
+ bool2 = 0
+ string = Hello world
+ string2 = "Another hello world!"
+ vectorOfString = ok,toto, titi,
+ tata,ok2, sdfdf,s
+ mapOfNumber = 1,2,1,1,1,2,
+ 4,2,1,1,1,2, 3,1,1,1,1,2,
+ 2,1,1,0,0,1, 0,0,0,0,0,0,
+ 0,0,0,0,0,0

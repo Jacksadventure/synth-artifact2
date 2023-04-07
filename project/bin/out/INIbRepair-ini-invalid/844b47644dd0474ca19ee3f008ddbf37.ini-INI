@@ -1,0 +1,68 @@
+# comment
+; another comment
+
+ global =     string
+ hel lo = w o r l d ;inline comment are not allowed
+ url = http://1270.0.0.1#div
+ "[disturbing]" = hey you never know
+ invalid
+ 
+[update_lang] ;inline comment are not allowed
+ 
+[a]
+
+[a]
+override = true
+override = false
+
+  [b.c]
+
+b= string
+c =string
+ d = string 
+ e=string
+ eq = eq=eq
+ f = 'string'
+ g = "string"
+ 
+[d]
+
+ d=125
+ e=0x125
+ f="125"
+ g=0123456
+ h=8M
+ 
+[e]
+
+path    = "var/lib/path/to"
+win32  = "C:\\Windows\\System32"
+ 
+[f]
+
+void =
+empty = ""
+invalidmixed = "something'
+
+[h]
+
+ lessIsMore = "\."
+ lessIsMore2 = \.
+ 
+[i] 
+
+[j]
+
+  yes = true
+  yes2 = "true"
+  no = false
+  no2 = "false"
+ 
+[Database]
+password = some very*difficult=password:
+database-name =my-project-db
+
+[__proto__]
+
+[garbage]
+invalid:

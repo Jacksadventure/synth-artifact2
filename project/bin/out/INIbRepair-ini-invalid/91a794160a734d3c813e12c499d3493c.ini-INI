@@ -1,0 +1,17 @@
+[Database]
+Host=127.0.0.1
+Username=mike
+Password=testing
+Testing:
+
+[Debug]
+Build=Version 1.0.0
+Type=DEBUG
+Installed-By=Michael Amaya
+Alternate Installed=Wow!
+
+[Random]
+Rsa-Key=239523425923952394d2h34h2h4gg52g5
+Rsa-Directory=/users/michaela/Desktop/testing
+Random-Mode=15
+

@@ -1,0 +1,1 @@
+{ "name" : "with-mobx" , "version" : "1.0.0" , "scripts" : { "dev" : "nde server.js" , "build" : "next build" , "start" : "NDE_ENV=production node server.js" } , "dependencies" : "mobx" , "mob-react" : "^.0." , "next" : "latest" , "react" : "^16.0.0" , "react-dom" : 16.0

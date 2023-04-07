@@ -1,0 +1,13 @@
+»¿[HSK3.Grammar.Complex sentence with åâ¦ç¶åâ¦]structure = å + %sentence1% + ç¶å + %sentence2%
+example 1 = æä»¬å %sentence1:åäºå·çº¿%ï¼ç¶å %sentence2:æ¢ä¸å·çº¿%
+example 2 = æä»¬å %sentence1:ççµå½±%ï¼ç¶å %sentence2:ååå¡%
+
+[HSK1.Grammar.Adverb å¤ª]
+structure = å¤ª + %adjective% + äº
+example 1 = æè½¦å¤ª %adjective:è´µ% äºï¼
+example 2 = æå®¶çç½å¤ª %adjective:æ¢% äºï¼
+
+[HSK1.Grammar.Negative adverb ä¸å¤ª]
+structure = ä¸å¤ª + %adjective%
+example 1 = ä»å¤©å¤©æ°ä¸å¤ª %adjective:å¥½%
+example 2 = æçé±ä¸å¤ª %adjective:å¤%

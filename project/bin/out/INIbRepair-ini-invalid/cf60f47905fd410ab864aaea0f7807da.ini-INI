@@ -1,0 +1,16 @@
+//Mania skin config=
+ColumnLineWidth: 1.2
+ColumnStart: 225
+BarlineWidth: 4.0
+HitPosition: 404
+SpecialStyle: 1
+SpecialPositionLeft: 1
+UpsideDown: 0
+JudgementLine: 0
+ScorePosition: 325
+ComboPosition: 355
+FontCombo: mn
+LightFramePerSecond: 24
+ColumnWidth: 45,30,25,30,25,30,25,30
+ColumnLine: 0,1,1,1,1,1,1,1,0
+//Coloursx

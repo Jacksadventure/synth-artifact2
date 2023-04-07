@@ -1,0 +1,192 @@
+[Rainmeter]
+Update=1000
+
+[Variables]
+@Include=#@#Variables.inc
+IsNight="N/A"
+WeatherPrev=""
+Weather="N/A"
+PrecipitationPrev=""
+Precipitation="N/A"
+Startup=1
+HideDebug=1
+
+[Metadata]
+Name=#ROOTCONFIG#
+Author=Winston
+Information=A dynamic weather wallpaper
+License=Creative Commons BY-NC-SA 4.0
+Version=1.0
+
+; ---------------------------------------- Startup Commands -----------------------------------------------------;
+[StartupMeter]
+Measure=Calc
+IfCondition=(#Startup#=1) 
+IfTrueAction=[!ZPos "-1" "#ROOTCONFIG#\Weather\Rain"][!ZPos "-1" "#ROOTCONFIG#\Weather\Snow"][!ZPos "-2" "#ROOTCONFIG#"][!ClickThrough "1" "#ROOTCONFIG#"][!ClickThrough "1" "#ROOTCONFIG#\Weather\Rain"][!ClickThrough "1" "#ROOTCONFIG#\Weather\Snow"][!Dragable "0" "#ROOTCONFIG#"][!Dragable "0" "#ROOTCONFIG#\Weather\Rain"][!Dragable "0" "#ROOTCONFIG#\Weather\Snow"][!DeactivateConfig "#ROOTCONFIG#\Weather\Rain" "Rainy Days.ini"][!DeactivateConfig "#ROOTCONFIG#\Weather\Snow" "Snow.ini"][!SetVariable "Startup" "0"]
+
+; ----------------------------------------- Weather Parsing --------------------------------------------------- ;
+; Weather condition
+[ConditionParse]
+Measure=WebParser
+URL=#Url#
+RegExp=#WeatherConditionRegex#
+UpdateRate=60
+; Sunrise
+[RiseParse]
+Measure=WebParser
+URL=#Url#
+RegExp=#RiseConditionRegex#
+UpdateRate=3600
+
+[RiseString]
+Measure=WebParser
+URL=[RiseParse]
+StringIndex=3
+Substitute=":":""
+; Sunset
+[SetParse]
+Measure=WebParser
+URL=#Url#
+RegExp=#SetConditionRegex#
+UpdateRate=3600
+
+[SetString]
+Measure=WebParser
+URL=[SetParse]
+StringIndex=3
+Substitute=":":""
+
+; ----------------------------------------- Current time ------------------------------------------------- ;
+
+[CurrentTime]
+Measure=Time
+Format=%H%M
+
+[IsNightCheckMeter]
+Measure=Calc
+Formula=-1
+[IsNightCheckPrevMeter]
+Measure=Calc
+Formula=-1
+[ChangeWeather]
+Measure=Calc
+Formula=0
+
+[SetBackgroundTime]
+Measure=Calc
+DynamicVariables=1
+IfCondition= ([CurrentTime] > [SetString]) || ([CurrentTime] < [RiseString]) 
+IfTrueAction=[!SetOption IsNightCheckMeter Formula 1]
+IfFalseAction=[!SetOption IsNightCheckMeter Formula 0]
+; if time of day switches and day is supposed to be night
+IfCondition2= ([IsNightCheckMeter]<>[IsNightCheckPrevMeter]) && ([IsNightCheckMeter]=1)
+IfTrueAction2=[!SetVariable "IsNight" "Night"][!SetOption IsNightCheckPrevMeter Formula 1][!SetOption ChangeWeather Formula 1][!SetOption BackgroundMeter ImageName "#@#\Images\BackgroundNight.jpg"]
+; if time of day switches and day is supposed to be day
+IfCondition3= ([IsNightCheckMeter]<>[IsNightCheckPrevMeter]) && ([IsNightCheckMeter]=0)
+IfTrueAction3=[!SetVariable "IsNight" "Day"][!SetOption IsNightCheckPrevMeter Formula 0][!SetOption ChangeWeather Formula 1][!SetOption BackgroundMeter ImageName "#@#\Images\BackgroundDay.jpg"]
+
+; ----------------------------------------- Weather ------------------------------------------------- ;
+[CloudCheckMeter]
+Measure=Calc
+Formula=-1
+[CloudCheckPrevMeter]
+Measure=Calc
+Formula=-1
+[PercipitationCheckMeter]
+Measure=Calc
+Formula=-1
+[PercipitationCheckPrevMeter]
+Measure=Calc
+Formula=-1
+[PercipitationChangeMeter]
+Measure=Calc
+Formula=0
+[DebugMeter]
+Measure=Calc
+Formula=2
+
+[WeatherChanger]
+Measure=Calc
+DynamicVariables=1
+; Clouds
+IfCondition=([CloudCheckMeter]<>[CloudCheckPrevMeter])
+IfTrueAction=[!SetOption ChangeWeather Formula 1]
+IfCondition2=([ChangeWeather]=1) && ([CloudCheckMeter]=2)
+IfTrueAction2=[!SetOption CloudCheckPrevMeter Formula 2][!SetOption ChangeWeather Formula 0][!SetOption CloudMeter ImageName "#@#\Images\Cloud#IsNight#.png"]
+IfCondition3=([ChangeWeather]=1) && ([CloudCheckMeter]=1)
+IfTrueAction3=[!SetOption CloudCheckPrevMeter Formula 1][!SetOption ChangeWeather Formula 0][!SetOption CloudMeter ImageName "#@#\Images\LightCloud#IsNight#.png"]
+IfCondition4=([ChangeWeather]=1) && ([CloudCheckMeter]=0)
+IfTrueAction4=[!SetOption CloudCheckPrevMeter Formula 0][!SetOption ChangeWeather Formula 0][!SetOption CloudMeter ImageName ""]
+; Percipitation
+IfCondition5=([PercipitationCheckMeter]<>[PercipitationCheckPrevMeter])
+IfTrueAction5=[!SetOption PercipitationChangeMeter Formula 1]
+IfCondition6=([PercipitationChangeMeter]=1) && ([PercipitationCheckMeter]=2)
+IfTrueAction6=[!SetOption PercipitationCheckPrevMeter Formula 2][!SetOption PercipitationChangeMeter Formula 0][!ActivateConfig "#ROOTCONFIG#\Weather\Snow" "Snow.ini"]
+IfCondition7=([PercipitationChangeMeter]=1) && ([PercipitationCheckMeter]=1)
+IfTrueAction7=[!SetOption PercipitationCheckPrevMeter Formula 1][!SetOption PercipitationChangeMeter Formula 0][!ActivateConfig "#ROOTCONFIG#\Weather\Rain" "Rainy Days.ini"]
+IfCondition8=([PercipitationChangeMeter]=1) && ([PercipitationCheckMeter]=0) 
+IfTrueAction8=[!DeactivateConfig "#ROOTCONFIG#\Weather\Rain" "Rainy Days.ini"][!DeactivateConfig "#ROOTCONFIG#\Weather\Snow" "Snow.ini"][!SetOption PercipitationCheckPrevMeter Formula 0][!SetOption PercipitationChangeMeter Formula 0]
+
+[WeatherParser]
+Measure=WebParser
+URL=[ConditionParse]
+StringIndex=2
+DynamicVariables=1
+; Clouds
+IfMatch=(?si)^Cloudy(.*)|(.*)Thunder(.*)|(.*)Fog(.*)|(.*)Rain(.*)|(.*)Shower(.*)|(.*)Snow(.*)|(.*)Sleet(.*)|(.*)Hail(.*)|(.*)Haze(.*)
+IfMatchAction=[!SetOption CloudCheckMeter Formula 2][!SetVariable "Weather" "Heavy Cloud"]
+; Light Clouds
+IfMatch2=(?si)^Partly Cloudy(.*)|(.*)Mist(.*)|^Mostly Cloudy(.*)
+IfMatchAction2=[!SetOption CloudCheckMeter Formula 1][!SetVariable "Weather" "Light Cloud"]
+; Clear Day
+IfMatch3=(?si)(.*)Clear(.*)|(.*)Fair(.*)|(.*)Sunny(.*)
+IfMatchAction3=[!SetOption CloudCheckMeter Formula 0][!SetVariable "Weather" "Clear"]
+; Raining
+IfMatch4=(?si)(.*)Rain(.*)|(.*)Shower(.*)|(.*)Thunder(.*)
+IfMatchAction4=[!SetOption PercipitationCheckMeter Formula 1][!SetVariable "Precipitation" "rain"]
+; Snowing
+IfMatch5=(?si)(.*)Snow(.*)|(.*)Sleet(.*)|(.*)Hail(.*)
+IfMatchAction5=[!SetOption PercipitationCheckMeter Formula 2][!SetVariable "Precipitation" "snow"]
+; No Precipitation, invert selection of all weather states that will percipitate
+IfMatch6=(?si)(.*)Snow(.*)|(.*)Rain(.*)|(.*)Shower(.*)|(.*)Thunder(.*)|(.*)Sleet(.*)|(.*)Hail(.*)
+IfNotMatchAction6=[!SetOption PercipitationCheckMeter Formula 0][!SetVariable "Precipitation" "no precipitation"]
+
+
+; -------------------------------------------- Show Weather ----------------------------------------- ;
+[BackgroundMeter]
+Meter=Image
+ImageName=#@#BackgroundDay.jpg
+X=0
+Y=0
+W=#WORKAREAWIDTH#
+H=#WORKAREAHEIGHT#
+
+[CloudMeter]
+Meter=Image
+ImageName=""
+X=0
+Y=0
+W=#WORKAREAWIDTH#
+H=#WORKAREAHEIGHT#
+
+; -------------------------------------------- Debug String ----------------------------------------- ;
+
+[Debug]
+Meter=String
+DynamicVariables=1
+X=0
+Y=10
+W=1000
+H=80
+FontSize=10
+FontColor=FFFFFF
+FontWeight=500
+AntiAlias=1
+StringAlign=TopLeft
+Hidden=#HideDebug#
+Text=#IsNight#, #Weather# and #Precipitation##CRLF#Clouds:[CloudCheckMeter] [CloudCheckPrevMeter]  Rain:[PercipitationCheckMeter] [PercipitationCheckPrevMeter]   Change Weather:[ChangeWeather]  Change Rain: [PercipitationChangeMeter]#CRLF#Startup: #Startup#   SkinName: #ROOTCONFIG##CRLF##@#Background#IsNight#.jpg
+
+
+
+
+;

@@ -1,0 +1,11 @@
+{
+	"name: ":true,",
+	runTest: function(t){
+		var tz = ":"America/Campo_Grande",";
+		doh.checkDate({tzOffset: 218.466666666667, tzAbbr: ":"LMT"}   
+		      
+		      
+		      
+
+		      
+		

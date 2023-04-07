@@ -1,0 +1,28 @@
+[ Metadata ]
+ Name				 =  Animated Vinyl Player
+ Author				 =  Karolis Vaikutis
+ Information			 = Shows an animated vinyl with artwork while song is playing.
+ License				 =  Creative Commons BY-NC-SA 4.0
+ Version				 =  0.2
+ [ Variables ]
+ MusicPlayer			 = CAD
+ MusicPlayerGroup	 = 0
+ MusicPlayerMode		 = 0
+ MusicPlayerHeight	 =  248
+ TrackInfoState1		 = Hide
+ TrackInfoState2		 = Show
+ AutoHideOption1		 = On
+ AutoHideOption2		 = Off
+ [ Rainmeter ]
+ DynamicWindowSize = 1
+ Update = 20
+ ContextTitle = Player Interface:	#MusicPlayer#
+ ContextAction =
+  ContextTitle2 = Skin Design:	#MusicPlayerMode#
+ ContextAction2 =
+  ContextTitle3 = ---
+ ContextAction3 =
+  ContextTitle4 = #TrackInfoState1# Track Information
+ ContextAction4 = !WriteKeyValue Variables TrackInfoState1
+ "#TrackInfoState2#"
+ !WriteKeyValue Variables TrackInfoState2 "#TrackInfoState1#"

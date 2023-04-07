@@ -1,0 +1,250 @@
+File names, FailReason for each subject and file sizes in Bytes for each file. Empty=Success
+File name,Size,ANTLR,TinyC
+/testfiles/tinyc-invalid-single/e6d674fdf964c5afce4e74d393ffc469.c,21,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/eb8f9d51a9d325ac4de750fabb963302.c,17,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7ad8e152ba03aaf2f277c0696eec8b0a.c,16,,The process terminated with exit code 2
+/testfiles/tinyc-invalid/706e4f13ca6533fae0b7e0f7f0cfdb07.c,48,,The process terminated with exit code 2
+/testfiles/tinyc-invalid/7d4c40bf1b50fc9d9486bee93fd07c8e.c,669,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7b246cf7610b4e121f1980b353907428.c,0,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7491f03a28c78bdf86cb19e1bd5f4ee6.c,41,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6aca31f7da5c6664370a08948fd6bec2.c,17,,Reported Incomplete
+/testfiles/tinyc-invalid/63a44566f3cb142bc774b55ef998424e.c,3385,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/eb8f9d51a9d325ac4de750fabb963302.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/640f11f20c625b0280f1d6206556483b.c,16,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/76397b1de134c646e7db4a2139b08232.c,3141,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ff21ea78c5ffd528e7bc640c76fbc4ca.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/75fcd24cc8466e96ebb595e5f4943745.c,260,,The process terminated with exit code 89
+/testfiles/tinyc-invalid-single/f9210dbac1e064902126801e05c2c33f.c,34,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e1c07ab7609479202fb03e9f8085804e.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/64f93eb43d57fbb105b58d1c821d1457.c,13,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/713e2bec48ea3428604d0ab054e41665.c,15,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7303b98ded350d6eed191594b373c8e0.c,15,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7eeb3949144ea478b288e2159cb1b167.c,56,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/75b3edb2aee10958c1b508c384b13065.c,28070,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e98f0653097c09cb8361933668838f5e.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7cc359b169b63f514e4ff7af71fc769e.c,16,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/def425b85260acc0f7a6259831d37085.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e1918264e68cc742b823c90b21f63964.c,809,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/dedf5b8f78ea5279dee2684f0d5f4920.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7b5633b6836f45366fa8e9a1ffaa0d59.c,17842,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/62be4d35942e9a8651031b7f74035e12.c,27512,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7045cfa5c1bc20f7d9804b922eb19ceb.c,19687,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/71839ac3c96100ebc5fff0ecf185af99.c,26,,Reported Incomplete
+/testfiles/tinyc-invalid/75db67ece2a6aeae405111b1f74b2e30.c,17,,Reported Incomplete
+/testfiles/tinyc-invalid-single/de1f48029931c33632a8650afa9689b2.c,28,,The process terminated with exit code 2
+/testfiles/tinyc-invalid-mult/de1f48029931c33632a8650afa9689b2.c,38,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/727e531fdb89c92176d3a23ab0f6149f.c,41,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/67ba7850b9f1411ae9e341a7de4fbc12.c,14,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/62b154e34b6e77cd117e82541d56c59d.c,26,,Reported Incomplete
+/testfiles/tinyc-invalid/7267b50f6dec5c5741b1351613ccb0d5.c,21612,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7a5434ed351fabc6e679a804152d66bf.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ed098c718bfe381fac3214222e682427.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7058cebecb95d0c839be5929d9e9ef7d.c,16,,The process terminated with exit code 5
+/testfiles/tinyc-invalid-mult/e2b88d2793a00dd0a1995fd2565342e5.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f3c72ccf24dd61c1a9c5bdf7216739e7.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6660f849a465b1278f067e17df8c7f3e.c,19,,The process terminated with exit code 3
+/testfiles/tinyc-invalid/76eaae1406a60ddecc62f24ffd9d7195.c,14,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/62bde7275b5e9fc8e83725504d7d97ed.c,995,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/dde6f3e8342d2db7ec0672026363d8ed.c,12,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e9caa3ea66b000c4332e58399ab4a444.c,26,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/68ecf8085796e34b944876d1ae69d861.c,27,,Reported Incomplete
+/testfiles/tinyc-invalid/75ee3f1addaed7c98ad74e03daba0b13.c,16,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e70362e00d35d657666d6735be76c3f2.c,21,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7e4343ea703b0cb985927257e2decb2a.c,62,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f168f2f055be9849475911aa88a9b0a3.c,12,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7dbb6591b31522eae741fde2aeccbebf.c,22,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6246e5168084285e5e093f9ef616f5b2.c,0,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/e98f0653097c09cb8361933668838f5e.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7e68ed03f91ee21beda566f0cdf84b19.c,24,,The process terminated with exit code 5
+/testfiles/tinyc-invalid-single/f8d3fe0c7f9995c1cbde303dbe111eba.c,5,,The process terminated with exit code 3
+/testfiles/tinyc-invalid-mult/fd23de76a537323e39ea610a768e0737.c,10,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e84a7a55ed395c0c0ecc3abbcf439d9e.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/f85be888c266bf2723e2594e347efff3.c,30,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/70446dd1138ba83e7e43af6d6daadc7d.c,45,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e6d674fdf964c5afce4e74d393ffc469.c,31,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/def425b85260acc0f7a6259831d37085.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e7aa03a2d736853af718feb925ce011f.c,260,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e2b39c37087833d258ad9a012995f259.c,138,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7ce86c95aed2ce55555f27920a4bd7f0.c,12,,The process terminated with exit code 3
+/testfiles/tinyc-invalid-single/dcab71d568275d772047cbab47a97311.c,21,,The process terminated with exit code 16
+/testfiles/tinyc-invalid/70a4db77853b02ab63c9b99fda1c5573.c,44,,The process terminated with exit code 3
+/testfiles/tinyc-invalid/6e577a656c2a52c59ca321fb1d4fa0b1.c,65,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/dde6f3e8342d2db7ec0672026363d8ed.c,18,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7bae47ecf9942d64b8fb1da2d460cd9e.c,16054,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/f2a58825dce52705b57d3226c5ff8d51.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/60a9a9a2019f6515f138332f30d7691d.c,23,,The process terminated with exit code 3
+/testfiles/tinyc-invalid-mult/f8e3a93fd340f77b9348830250cc14e8.c,160,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7b395c008f50cc163d9eaacde98fd17d.c,17,,Reported Incomplete
+/testfiles/tinyc-invalid/7f9e3bdcd652cbb333c600bd11f6f369.c,29068,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/71f971638db6c950b66c658d711f136b.c,17,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6489b60af0e8f25f696450a97e905937.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/f9e6f878e075137020b0e4418c16b118.c,8,,The process terminated with exit code 6
+/testfiles/tinyc-invalid/79e17d5660508998d4117c7a45fcf60e.c,132,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/65613db525d07b7e857275f6331b025f.c,128,,Reported Incomplete
+/testfiles/tinyc-invalid/65e4e508d3b085e0058f17d79caa2bd9.c,1,,Reported Incomplete
+/testfiles/tinyc-invalid/77b1a4256e97851b685cd8d908115454.c,34,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7d66e9ab18bcadfcb930fb0be16458a3.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7e3031751516a5d0e1dc5a840808e6f2.c,36,,The process terminated with exit code 3
+/testfiles/tinyc-invalid/69491d485cac4c496832c4edfeabc701.c,24268,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/76fa143f836e0b90a0bc50cf357120ec.c,32,,Reported Incomplete
+/testfiles/tinyc-invalid/6ea98c2fa133ed98e9951517c1a788e4.c,36,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/f03c5cec3d87f0844e13ba9c4cd7cd37.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/741c8ef238550834e80ba4070967a20a.c,21,,Reported Incomplete
+/testfiles/tinyc-invalid-single/e9fd0c2aa6a72bfdef18109126dfdd7d.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/fc21cfbea2474f618e667f5f2d18cbb9.c,164,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6b467e1c8a2885eade572789d0f0589a.c,24,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/74a1967b2b6846298f7df39e87c3304b.c,19,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/ec244e8cc5853f7b3459d4fcc7daf4c2.c,10,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/677c4f19c1827c8fe181a96bc1059bd3.c,16,,Reported Incomplete
+/testfiles/tinyc-invalid/7026e8856fb861a9609ee724b7ae5d52.c,16,,The process terminated with exit code 5
+/testfiles/tinyc-invalid-mult/e061eef4352334d3ee290fec2baa0b33.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6ccf162881f326af417374075a31017f.c,10617,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/76caac42141cd9b0dcddd44a32149399.c,20440,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/77894e44eb459933500f50e86969585d.c,324,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7f772c4b15210421f28d462fd466434c.c,246,,Reported Incomplete
+/testfiles/tinyc-invalid/75d16e2f7913b3469fecb8e6147c5dcd.c,130,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/da06e564702c8fa3165d64219abae6ff.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7819b9ba2bf4947c83b4344df02bf60c.c,36,,The process terminated with exit code 4
+/testfiles/tinyc-invalid/6ff76a29313895cb9135921bdf9a423b.c,19178,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f8e3a93fd340f77b9348830250cc14e8.c,160,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ea98c1e914dd459eb86996d2ca99bbb6.c,11,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/f168f2f055be9849475911aa88a9b0a3.c,17,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/67945a0ce43f5811c4aadcee37c01a85.c,25,,Reported Incomplete
+/testfiles/tinyc-invalid/710226d6ac6781ab4f42fa48db76c614.c,24,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6f9de272399cb0ffb0dc8f12911eb298.c,13829,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/79f98b801af6d3f44e953c99715c0226.c,16,,The process terminated with exit code 2
+/testfiles/tinyc-invalid-mult/e250bce557c54aed4fd5b49489e6741c.c,17,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e84a7a55ed395c0c0ecc3abbcf439d9e.c,17,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/75cfb956a94371d2616384ccc96deed8.c,56,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/ebe8997df416bfe3763fbb6b3d806801.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6578fd1f0eb88241803525dd4a36418c.c,147,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7535b9000d4d75c9cb6ebf484073865d.c,15,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ec244e8cc5853f7b3459d4fcc7daf4c2.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6083440cf8c5d7bdda2db19342c8c95f.c,303,,The process terminated with exit code 104
+/testfiles/tinyc-invalid-mult/da06e564702c8fa3165d64219abae6ff.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f2797c5dcd82275fb0cfcab64f04a9cf.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/63eb7ba5647ea23e5f8d538c699cbada.c,16,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/d89ae260cb9e0a00d8b1448da6b2ce73.c,7,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/df2635637298a79cfe3ef6262492ce1f.c,3,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/74771e943b6ad2a790d3df4f4a083fd4.c,33,,Reported Incomplete
+/testfiles/tinyc-invalid-single/df9a8a5d2e129ec5ac4e809b4333265e.c,3,,The process terminated with exit code 3
+/testfiles/tinyc-invalid-mult/ed098c718bfe381fac3214222e682427.c,21,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/f77b5dd2ce5604108c3c369a1c362014.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/ec6295b3be871c32fb13d09ec44ecc12.c,18,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6703a4bcc1fa9e3e553a84e200452d14.c,16,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/e2b39c37087833d258ad9a012995f259.c,136,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/77297703c201af5a6aa633f7e34845f1.c,25883,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6f307f6326cda96c4314e2c1f1bceb2e.c,2,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/f6cc4e6f67c806376fb4596a9b7f3227.c,7,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f77b5dd2ce5604108c3c369a1c362014.c,14,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/efe07d515f1ef758cb564f0186199ec0.c,3,,Reported Incomplete
+/testfiles/tinyc-invalid/6be19ce97409039b9d78e2fbc589ac7e.c,22793,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6879f400552228bc5bac67e82fab2a72.c,10,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/67e464dd2679c5e2641f2a0e9379d28c.c,2541,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e1918264e68cc742b823c90b21f63964.c,818,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/ff21ea78c5ffd528e7bc640c76fbc4ca.c,26,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/70cf152f5dddabbf3e3e3a8bc23d0095.c,0,,Reported Incomplete
+/testfiles/tinyc-invalid/63a8943e4056877a068639b31229db2b.c,36,,The process terminated with exit code 15
+/testfiles/tinyc-invalid-mult/f2797c5dcd82275fb0cfcab64f04a9cf.c,17,,The process terminated with exit code 4
+/testfiles/tinyc-invalid-single/e39d529bc7015ec6eaa2b54060d369e4.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e9caa3ea66b000c4332e58399ab4a444.c,32,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6a60c943349763fecd4936e51067035d.c,290,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/70bc9b30a62379f52488e795380e3bd3.c,16,,Reported Incomplete
+/testfiles/tinyc-invalid/73325176da29cda5aa80eb277c530b8c.c,1225,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7ee7b0160730355fca1ca4a8bd2892a3.c,136,,Reported Incomplete
+/testfiles/tinyc-invalid/6c7ca70e9f7aba2f514dadc98ba4b262.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7c89462d17f0f27967e62067e5a83b2f.c,15,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/ebaabc8938b058e8663af28e1fc377e8.c,40,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7aec5122bf662d00736d2824d4d876b0.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6a3b37ab1e2e07d5d86bceef8ceb6165.c,13,,Reported Incomplete
+/testfiles/tinyc-invalid-single/e2b88d2793a00dd0a1995fd2565342e5.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f9e6f878e075137020b0e4418c16b118.c,9,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/efe07d515f1ef758cb564f0186199ec0.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/62378352d5d3ed7dbeaba042746c796c.c,32,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/706af7bbe0a4c0f043990fb386dccbba.c,36,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6e307c8f80f4068babe2f13dcdf07477.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e7aa03a2d736853af718feb925ce011f.c,261,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6079cac43fe513b6e0d841ab036f4b3c.c,8436,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/74193e054f53e4778bc731aa8d76d53e.c,21136,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7b1a1df9b97d5fa292c988a597cc6320.c,2,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e273975e2715ff5d2f3ff1040c5f28cb.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6182d3ff4060a189c1362a620b48085a.c,358,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/.c,10715,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e70362e00d35d657666d6735be76c3f2.c,21,,The process terminated with exit code 19
+/testfiles/tinyc-invalid/6265f563763b28ee4ea37878805c3772.c,63,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7e96b55ef1e20f5a9efa0b5d14ad397f.c,79,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/71c0ab5a17bfad348ed81f415bec0c60.c,1,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e581cd3de513b8da1293be1ca9871f11.c,18,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/df9a8a5d2e129ec5ac4e809b4333265e.c,9,,The process terminated with exit code 6
+/testfiles/tinyc-invalid-single/fd23de76a537323e39ea610a768e0737.c,12,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/63dd2c7ac78411ae2d84031eaa855abe.c,23707,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7176896b9c8f574fbf9389b4003e5a5f.c,44,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/ea98c1e914dd459eb86996d2ca99bbb6.c,11,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e8ae38b9b426acc956f05b9e33ad1b80.c,363,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/fc21cfbea2474f618e667f5f2d18cbb9.c,163,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/dd1c0e1a8117f569694f113305a9a032.c,18,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f03c5cec3d87f0844e13ba9c4cd7cd37.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e1c07ab7609479202fb03e9f8085804e.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e581cd3de513b8da1293be1ca9871f11.c,6,,The process terminated with exit code 6
+/testfiles/tinyc-invalid/67117ad041d3aaeb009ad9e578a59171.c,123,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/73f0aca5c684eb21b6dca0a848b8693a.c,669,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e39d529bc7015ec6eaa2b54060d369e4.c,8,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7223676c4dbf0c43b7eed7589dd09b50.c,32,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/f3c72ccf24dd61c1a9c5bdf7216739e7.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7dfa3df2efd1fbcef83dd4fca528fb85.c,12,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/73157b30d63ebb4bbdd70dbff6b46574.c,32,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f2a58825dce52705b57d3226c5ff8d51.c,5,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/dedf5b8f78ea5279dee2684f0d5f4920.c,6,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/63cd1bfabe1cebc5a88ec56ad398d112.c,14,,Reported Incomplete
+/testfiles/tinyc-invalid/6f9c587b4522aa6650fd1b24c88b01f4.c,42,,The process terminated with exit code 5
+/testfiles/tinyc-invalid/742bc6bbe2584eb50e081bc89a65a458.c,13066,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/df2635637298a79cfe3ef6262492ce1f.c,3,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7c13451d15cbbd6b07ac34e1abde0fe9.c,110,,Reported Incomplete
+/testfiles/tinyc-invalid/638dc7579d92246591137fbe181a5d63.c,3,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/613a2a465a0df3040fc535fe03cba426.c,18,,The process terminated with exit code 3
+/testfiles/tinyc-invalid/6c029860d911612e02a819d9cd1880ae.c,36,,Reported Incomplete
+/testfiles/tinyc-invalid-single/f6cc4e6f67c806376fb4596a9b7f3227.c,6,,Reported Incomplete
+/testfiles/tinyc-invalid/68e49626e2bd12c4577a6a95ef13c684.c,145,,Reported Incomplete
+/testfiles/tinyc-invalid/7bc069de87d447560845bad81ff31095.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e273975e2715ff5d2f3ff1040c5f28cb.c,7,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7cf4a7d27f4ef682ea73b4a979d6a487.c,16,,The process terminated with exit code 3
+/testfiles/tinyc-invalid/7ad5e354237fba5680fb9d589fc22140.c,31636,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7c4fae3e106d9204c6dd9b6d86af3704.c,32095,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/73439c3c50893dcf8f2ec2d5ca3f695c.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/787ac4aab6bca979a250d1a63a66a2c6.c,241,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6657a89807c5bb689a4dec428dc9f0ee.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6ee194bd6acf47d61e58af7d4ffdfed3.c,2,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/dcab71d568275d772047cbab47a97311.c,9,,The process terminated with exit code 9
+/testfiles/tinyc-invalid/6a2e1901f818d33558714e9b7832b099.c,17216,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/646ee98772dda64ebd856008d30f5ff2.c,77,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/f9210dbac1e064902126801e05c2c33f.c,47,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/70a4f71362430d48e2f745fa3b5f6283.c,1115,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7ecb7ed713422cacadce99240442536b.c,23,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ec6295b3be871c32fb13d09ec44ecc12.c,20,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ebaabc8938b058e8663af28e1fc377e8.c,40,,The process terminated with exit code 7
+/testfiles/tinyc-invalid-single/e250bce557c54aed4fd5b49489e6741c.c,19,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/78708c8c51f95dd6d6baa4ea3bf973d8.c,26,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6144d3abfd2e8388d8431352df475130.c,130,,Reported Incomplete
+/testfiles/tinyc-invalid/6831e9fee717e12d1871fa24c65e2f9b.c,39,,Reported Incomplete
+/testfiles/tinyc-invalid/77edda1d164018b7c8ae781b4ddca1a0.c,88,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/6e9742373d238de9947c5b3222fe64a3.c,19,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/ebe8997df416bfe3763fbb6b3d806801.c,4,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7d41848c1829bf494167e4d6cf3f92b6.c,16,,The process terminated with exit code 2
+/testfiles/tinyc-invalid/7cdf28d30d4bf33d2c18f99e50cdd7da.c,72,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/f8d3fe0c7f9995c1cbde303dbe111eba.c,7,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/61ea7454ad47812093c9f7030328cb07.c,114,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/e061eef4352334d3ee290fec2baa0b33.c,9,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/62ee18defae988639b652b29d2ccfe53.c,13,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/650330cd14dd99d59785334c08401774.c,24,,Reported Incomplete
+/testfiles/tinyc-invalid/7be34504f741a037f1b1b522814d258f.c,36,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/d89ae260cb9e0a00d8b1448da6b2ce73.c,7,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7c3a1fea1354f56b86cb2bfebcd8409f.c,15,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7ddd8ea91061a0b25ee1da1a6f8c680a.c,12,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/633fe1003c2076d4061f462d73dbb9c1.c,68,,The process terminated with exit code 2
+/testfiles/tinyc-invalid/7f3fa752ea5ff56075d4a95d6d90232e.c,36,,Reported Incomplete
+/testfiles/tinyc-invalid-mult/e8ae38b9b426acc956f05b9e33ad1b80.c,363,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-mult/e9fd0c2aa6a72bfdef18109126dfdd7d.c,8,,The process terminated with exit code 8
+/testfiles/tinyc-invalid/67073cef36e767317b1e56cf93fedc18.c,16,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid/7609fb036980fc8dac697a187fc9156b.c,16,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/dd1c0e1a8117f569694f113305a9a032.c,3,,Reported an incorrect input with exit code 1
+/testfiles/tinyc-invalid-single/f85be888c266bf2723e2594e347efff3.c,20,,Reported an incorrect input with exit code 1
