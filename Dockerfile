@@ -14,6 +14,8 @@ RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen en_US.UTF-8 && 
 
 RUN apt-get --yes --no-install-recommends update && \
     apt-get --yes --no-install-recommends install openjdk-17-jdk git python3 python3-pip python3-setuptools python3-wheel pkg-config curl unzip && \
+    update-alternatives --config java && \
+    apt-get --yes --no-install-recommends install wget && \
     apt-get --purge remove -y .\*-doc$ && \
     apt-get clean
 
@@ -21,11 +23,23 @@ WORKDIR /home
 
 ENV PYTHONPATH "$PYTHONPATH:."
 
-ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+# Set JAVA_HOME correctly
+RUN JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java)))) && \
+    echo "export JAVA_HOME=$JAVA_HOME" >> /etc/profile && \
+    echo "export PATH=$PATH:$JAVA_HOME/bin" >> /etc/profile
+
+ENV JAVA_HOME $JAVA_HOME
+ENV PATH $JAVA_HOME/bin:$PATH
+
+# Verify Java installation
+RUN java -version
+
 
 # Install custom Gradle
 RUN cd /tmp && \
-    curl -O https://downloads.gradle-dn.com/distributions/gradle-7.3.3-bin.zip && \
+    wget http://host.docker.internal:8000/gradle-7.3.3-bin.zip && \
     unzip gradle-7.3.3-bin.zip && \
     mkdir -p /opt/gradle && \
     cp -pvr gradle-7.3.3/* /opt/gradle && \
@@ -42,8 +56,7 @@ RUN mv -v /home/project/bin/testfiles / && \
     rm -vrf /home/project/bin && \
     ls -A && \
     gradle --version && \
-    gradle wrapper && \
-    ./gradlew deployJar
+    gradle deployJar --stacktrace --info
 
 RUN printf "#!/bin/bash\n\njava -jar /home/project/bin/fsynth.jar \$@\n" > /usr/bin/fsynth && \
     chmod +x /usr/bin/fsynth && \
