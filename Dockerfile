@@ -36,7 +36,7 @@ ENV PATH $JAVA_HOME/bin:$PATH
 # Verify Java installation
 RUN java -version
 
-COPY gradle-7.3.3 /opt/gradle
+COPY libs/gradle-7.3.3 /opt/gradle
 
 ENV GRADLE_HOME /opt/gradle
 
