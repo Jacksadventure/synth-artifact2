@@ -36,20 +36,15 @@ ENV PATH $JAVA_HOME/bin:$PATH
 # Verify Java installation
 RUN java -version
 
-COPY libs/gradle-7.3.3-bin.zip /tmp/
+COPY gradle-7.3.3 /opt/gradle
 
-# Install custom Gradle
-RUN cd /tmp && \
-    unzip gradle-7.3.3-bin.zip && \
-    mkdir -p /opt/gradle && \
-    cp -pvr gradle-7.3.3/* /opt/gradle && \
-    rm -vrf gradle-7.3.3 gradle-7.3.3-bin.zip
+ENV GRADLE_HOME /opt/gradle
 
 ADD project /home/project
 
 WORKDIR /home/project
 
-ENV PATH "/opt/gradle/bin:${PATH}"
+ENV PATH $PATH:$GRADLE_HOME/bin
 
 # Build Project
 RUN mv -v /home/project/bin/testfiles / && \
