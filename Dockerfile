@@ -36,10 +36,10 @@ ENV PATH $JAVA_HOME/bin:$PATH
 # Verify Java installation
 RUN java -version
 
+COPY libs/gradle-7.3.3-bin.zip /tmp/
 
 # Install custom Gradle
 RUN cd /tmp && \
-    wget http://host.docker.internal:8000/gradle-7.3.3-bin.zip && \
     unzip gradle-7.3.3-bin.zip && \
     mkdir -p /opt/gradle && \
     cp -pvr gradle-7.3.3/* /opt/gradle && \
