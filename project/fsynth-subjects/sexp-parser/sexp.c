@@ -8,6 +8,12 @@
     #include "fmemopen/fmemopen.h"
 #endif
 
+int my_fgetc(FILE* stream) {
+    int c = fgetc(stream);
+    char b = c;
+    return c;
+}
+
 
 /*
  * bool
@@ -399,7 +405,10 @@ void nreverse(sexp_t **psexp)
 
 sexp_t *read(FILE *, bool);
 
-sexp_t *read_string(FILE *fp, char c)
+int my_EOF = EOF;
+
+
+sexp_t *read_string(FILE *fp, int c)
 {
 #define ADD_BUF(_buf, _i, _c) do { \
         _buf[_i++] = _c; \
@@ -412,10 +421,10 @@ sexp_t *read_string(FILE *fp, char c)
     char buf[256] = {0};
     int i = 0;
 
-    while ((c = fgetc(fp)) != EOF) {
+    while ((c = my_fgetc(fp)) != my_EOF) {
 
         if (is_single_escape(c)) {
-            if ((c = fgetc(fp)) == EOF)
+            if ((c = my_fgetc(fp)) == my_EOF)
                 END_OF_FILE;
             ADD_BUF(buf, i, c);
             continue;
@@ -436,7 +445,7 @@ sexp_t *read_list(FILE *fp, char c)
 {
     sexp_t *list = create_nil();
 
-    while ((c = fgetc(fp)) != EOF) {
+    while ((c = my_fgetc(fp)) != my_EOF) {
 
         if (is_whitespace(c))
             continue;
@@ -501,7 +510,7 @@ sexp_t *read(FILE *fp, bool inRoot)
     int int_value = 0;
 
 step1:
-    if ((c = fgetc(fp)) == EOF)
+    if ((c = my_fgetc(fp)) == my_EOF)
         if (inRoot){
             return NULL;
         } else {
@@ -548,7 +557,7 @@ step4:
 
 step5:
     if (is_single_escape(c)) {
-        if ((c = fgetc(fp)) == EOF)
+        if ((c = my_fgetc(fp)) == my_EOF)
             END_OF_FILE;
         ADD_BUF(buf, i, c);
         goto step8;
@@ -564,7 +573,7 @@ step7:
     goto step8;
 
 step8:
-    if ((c = fgetc(fp)) == EOF)
+    if ((c = my_fgetc(fp)) == my_EOF)
         goto step10;
 
     if (is_non_terminating(c)) {
@@ -573,7 +582,7 @@ step8:
     }
 
     if (is_single_escape(c)) {
-        if ((c = fgetc(fp)) == EOF)
+        if ((c = my_fgetc(fp)) == my_EOF)
             END_OF_FILE;
         ADD_BUF(buf, i, c);
         goto step8;
