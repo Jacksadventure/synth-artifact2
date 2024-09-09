@@ -246,20 +246,24 @@ files = {
                   }
         }
 
+def exists(f):
+    print(f)
+    print()
+    assert os.path.exists(f)
 
 def produce_files(tool, fmt):
     for kind in kinds:
         for k in files[fmt]['files']:
             original = valid_prefix + files[fmt]['kind_prefix'] + valid_suffix + k
-            assert os.path.exists(original)
+            exists(original)
 
             invalid = valid_prefix + files[fmt]['kind_prefix'] + kind + k
-            assert os.path.exists(invalid)
+            exists(invalid)
             if tool == 'Antlr':
                 fname = common_prefix + files[fmt]['tool_prefix'] + tool + '-' + files[fmt]['kind_prefix'] + kind + k
             else:
                 fname = common_prefix + files[fmt]['tool_prefix'] + tool + '-' + files[fmt]['kind_prefix'] + kind + k + files[fmt]['tool_suffix']
-            assert os.path.exists(fname)
+            exists(fname)
             result = (tool, fname)
             yield (original, invalid, result)
 
