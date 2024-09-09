@@ -15,7 +15,7 @@ class Dist:
         self.delops = [c for c in self.editops if c[0] == 'delete']
 
 tool_names='bRepair DDMin DDMaxG Antlr DDMax'.split(' ')
-formats = ['ini', 'json', 'sexp', 'tinyc']
+format_names = ['ini', 'json', 'tinyc', 'sexp']
 
 print_format = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"
 
@@ -31,26 +31,41 @@ print(print_format % ('tool', 'fmt',
                       ))
 
 
+def process(args):
+    if args['tools']: tools = args['tools']
+    else: tools = tool_names
 
-for tool in tool_names:
-    for fmt in formats:
-        for valid, invalid, result in files.produce_files(tool, fmt):
-            tool, repaired = result
-            l0 = Dist(valid, invalid)
-            len_valid = l0.d1
-            len_invalid = l0.d2
-            l1 = Dist(valid, repaired)
-            len_repaired = l1.d2
-            l2 = Dist(invalid, repaired)
-            print(print_format % (tool, fmt,
-                  valid, invalid, repaired,
-                  len_valid, len_invalid, len_repaired,
-                  len(l0.editops),
-                  len(l1.editops),
-                  len(l2.editops),
-                  len(l0.delops),
-                  len(l1.delops),
-                  len(l2.delops)))
+    if args['formats']: fmts = args['formats']
+    else: fmts = format_names
+
+    for tool in tools:
+        for fmt in fmts:
+            for valid, invalid, result in files.produce_files(tool, fmt):
+                tool, repaired = result
+                l0 = Dist(valid, invalid)
+                len_valid = l0.d1
+                len_invalid = l0.d2
+                l1 = Dist(valid, repaired)
+                len_repaired = l1.d2
+                l2 = Dist(invalid, repaired)
+                print(print_format % (tool, fmt,
+                      valid, invalid, repaired,
+                      len_valid, len_invalid, len_repaired,
+                      len(l0.editops),
+                      len(l1.editops),
+                      len(l2.editops),
+                      len(l0.delops),
+                      len(l1.delops),
+                      len(l2.delops)))
 
 
+import sys
+my_args = {'tools': [], 'formats': []}
+for arg in sys.argv:
+    if arg in tool_names:
+        my_args['tools'].append(arg)
+    elif  arg in format_names:
+        my_args['formats'].append(arg)
+
+process(my_args)
 
