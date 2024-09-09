@@ -13,7 +13,7 @@ RUN apt-get --yes --no-install-recommends update && \
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 
 RUN apt-get --yes --no-install-recommends update && \
-    apt-get --yes --no-install-recommends install openjdk-17-jdk git python3 python3-pip python3-setuptools python3-wheel pkg-config curl unzip && \
+    apt-get --yes --no-install-recommends install openjdk-17-jdk git python3 python3-pip python3-setuptools python3-wheel pkg-config curl unzip vim tmux diffutils && \
     update-alternatives --config java && \
     apt-get --yes --no-install-recommends install wget && \
     apt-get --purge remove -y .\*-doc$ && \
