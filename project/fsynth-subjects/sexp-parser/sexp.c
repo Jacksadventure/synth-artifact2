@@ -469,29 +469,30 @@ bool integer(int *result, const char *str)
 {
     int i = 0;
     int sign = 1;
+    *result = 0; // Initialize result to 0
 
     if (str[i] == '+')
         i++;
-    if (str[i] == '-') {
+    else if (str[i] == '-') { // Use 'else if' to handle '-' correctly
         sign = -1;
         i++;
     }
     if ('0' <= str[i] && str[i] <= '9') {
-        *result += str[i] - 0x30;
+        *result += str[i] - '0';
         i++;
     } else
         return false;
-begin:
-    if ('0' <= str[i] && str[i] <= '9') {
-        // No overflow check.
-        *result *= 10;
-        *result += str[i] - 0x30;
-        i++;
-        goto begin;
-    } else if (str[i] == '\0')
-        return true;
-    else
-        return false;
+    begin:
+        if ('0' <= str[i] && str[i] <= '9') {
+            *result *= 10;
+            *result += str[i] - '0';
+            i++;
+            goto begin;
+        } else if (str[i] == '\0') {
+            *result *= sign; // Apply the sign here
+            return true;
+        } else
+            return false;
 }
 
 sexp_t *read(FILE *fp, bool inRoot)
