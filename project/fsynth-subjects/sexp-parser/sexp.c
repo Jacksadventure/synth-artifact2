@@ -511,12 +511,13 @@ sexp_t *read(FILE *fp, bool inRoot)
     int int_value = 0;
 
 step1:
-    if ((c = my_fgetc(fp)) == my_EOF)
-        if (inRoot){
+    if ((c = my_fgetc(fp)) == my_EOF) {
+        if (inRoot) {
             return NULL;
         } else {
             END_OF_FILE; // TODO accept empty files?
         }
+    }
 
 step2:
     if (is_invalid_character(c))
@@ -538,8 +539,17 @@ step4:
         if (c == '\'')
             NOT_IMPLEMENTED_("Single Tick");
 
-        if (c == '(')
-            return read_list(fp, c);
+        if (c == '(') {
+            sexp_t *list = read_list(fp, c);
+            if (inRoot) {
+                while ((c = my_fgetc(fp)) != my_EOF) {
+                    if (!is_whitespace(c)) {
+                        MUST_NOT_BE_REACHED;
+                    }
+                }
+            }
+            return list;
+        }
 
         if (c == ')')
             UNMATCHED_CLOSE_PARENTHESIS;
@@ -611,8 +621,24 @@ step9:
     NOT_IMPLEMENTED_("Step 9");
 
 step10:
-    if (integer(&int_value, buf))
+    if (integer(&int_value, buf)) {
+        if (inRoot) {
+            while ((c = my_fgetc(fp)) != my_EOF) {
+                if (!is_whitespace(c)) {
+                    MUST_NOT_BE_REACHED;
+                }
+            }
+        }
         return create_integer(int_value);
+    }
+
+    if (inRoot) {
+        while ((c = my_fgetc(fp)) != my_EOF) {
+            if (!is_whitespace(c)) {
+                MUST_NOT_BE_REACHED;
+            }
+        }
+    }
 
     return create_symbol(buf);
 
