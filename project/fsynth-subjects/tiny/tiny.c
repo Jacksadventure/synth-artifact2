@@ -93,11 +93,7 @@ void syntax_error_ch() {
 }
 
 void syntax_error() {
-  /* TODO: here, we should return the #chars from the end -- saved in last_search */
-  int e = strlen(buffer) - last_search;
-  fprintf(stderr, "syntax error %d\n", e);
-  if (!e) exit(1);
-  exit(e);
+  exit(1);
 }
 void eof_error() { /*fprintf(stderr, "EOF error\n");*/ exit(-1); }
 void next_ch() {
