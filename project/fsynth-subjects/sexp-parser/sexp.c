@@ -530,8 +530,17 @@ step3:
 step4:
     if (is_macro_character(c)) {
 
-        if (c == '"')
-            return read_string(fp, c);
+        if (c == '"') {
+            sexp_t *string_sexp = read_string(fp, c);
+            if (inRoot) {
+                while ((c = my_fgetc(fp)) != my_EOF) {
+                    if (!is_whitespace(c)) {
+                        INCORRECT("Extra tokens after root S-expression.");
+                    }
+                }
+            }
+            return string_sexp;
+        }
 
         if (c == '#')
             NOT_IMPLEMENTED_("Single Hash");
