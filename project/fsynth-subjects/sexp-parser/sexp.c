@@ -469,29 +469,30 @@ bool integer(int *result, const char *str)
 {
     int i = 0;
     int sign = 1;
+    *result = 0; // Initialize result to 0
 
     if (str[i] == '+')
         i++;
-    if (str[i] == '-') {
+    else if (str[i] == '-') { // Use 'else if' to handle '-' correctly
         sign = -1;
         i++;
     }
     if ('0' <= str[i] && str[i] <= '9') {
-        *result += str[i] - 0x30;
+        *result += str[i] - '0';
         i++;
     } else
         return false;
-begin:
-    if ('0' <= str[i] && str[i] <= '9') {
-        // No overflow check.
-        *result *= 10;
-        *result += str[i] - 0x30;
-        i++;
-        goto begin;
-    } else if (str[i] == '\0')
-        return true;
-    else
-        return false;
+    begin:
+        if ('0' <= str[i] && str[i] <= '9') {
+            *result *= 10;
+            *result += str[i] - '0';
+            i++;
+            goto begin;
+        } else if (str[i] == '\0') {
+            *result *= sign; // Apply the sign here
+            return true;
+        } else
+            return false;
 }
 
 sexp_t *read(FILE *fp, bool inRoot)
@@ -510,12 +511,13 @@ sexp_t *read(FILE *fp, bool inRoot)
     int int_value = 0;
 
 step1:
-    if ((c = my_fgetc(fp)) == my_EOF)
-        if (inRoot){
+    if ((c = my_fgetc(fp)) == my_EOF) {
+        if (inRoot) {
             return NULL;
         } else {
             END_OF_FILE; // TODO accept empty files?
         }
+    }
 
 step2:
     if (is_invalid_character(c))
@@ -528,8 +530,17 @@ step3:
 step4:
     if (is_macro_character(c)) {
 
-        if (c == '"')
-            return read_string(fp, c);
+        if (c == '"') {
+            sexp_t *string_sexp = read_string(fp, c);
+            if (inRoot) {
+                while ((c = my_fgetc(fp)) != my_EOF) {
+                    if (!is_whitespace(c)) {
+                        INCORRECT("Extra tokens after root S-expression.");
+                    }
+                }
+            }
+            return string_sexp;
+        }
 
         if (c == '#')
             NOT_IMPLEMENTED_("Single Hash");
@@ -537,8 +548,17 @@ step4:
         if (c == '\'')
             NOT_IMPLEMENTED_("Single Tick");
 
-        if (c == '(')
-            return read_list(fp, c);
+        if (c == '(') {
+            sexp_t *list = read_list(fp, c);
+            if (inRoot) {
+                while ((c = my_fgetc(fp)) != my_EOF) {
+                    if (!is_whitespace(c)) {
+                        MUST_NOT_BE_REACHED;
+                    }
+                }
+            }
+            return list;
+        }
 
         if (c == ')')
             UNMATCHED_CLOSE_PARENTHESIS;
@@ -610,8 +630,24 @@ step9:
     NOT_IMPLEMENTED_("Step 9");
 
 step10:
-    if (integer(&int_value, buf))
+    if (integer(&int_value, buf)) {
+        if (inRoot) {
+            while ((c = my_fgetc(fp)) != my_EOF) {
+                if (!is_whitespace(c)) {
+                    MUST_NOT_BE_REACHED;
+                }
+            }
+        }
         return create_integer(int_value);
+    }
+
+    if (inRoot) {
+        while ((c = my_fgetc(fp)) != my_EOF) {
+            if (!is_whitespace(c)) {
+                MUST_NOT_BE_REACHED;
+            }
+        }
+    }
 
     return create_symbol(buf);
 
