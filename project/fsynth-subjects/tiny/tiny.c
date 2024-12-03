@@ -102,66 +102,53 @@ void next_ch() {
 }
 
 void next_sym()
-{ last_search = buffer_i;
-  again: switch (ch)
-    { case ' ': case '\n': next_ch(); goto again;
-      case '\0': sym = EOI; break;
-      case '{': next_ch(); sym = LBRA; break;
-      case '}': next_ch(); sym = RBRA; break;
-      case '(': next_ch(); sym = LPAR; break;
-      case ')': next_ch(); sym = RPAR; break;
-      case '+': next_ch(); sym = PLUS; break;
-      case '-': next_ch(); sym = MINUS; break;
-      case '<': next_ch(); sym = LESS; break;
-      case ';': next_ch(); sym = SEMI; break;
-      case '=': next_ch(); sym = EQUAL; break;
-      default:
-        if (ch >= '0' && ch <= '9')
-          { int_val = 0; /* missing overflow check */
-            while (ch >= '0' && ch <= '9')
-              { int_val = int_val*10 + (ch - '0'); next_ch(); }
-            sym = INT;
-          }
-        else if (ch >= 'a' && ch <= 'z')
-          { int i = 0; int is_token = 9;/* missing overflow check */
-            while ((ch >= 'a' && ch <= 'z') || ch == '_')
-              {
-                id_name[i++] = ch;
-                if (id_name[0] == 'i' || id_name[0] == 'e' || id_name[0] == 'd' || id_name[0] == 'w')
-                {
-                  is_token = check_token(id_name);
-                  if (is_token == 0)
-                  {
-                    //printf("Correct token.\n");
-                    next_ch();
-
-                  }
-                  else if (is_token == -1)
-                  {
-                    //printf("Incomplete.\n");
-                    next_ch(); // INCOMPLETE -1, read next char.
-                  }
-                  else if (is_token == 1)
-                  {
-                    //printf("Invalid.\n");
-                    syntax_error_ch();
-                  }
-                }
-
-                else next_ch();
-              }
-              if (ch == '\0' && is_token == -1) eof_error(); // End of file reached but token is not complete.
-
-            id_name[i] = '\0';
-            sym = 0;
-            while (words[sym] != NULL && strcmp(words[sym], id_name) != 0)
-              sym++;
-            if (words[sym] == NULL)
-              if (id_name[1] == '\0') sym = ID; else syntax_error_ch();
-          }
-        else
-          syntax_error_ch();
-    }
+{
+  again:
+  switch (ch)
+  {
+    case ' ': case '\n': next_ch(); goto again;
+    case '\0': sym = EOI; break;
+    case '{': next_ch(); sym = LBRA; break;
+    case '}': next_ch(); sym = RBRA; break;
+    case '(': next_ch(); sym = LPAR; break;
+    case ')': next_ch(); sym = RPAR; break;
+    case '+': next_ch(); sym = PLUS; break;
+    case '-': next_ch(); sym = MINUS; break;
+    case '<': next_ch(); sym = LESS; break;
+    case ';': next_ch(); sym = SEMI; break;
+    case '=': next_ch(); sym = EQUAL; break;
+    default:
+      if (ch >= '0' && ch <= '9')
+      {
+        int_val = 0;
+        while (ch >= '0' && ch <= '9')
+        {
+          int_val = int_val * 10 + (ch - '0');
+          next_ch();
+        }
+        sym = INT;
+      }
+      else if (ch >= 'a' && ch <= 'z')
+      {
+        int i = 0;
+        while ((ch >= 'a' && ch <= 'z') || ch == '_')
+        {
+          id_name[i++] = ch;
+          next_ch();
+        }
+        id_name[i] = '\0';
+        sym = 0;
+        while (words[sym] != NULL && strcmp(words[sym], id_name) != 0)
+          sym++;
+        if (words[sym] == NULL)
+        {
+          if (id_name[1] == '\0') sym = ID;
+          else syntax_error_ch();
+        }
+      }
+      else
+        syntax_error_ch();
+  }
 }
 
 /*---------------------------------------------------------------------------*/
