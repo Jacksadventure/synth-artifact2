@@ -1,1 +1,0 @@
-(hydromechanics (fluid-dyna@ics (pressure (at-depth 10&)) (mechanics (forces (gravity 9.81))))

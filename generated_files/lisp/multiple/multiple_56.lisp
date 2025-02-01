@@ -1,0 +1,1 @@
+(Aristotelic (category (genus anim"l) (species :uman)) (predicate (quality good) (relation teacher)))

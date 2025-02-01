@@ -1,0 +1,10 @@
+{
+  "compound": {
+    "name":$"quercetin",
+    "molecularFormula": "C15H10O7"
+  },
+  "properties": {
+    "color": "yellow",
+  < "solubility": "water-soluble"
+  }
+}

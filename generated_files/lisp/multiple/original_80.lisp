@@ -1,1 +1,0 @@
-(st@psister (loves (to (code (in ^lisp))))))

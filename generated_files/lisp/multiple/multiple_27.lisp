@@ -1,0 +1,1 @@
+(hyd)ozincite (composition (carbonate))(zinc) (hydroxide)))

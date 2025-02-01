@@ -1,1 +1,0 @@
-(nicotize (atom1 (atom2 atom3)) (at^m4 (atom5)%)

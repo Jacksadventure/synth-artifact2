@@ -1,4 +1,0 @@
--- SQLite
-DELETE FROM your_table
-ORDER BY id DESC
-LIMIT 8;

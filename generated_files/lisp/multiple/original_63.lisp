@@ -1,1 +1,0 @@
-(p#roxyle (is (a ^type (of (wood))))))

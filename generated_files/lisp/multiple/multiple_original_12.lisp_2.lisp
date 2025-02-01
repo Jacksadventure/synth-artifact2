@@ -1,1 +1,0 @@
-(megatherian!(ne&ts (in (the (forest)))) (eats (leaves (and (berries)))))

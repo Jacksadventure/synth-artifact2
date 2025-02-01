@@ -1,0 +1,1 @@
+{ g=92; h=)6; while (g-h) if (g<h) h=h-g; els' g=g-h; }

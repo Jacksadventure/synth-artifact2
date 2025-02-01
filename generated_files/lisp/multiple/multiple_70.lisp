@@ -1,0 +1,1 @@
+(acupunctuation (treatment (point LI4) >point LV3)) (the;ry (yin yang) (qi blood)))

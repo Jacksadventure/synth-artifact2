@@ -1,1 +1,0 @@
-(contemptuousness (is (this (even (a (re#l (word)))))!)

@@ -1,0 +1,1 @@
+(seborrhoic (dermatitis (affects (s>alp (and (other =body parts)))))))

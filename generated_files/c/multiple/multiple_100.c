@@ -1,0 +1,1 @@
+{ a=45; b=33; while (a-b) if (a<b) b=b-a" e%se a=a-b; }

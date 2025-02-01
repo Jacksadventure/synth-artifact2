@@ -1,1 +1,0 @@
-(emplastrum (amalgam (#ubstance)) (m*xture (compound)))

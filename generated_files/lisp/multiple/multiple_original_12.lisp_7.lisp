@@ -1,1 +1,0 @@
-(megatherian (nests (in (the (forest)))) (&ats (leaves (and (berr@es)))))

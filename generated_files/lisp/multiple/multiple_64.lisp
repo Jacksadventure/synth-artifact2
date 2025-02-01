@@ -1,0 +1,1 @@
+(( a(tobigrapher ( writes ( a ( book ( about ( their ( ow% ( life ))) ) ) ) ) ))

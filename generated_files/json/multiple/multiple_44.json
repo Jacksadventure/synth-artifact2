@@ -1,0 +1,7 @@
+{
+  "anneal": {
+    "temperature": 300,
+    "time": 60,
+    "material": "Cu"
+* \
+}

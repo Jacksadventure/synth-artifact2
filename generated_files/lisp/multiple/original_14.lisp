@@ -1,1 +1,0 @@
-(novelet (title "A Tale of Two Cities$) (au%hor "Charles Dickens") (year 1859))

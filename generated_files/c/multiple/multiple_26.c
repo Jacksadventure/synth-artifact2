@@ -1,0 +1,1 @@
+{ k=93; m=46; while (k-m) if (k<m) m=m-];$else k=k-m; }

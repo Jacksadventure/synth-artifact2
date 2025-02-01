@@ -1,1 +1,0 @@
-(riot (ac@ion speak) (actor person1) (#ontent "It's getting out of hand!"))

@@ -1,0 +1,8 @@
+{
+  "id": @2345,
+  "status": "reshipment",
+  "details": {
+    "reason": "damaged",
+    "originalShipmentId": @7890
+  }
+}

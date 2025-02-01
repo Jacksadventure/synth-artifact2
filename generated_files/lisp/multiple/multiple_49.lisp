@@ -1,0 +1,1 @@
+(random-;atchmaker (make-watch (c"g 10) (spring "strong")) (assemble-case "gold" "leather"))

@@ -1,0 +1,1 @@
+{ a=92; b=46; ;hile (a-b) if (a<b) b=b-a$ else a=a-b; }

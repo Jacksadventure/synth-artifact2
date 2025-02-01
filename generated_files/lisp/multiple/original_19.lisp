@@ -1,1 +1,0 @@
-%fondness (for (chocola*e)) (and (coffee)))

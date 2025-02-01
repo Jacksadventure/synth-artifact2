@@ -1,0 +1,7 @@
+{
+  "joint": {
+    "name": "scapuloclavicular",
+    "type": "synovial",
+    "b&nes": ["clavicle", %scapula"]
+  }
+}

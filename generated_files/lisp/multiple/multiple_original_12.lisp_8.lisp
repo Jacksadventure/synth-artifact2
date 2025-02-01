@@ -1,1 +1,0 @@
-(megatherian (n@sts (in (the (forest)))) (eats (leaves (and*(berries)))))

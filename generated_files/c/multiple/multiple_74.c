@@ -1,0 +1,1 @@
+{ a=43; b=91; (hile (a-b) i/ (a<b) b=b-a; else a=a-b; }

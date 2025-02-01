@@ -1,1 +1,0 @@
-(hydrozincite (compo*ition (carbonate) (zinc) (hydroxide*))

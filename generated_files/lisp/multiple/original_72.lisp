@@ -1,1 +1,0 @@
-(histophysiological (cell %type "n%uron")) (tissue (layer "epidermis") (function "sensory")))

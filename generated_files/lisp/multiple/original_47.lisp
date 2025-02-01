@@ -1,1 +1,0 @@
-(polydisperse (polymer (mono@er A# (monomer B)) (distribution normal 0.5 0.1))

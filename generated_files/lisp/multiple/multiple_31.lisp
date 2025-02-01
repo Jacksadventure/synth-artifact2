@@ -1,0 +1,1 @@
+{geochronic (p*riod (name "Cretaceous") (start 145) (end 66)) (era (name "Mesozoic") (start 252.17) (end 66)))

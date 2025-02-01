@@ -1,0 +1,1 @@
+(cont'mptuousness (is (this (even;(a (real (word)))))))

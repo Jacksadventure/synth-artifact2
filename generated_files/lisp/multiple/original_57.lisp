@@ -1,1 +1,0 @@
-((Lecanoraceae (species (Lecanora $fertile))) (^enus Lecanora) (distribution (Europe Africa))))

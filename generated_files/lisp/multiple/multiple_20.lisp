@@ -1,0 +1,1 @@
+(larvikite (property color (value "gray")@ (property luster (value "|itreous")) (property diaphaneity (value "translucent")))

@@ -1,1 +1,0 @@
-(priest$(worship (#od)) (bless (congregation)))

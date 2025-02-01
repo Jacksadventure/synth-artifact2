@@ -1,1 +1,0 @@
-(charcutier (pork (ham (smoked)) (sausage @%hick))) (beef (steak) (brisket (smoked))))

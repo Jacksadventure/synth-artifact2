@@ -1,1 +1,0 @@
-(( autobigrapher ( writes ( a ( b!ok ( about ( their ( own ( life ))) ) ) ) ^ ))

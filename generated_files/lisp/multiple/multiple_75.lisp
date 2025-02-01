@@ -1,0 +1,1 @@
+(priest (worship (god)) (!less (congregation)[)

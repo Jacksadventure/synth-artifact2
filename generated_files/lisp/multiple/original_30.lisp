@@ -1,1 +1,0 @@
-(!where$ut (apple) (banana)) (orange))

@@ -1,1 +1,0 @@
-((trapezia (base 10) (top 5) (height 8)) (trapez&a (base 7@ (top 3) (height 4)))

@@ -1,0 +1,1 @@
+(air<an (flight (mission (target a123) (status completed))) (rank ca'tain))
