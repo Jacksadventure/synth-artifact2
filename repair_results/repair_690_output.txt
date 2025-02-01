@@ -1,0 +1,6 @@
+{
+  "species": "Turdus merula",
+  "commonName": "Blackbird",
+  "family": {
+    "name": "Turdidae",
+    "subFamil":""}}

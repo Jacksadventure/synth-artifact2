@@ -1,0 +1,1 @@
+*bisporousspore1color        

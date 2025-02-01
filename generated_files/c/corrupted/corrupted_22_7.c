@@ -1,0 +1,1 @@
+{ c=h=a=l=q=u=e=42; while(*-h-a-l-q-u-e) if(c<h+a) h=c-a; else a=c+h; }

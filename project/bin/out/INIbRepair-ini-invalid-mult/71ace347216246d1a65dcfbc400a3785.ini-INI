@@ -1,8 +1,0 @@
-; [GENERAL]
-; CLOR  color
-; STRING source
-; INT    width
-; INT    height
-
-[GENERAL]
-color  #DCDCDC:

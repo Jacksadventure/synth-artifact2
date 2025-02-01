@@ -1,0 +1,1 @@
+(ambrosine (flower (petal red) (petal blue)) *fruit sweet))

@@ -1,0 +1,1 @@
+{ h = 7 ; a = m =o = u = s ; if ( h < a ) m = a - h ; else u = h - a ; }

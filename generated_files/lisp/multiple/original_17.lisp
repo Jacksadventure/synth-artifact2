@@ -1,0 +1,1 @@
+(longinquity (is (a (measur@ (of $distance))))))

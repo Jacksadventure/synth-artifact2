@@ -1,0 +1,6 @@
+{
+  "joint*: {
+    ":null,"ame": "scapuloclavicular",
+    "type": "synovial",
+    "bones": ["clavicle", "scapula"]
+  }

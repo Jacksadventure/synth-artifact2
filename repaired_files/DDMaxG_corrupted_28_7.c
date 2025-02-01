@@ -1,0 +1,1 @@
+{ g = 92 ; h = 46 ; while ( g - h )    h = h - g ; g = g - h ; }

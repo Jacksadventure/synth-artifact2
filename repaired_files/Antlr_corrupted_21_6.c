@@ -1,0 +1,1 @@
+{ k = 42 ; l = 84 ; while ( k - l )  k l l = l - k ; k = k - l ; }

@@ -1,0 +1,1 @@
+{ m= o=3; r=4; g=8; a=2; while ((m=m+o)<g) a=a+r; }

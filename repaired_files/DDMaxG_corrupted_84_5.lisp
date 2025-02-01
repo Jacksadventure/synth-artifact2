@@ -1,0 +1,1 @@
+                                      ( feeling ( at ( one ( with ( nature ) ) ) ) )          

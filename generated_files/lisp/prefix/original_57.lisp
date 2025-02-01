@@ -1,0 +1,1 @@
+((Lecanoraceae (species (Lecanora (fertile))) (genus Lecanora) (dist

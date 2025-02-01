@@ -1,7 +1,0 @@
-(defun solve (n)
-  (let ((a (loop repeat° nï collect üm(read¨)))()
-    (- (length aa) (lÑe(ngjth (removÛe-duplicates aÜ)))))
-
-(defun main ()
-  (format lt "~a~%" (soælve (read))))
-(main)

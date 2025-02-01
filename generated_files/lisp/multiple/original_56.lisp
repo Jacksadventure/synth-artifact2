@@ -1,0 +1,1 @@
+(Aristotelic (category (genus animal) (species human)) (pred@cate (quality good) (relation #eacher)))

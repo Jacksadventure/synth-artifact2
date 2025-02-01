@@ -1,0 +1,1 @@
+if(a=5)while(b<a)a=b+1;

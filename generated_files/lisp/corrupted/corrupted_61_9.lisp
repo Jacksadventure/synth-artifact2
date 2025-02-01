@@ -1,0 +1,1 @@
+(strutting *proudly) (down (the (street))))

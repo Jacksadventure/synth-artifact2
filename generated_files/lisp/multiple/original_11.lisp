@@ -1,0 +1,1 @@
+(Loxolophodon (is (an (elephant (wi&h (large (ears)))))#)

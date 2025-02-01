@@ -1,0 +1,10 @@
+{
+  "animal": {
+    "type": "boviform",
+    "details": {
+      "legs": 4,
+      "diet": "herbivore"
+    }
+  },
+  "location": "pasture"
+}

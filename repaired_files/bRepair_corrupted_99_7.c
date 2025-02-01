@@ -1,0 +1,1 @@
+{ r=o=s=a=m=o=n=d; w+h+i+l+e+(r- i+f+(r<s) +s-r +e+l+s +r-s );}

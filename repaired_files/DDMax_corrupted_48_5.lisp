@@ -1,0 +1,1 @@
+ (infection (virus)* (response (immune)))

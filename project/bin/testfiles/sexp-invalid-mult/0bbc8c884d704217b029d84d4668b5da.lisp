@@ -1,1 +1,0 @@
-ê(Ýwrite-line "Hello World´")µÄ;í?K

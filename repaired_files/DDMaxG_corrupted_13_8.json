@@ -1,0 +1,1 @@
+{ "name" : "civilizer" , "version" : "1.0.0" , "config" : { "maxUsers" :    [ "chat" , "notifications" ] } , "status" : "active" }

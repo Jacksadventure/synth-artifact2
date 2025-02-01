@@ -1,0 +1,1 @@
+{ a=94; b=38; while (a-b) f +(a<b) +b-a; e+l+s +a-b; }

@@ -1,0 +1,1 @@
+(polyphagia (eating (meat (beef chicken)) (vegetables (carrots spinach))) (drinking (water (filtered bottled)))*)

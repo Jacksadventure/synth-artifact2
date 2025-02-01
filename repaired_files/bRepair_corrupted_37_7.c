@@ -1,0 +1,1 @@
+if(a=0)while(b<a+1)c=b+b;

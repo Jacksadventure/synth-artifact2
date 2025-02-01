@@ -1,0 +1,8 @@
+{
+  "name": "chronist",
+  "id": 12345,
+  *details": {
+    "age": 28,
+    "location": "Athens"
+  }
+}

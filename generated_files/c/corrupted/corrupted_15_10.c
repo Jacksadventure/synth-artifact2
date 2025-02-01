@@ -1,0 +1,1 @@
+{ a=15; b=30; while (a<b) if (a<b-5) b=b-a; els* a=a+1; }

@@ -1,0 +1,1 @@
+{ v = i = g = i = l = a =  e = 42 ; if ( v < i ) g = g + v ; else v = v + g ; }

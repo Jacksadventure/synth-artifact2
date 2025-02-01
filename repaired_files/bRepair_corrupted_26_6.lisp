@@ -1,0 +1,1 @@
+(larvikite *property color (value "gray")) 

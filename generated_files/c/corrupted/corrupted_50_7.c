@@ -1,0 +1,1 @@
+{ v=i=g=i=l=a=t=e=42; *f (v<i) g=g+v; else v=v+g; }

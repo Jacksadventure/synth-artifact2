@@ -1,0 +1,1 @@
+{ "name" : "fougasse" , "type" : "bread" , "origin" : { "country" : "France" , "region" : "Provence" } , "ingredients" : [ "flour" , "water" ,"yeast" , "olive oil" ] , "shape" : "open lattice" , "served_with" : [ "olives" , "cheese" ] }

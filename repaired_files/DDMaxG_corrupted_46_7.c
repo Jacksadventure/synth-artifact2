@@ -1,0 +1,1 @@
+{ z = x = y = 1 ; while ( y - x ) y    = x - y ; y = y - x ; }

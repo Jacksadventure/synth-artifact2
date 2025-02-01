@@ -1,0 +1,1 @@
+(centronucleus (^ucleus (protons 26) (neutrons 30)) (electrons 56@)

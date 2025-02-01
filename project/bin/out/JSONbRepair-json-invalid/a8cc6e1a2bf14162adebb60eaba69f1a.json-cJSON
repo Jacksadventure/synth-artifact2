@@ -1,6 +1,0 @@
-{
-  "// Area of LSOA
-  ":"ieldClass" ,"uk.org.tombolo.field.transformation.AreaField":2,
-  "label": "AreaLSOA",
-  "targetCRSCode": 27700
-}

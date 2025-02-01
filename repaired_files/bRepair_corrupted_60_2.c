@@ -1,0 +1,1 @@
+{ h=e=r=i=t=a=b=i=l=i=t=y=0; w+h+i+l+e<5 +e+1; r=r+2; t=t+3; } 

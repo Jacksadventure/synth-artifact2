@@ -1,0 +1,1 @@
+{ k=98; m=43; w*ile (k-m) if (k<m) m=m-k; else k=k-m; }

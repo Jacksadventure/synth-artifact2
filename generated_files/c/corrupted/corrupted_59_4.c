@@ -1,0 +1,1 @@
+{ w=m=i=73; w*ile (w-m) if (w<m) m=m-w; else w=w-m; }

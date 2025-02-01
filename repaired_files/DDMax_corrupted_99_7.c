@@ -1,0 +1,1 @@
+{ r=o=s=a=m=o=n=d;  if(r<s) s=s-r; else r=r-s; }

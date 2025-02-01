@@ -1,0 +1,1 @@
+(ecologic (forest (trees oak pine) (animals deer fox)* (ocean (fish salmon tuna) (plants kelp seaweed))))

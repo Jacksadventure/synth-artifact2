@@ -1,0 +1,12 @@
+{
+  "name": "John Doe",
+  "age": 29,
+  "sports": {
+  * "favorite": "Football",
+    "played": ["Basketball", "Tennis"]
+  },
+  "hobbies": {
+    "indoor": ["Reading", "Gaming"],
+    "outdoor": ["Hiking", "Camping"]
+  }
+}

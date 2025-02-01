@@ -1,0 +1,1 @@
+(pyroxyle (is (a (type (of (wood*)))))

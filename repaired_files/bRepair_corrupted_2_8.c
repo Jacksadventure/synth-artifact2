@@ -1,0 +1,1 @@
+{ g=95; h=45; while (g-h) if (g< h-g )e+l+s +g-h; }

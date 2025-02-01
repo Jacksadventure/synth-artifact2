@@ -1,0 +1,1 @@
+{ "name*: " : "bread" , "origin" : { "country" : "France" , "region" : "Provence" } , "ingredients" : [ "flour" ,"water" , "yeast" , "salt" , "olive oil" ] , "shape" : "open lattice" , "served_with" : [ "olives" , "cheese" ] }

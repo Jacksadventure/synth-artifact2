@@ -1,0 +1,1 @@
+(Palaeoniscus *is (a (type (of (fossil (fish)))))))

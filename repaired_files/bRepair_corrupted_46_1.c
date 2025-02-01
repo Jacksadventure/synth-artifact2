@@ -1,0 +1,1 @@
+{ z=x=y=1; while (y-x) if (y< x-y )e+l+s +y-x; }

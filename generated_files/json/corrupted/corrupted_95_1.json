@@ -1,0 +1,10 @@
+{
+  "id": "001",
+  "type": "screw",
+  "material": "steel",
+ *"size": {
+    "length": 5,
+    "diameter": 3
+  },
+  "quantity": 100
+}

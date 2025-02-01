@@ -1,0 +1,1 @@
+(spellbound (in (a (world) (of (m%gic)))) ^where (truths) (are (not) (always) (as (they) (seem)))))

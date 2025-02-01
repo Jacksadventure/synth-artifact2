@@ -1,0 +1,13 @@
+{
+  "name": "tollhouse",
+  "type": "facility",
+  "location": {
+    "city": "Springfield",
+    "state": "Illinois"
+  },
+  "status": "operational",
+  "tolls": {
+     
+    "truck": 3.00
+  }
+}

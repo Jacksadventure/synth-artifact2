@@ -1,0 +1,1 @@
+(conoida@ (shape (type conoid) (base circle) (apex point)) !material metal))

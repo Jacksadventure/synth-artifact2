@@ -1,0 +1,6 @@
+{
+  "anneal*: {
+    ":true,"mperature": 300,
+    "time": 60,
+    "material": "Cu"
+  }

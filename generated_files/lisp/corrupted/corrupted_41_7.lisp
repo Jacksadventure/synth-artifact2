@@ -1,0 +1,1 @@
+(peacockery *feathers (long colorful)) (strut (proudly)))

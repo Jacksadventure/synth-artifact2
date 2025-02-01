@@ -1,0 +1,1 @@
+ (al (cu (la (ri (cu (la)*)))))

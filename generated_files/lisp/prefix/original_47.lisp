@@ -1,0 +1,1 @@
+(polydisperse (polymer (monomer A) (monomer B)) (distribution nor

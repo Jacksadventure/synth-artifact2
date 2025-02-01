@@ -1,0 +1,8 @@
+{
+  "id": 123,
+  "name": "John Doe",
+* "settings": {
+    "theme": "dark",
+    "notifications": false
+  }
+}

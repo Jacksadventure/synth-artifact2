@@ -1,0 +1,1 @@
+{ k=43; m=89; while (k+m) f +(k<m) +m-k; e+l+s +k-m; }

@@ -1,0 +1,1 @@
+(meditating (in (the (quiet (forest)))) (while (listening (to (the (birds (and (the (breeze)))))))) (feeling (at (one (with (nature))*)) (for (an (hour))))

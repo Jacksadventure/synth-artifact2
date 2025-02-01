@@ -1,0 +1,1 @@
+{ g=48; h=96; while (g-h) if (g<h) h=h-g; els* g=g-h; }

@@ -1,0 +1,1 @@
+{ k=93; m=46; whi*e (k-m) if (k<m) m=m-k; else k=k-m; }

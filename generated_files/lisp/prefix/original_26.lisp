@@ -1,0 +1,1 @@
+(adulterateness (property (value high)) (

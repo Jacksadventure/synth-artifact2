@@ -1,0 +1,1 @@
+{ k=93; m=46; while (k-*) if (k<m) m=m-k; else k=k-m; }

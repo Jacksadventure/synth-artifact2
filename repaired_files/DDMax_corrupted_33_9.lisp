@@ -1,0 +1,1 @@
+*nicotizeatom1atom2atom3atom4 

@@ -1,0 +1,1 @@
+{ b=o=w=s=p=r=i=t=1; f +(b<o) +w-b; e+l+s +b-w; }

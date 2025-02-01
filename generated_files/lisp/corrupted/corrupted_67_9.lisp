@@ -1,0 +1,1 @@
+(timberman (cut* (move-left) (move-right) (jump))

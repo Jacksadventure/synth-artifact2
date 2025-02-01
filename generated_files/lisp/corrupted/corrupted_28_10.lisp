@@ -1,0 +1,1 @@
+*nicotize (atom1 (atom2 atom3)) (atom4 (atom5)))

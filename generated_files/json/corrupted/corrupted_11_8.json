@@ -1,0 +1,7 @@
+{
+  "name": "Alice",
+  "age": 29,*  "attributes": {
+    "charmingness": "high",
+    "intelligence": "moderate"
+  }
+}

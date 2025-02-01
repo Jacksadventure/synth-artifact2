@@ -1,0 +1,1 @@
+(venturer (go (left (pat@))) (take $item)))

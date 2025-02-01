@@ -1,0 +1,1 @@
+(meg$therian (nests ($n (the (forest)))) (eats (leaves (and (berries)))))

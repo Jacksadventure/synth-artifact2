@@ -1,0 +1,1 @@
+{ g ; h = 96 ; while ( g - h ) if ( g < h ) h = h - g ; else g = g - h ; }

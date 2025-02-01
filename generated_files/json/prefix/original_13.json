@@ -1,0 +1,6 @@
+{
+  "name": "civilizer",
+  "version": "1.0.0",
+  "config": {
+    "maxUsers": 50,
+    "activeFeatur

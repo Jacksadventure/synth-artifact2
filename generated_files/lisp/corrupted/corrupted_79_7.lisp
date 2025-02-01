@@ -1,0 +1,1 @@
+(xeroderma (pigmentosa *a (genetic (disorder)))))

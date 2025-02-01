@@ -1,0 +1,8 @@
+{
+  "id": 12*,
+  "name": "example",
+  "attributes": {
+    "color": "blue",
+    "size": "medium"
+  }
+}

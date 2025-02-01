@@ -1,0 +1,9 @@
+{
+  "disease": "pneumococcemia",
+  "patient": {
+    "id": "123456",
+    "name": "John Doe",
+    "age": 45
+  },
+  "treatment": {
+    "medication": "Penicillin"

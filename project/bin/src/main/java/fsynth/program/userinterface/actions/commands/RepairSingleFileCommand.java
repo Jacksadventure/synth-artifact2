@@ -76,14 +76,14 @@ public class RepairSingleFileCommand extends Command {
         for (final Subject subject : Oracle.getSubjectsFor(myRepairer.getFormat())) {
             allSuccessful = myRepairer.run(subject) && allSuccessful;
             //TODO put this piece of code into the repairer class:
-            final Path of = myRepairer.getResultPath().resolve(fileToRepair.getFileName() + "-" + subject.getKind().toString());
+            final Path of = myRepairer.getResultPath();
             if (autodetected.isGrammarBased) {
                 System.out.println("*** File before Repair: ***\n" + Parsing.readStringFromFile(fileToRepair));
                 System.out.println("*** File after Repair: ***\n" + Parsing.readStringFromFile(of));
             } else {
                 System.out.println("*** File path of repaired file: ***\n" + of.toAbsolutePath().toString());
             }
-            System.out.println("*** Number of required oracle runs: " + myRepairer.getNumberOfSubjectRuns(subject.getKind()) + " ***");
+            System.out.println("*** Number of required oracle runs: " + myRepairer.getNumberOfSubjectRuns(subject.getKind()) +" correct: "+myRepairer.successful+ " incorrect: "+myRepairer.failed+ " incomplete: 0" + " ***");
         }
         if (allSuccessful) return 0;
         else return 1;

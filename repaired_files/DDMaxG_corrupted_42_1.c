@@ -1,0 +1,1 @@
+{ a = 34 ; b = 29 ;    { if ( a < b ) b = b - a ; else a = a - b ; } }

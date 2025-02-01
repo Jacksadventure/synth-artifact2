@@ -1,0 +1,8 @@
+{
+  "name": "runkle",
+  "age": *8,
+  "address": {
+    "city": "Springfield",
+    "zip": "62704"
+  }
+}

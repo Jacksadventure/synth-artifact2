@@ -1,0 +1,13 @@
+{
+  "name": "Podolian",
+  "type": "Breed",
+  "origin":*{
+    "country": "Ukraine",
+    "region": "Podolia"
+  },
+  "traits": {
+    "coatColor": "Black and White",
+    "size": "Medium to Large",
+    "lifespan": "10-12 years"
+  }
+}

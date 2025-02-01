@@ -1,0 +1,1 @@
+{ w = m = i = 73 ; while ( w -     w < m ) m = m - w ; w = w - m ; }

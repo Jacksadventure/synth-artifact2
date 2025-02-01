@@ -1,0 +1,1 @@
+(random-watchmaker (make-watch *cog 10) (spring "strong")) (assemble-case "gold" "leather"))

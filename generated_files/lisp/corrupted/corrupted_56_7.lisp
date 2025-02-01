@@ -1,0 +1,1 @@
+*Aristotelic (category (genus animal) (species human)) (predicate (quality good) (relation teacher)))

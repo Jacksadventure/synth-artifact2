@@ -1,0 +1,1 @@
+{ k=34; m=*8; while (k-m) if (k<m) m=m-k; else k=k-m; }

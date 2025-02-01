@@ -1,0 +1,1 @@
+ (go (left (path))* (take (item)))

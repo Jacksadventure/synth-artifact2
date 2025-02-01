@@ -6,6 +6,7 @@ import fsynth.program.differencing.DifferencingAlgorithm;
 import fsynth.program.differencing.LevenshteinDistance;
 import fsynth.program.subject.Oracle;
 import fsynth.program.subject.Subject;
+import fsynth.program.subject.SubjectStatus;
 import fsynth.program.subject.Subjects;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.reflections.Reflections;
@@ -348,7 +349,7 @@ public abstract class Repairer extends DatabaseConnection {
      * @param resultPath Path
      */
     public void setResultPath(Path resultPath) {
-        this.resultPath = resultPath.resolve(this.format.toString() + this.NAME() + "-" + this.file.toAbsolutePath().getParent().getFileName().toString());
+        this.resultPath = resultPath;
     }
 
     /**
@@ -401,6 +402,9 @@ public abstract class Repairer extends DatabaseConnection {
         return passed;
     }
 
+    public int successful = 0;
+    public int failed = 0;
+    public int incomplete = 0;
     /**
      * Runs a single oracle and reports the result to the database.
      * If unmutated files are present, evaluate editing distances and store all collected data into the database.
@@ -413,7 +417,18 @@ public abstract class Repairer extends DatabaseConnection {
      * @throws NoSuchElementException if the test timer has not been stopped before this method is called
      */
     final boolean runOracle(Subject oracle, Path rectifiedFile, Path mutatedOriginalFile) throws NoSuchElementException {
-        final boolean ret = Oracle.runOracle(oracle, rectifiedFile.normalize().toString(), null, null, null).wasSuccessful();
+        final SubjectStatus res = Oracle.runOracle(oracle, rectifiedFile.normalize().toString(), null, null, null);
+        if(res.wasIncorrect())
+        {
+            failed++;
+        } else if(res.wasSuccessful())
+        {
+            successful++;
+        } else
+        {
+            incomplete++;   
+        }
+        final boolean ret = res.wasSuccessful();
         this.incrementSubjectRuns(oracle.getKind());
         final long sizeRectified;
         try {
@@ -503,11 +518,7 @@ public abstract class Repairer extends DatabaseConnection {
      * @return the full absolute path to the result file
      */
     public Path getResultPathFor(@Nullable Subjects subject, @Nonnull Path origFilePath) {
-        if (subject == null) {
-            return this.resultPath.resolve(origFilePath.getFileName().normalize().toString());
-        } else {
-            return this.resultPath.resolve(origFilePath.getFileName().normalize().toString() + "-" + subject.toString());
-        }
+        return this.resultPath;
     }
 
     /**

@@ -1,0 +1,1 @@
+{ g=48; h=96; while (g- i )(g<h) +h-g; e+l+s +g-h; }

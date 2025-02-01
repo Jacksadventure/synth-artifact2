@@ -1,0 +1,1 @@
+(bisporous (spore1 (color white) (size small)) *spore2 (color black) (size large)))

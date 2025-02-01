@@ -1,0 +1,7 @@
+{
+  "name": "John Doe",
+  "age": 32,
+  "address": {
+    "street": "123 Elm St",
+    "city": "Springfield"
+  },

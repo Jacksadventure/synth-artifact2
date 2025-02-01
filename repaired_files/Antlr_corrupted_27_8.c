@@ -1,0 +1,1 @@
+{ t = 98 ; e = r = r = y ; while ( t - e ) if ( t < e ) e = e - t ; else t = t - e ; }

@@ -1,3 +1,0 @@
-(iú--ack™ge :htp)
-)de±^neÌhandler anonymous-handleY (Q
-  ())

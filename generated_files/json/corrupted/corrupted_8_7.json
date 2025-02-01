@@ -1,0 +1,11 @@
+{
+  "name": "veallike",
+  "age": 28,
+  "location": {
+    "city": "Berlin",
+    "country": "Germany"
+  },*  "preferences": {
+    "color": "blue",
+    "food": "sushi"
+  }
+}

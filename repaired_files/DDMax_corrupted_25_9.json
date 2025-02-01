@@ -1,0 +1,12 @@
+{
+  "name": "Lara",
+  "age": 29,
+  "address": {
+       
+    "city": "Springfield"
+  },
+  "traits": {
+    "personality": "granddaughterly",
+    "hobbies": ["reading", "gardening"]
+  }
+}

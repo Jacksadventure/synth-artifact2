@@ -1,0 +1,1 @@
+*whaling (ships (count 5)) (harpoons (total 20)))

@@ -1,0 +1,1 @@
+(birdwoman (wings *left) (right)) 

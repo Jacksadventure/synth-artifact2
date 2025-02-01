@@ -1,0 +1,1 @@
+*fiscalizationyear2023revenuetotal150000taxes30000expenditureeducation45000healthcare 

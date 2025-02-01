@@ -1,0 +1,1 @@
+{ a=92; b=34; w*ile (a-b) if (a<b) b=b-a; else a=a-b; }

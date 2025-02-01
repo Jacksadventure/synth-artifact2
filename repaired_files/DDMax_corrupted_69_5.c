@@ -1,0 +1,1 @@
+{ k=98; l=63;   if (k<l) l=l-k; else k=k-l; }

@@ -1,0 +1,1 @@
+{ g=92; h=46;   if (g<h) h=h-g; else g=g-h; }

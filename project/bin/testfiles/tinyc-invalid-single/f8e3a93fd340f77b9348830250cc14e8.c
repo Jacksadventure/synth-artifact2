@@ -1,1 +1,0 @@
-q=q=v-q-q+q-q-q+q+q-q-q+q-q-q+q+q-q-Ö+q+q-q-q+q-q-q+q+q-q+q-q-q+q-q-q+q+q-q-q+q-q+q+q-q-q+q-q-q+q+q-q-q+q+q-q+q-q-q+q-q-q+q+q-q-q+q-q+q+q-q-q+q-q-q+q+q-q-q+q-q;

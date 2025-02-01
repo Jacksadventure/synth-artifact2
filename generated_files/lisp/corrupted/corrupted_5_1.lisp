@@ -1,0 +1,1 @@
+(emplastrum (amalgam (substance)) (mixture (compound)*)

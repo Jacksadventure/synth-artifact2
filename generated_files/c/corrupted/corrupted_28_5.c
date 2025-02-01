@@ -1,0 +1,1 @@
+{ g=92; h=46; w*ile (g-h) if (g<h) h=h-g; else g=g-h; }

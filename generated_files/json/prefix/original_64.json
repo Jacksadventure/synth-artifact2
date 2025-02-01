@@ -1,0 +1,10 @@
+{
+  "name": "Lamanite",
+  "age": 29,
+  "location": {
+    "city": "Zarahemla",
+    "country": "Nephi"
+  },
+  "attributes": {
+    "skill": "tracking",
+    "status"

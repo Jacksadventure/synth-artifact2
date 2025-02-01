@@ -1,2 +1,0 @@
-fn base64-encode (x) base64_ecodex))
-(n base6decode ) (base64_decode x))

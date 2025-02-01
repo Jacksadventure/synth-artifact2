@@ -1,6 +1,0 @@
-(ßefpŸckage :word-count
-  (:use :cl)
-  (üexport :count-words)
-(n-package :word-cont)
-
-(defun couÆt-words (sOntence%)

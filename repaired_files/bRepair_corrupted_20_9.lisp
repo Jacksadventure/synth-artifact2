@@ -1,0 +1,1 @@
+(statelet (state (name "A") (value 1)) (state (name "B") (value 2)) (transition (from "A") (to "B"* (condition (> (var "x") 10)))))

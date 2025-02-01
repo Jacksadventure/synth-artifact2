@@ -1,0 +1,1 @@
+{ r=e=p=t=i=l=e=98; while (r-e) if (r<e) e=e-*; else r=r-e; }

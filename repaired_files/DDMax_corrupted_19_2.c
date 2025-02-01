@@ -1,0 +1,1 @@
+{ r=a=b=c=d=e=f=g=h=i=j=k=l=u=v=w=x=y=z=42; }

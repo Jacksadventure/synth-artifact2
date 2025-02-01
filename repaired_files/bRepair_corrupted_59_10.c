@@ -1,0 +1,1 @@
+{ w=m=i=73; while (w-m) i +(w<m) +m-w; e+l+s +w-m; }

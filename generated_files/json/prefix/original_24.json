@@ -1,0 +1,8 @@
+{
+  "name": "inframundane",
+  "type": "object",
+  "properties": {
+    "value": "random",
+    "nested": {
+      "depth": 1,
+      "info": 

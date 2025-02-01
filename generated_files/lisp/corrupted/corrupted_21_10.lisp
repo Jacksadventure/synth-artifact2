@@ -1,0 +1,1 @@
+(jouster (joust (knight1 (name "Sir Lancelot") (horse "Shadow")) (knight2 (name "Sir Gawain") (horse "Thunder"))) (result (winner "Sir Lancelot") (loser "Sir Gawain*)))

@@ -1,0 +1,1 @@
+(glauc!nitization (of (rocks) (in (marine (environments*))))

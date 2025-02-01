@@ -1,0 +1,1 @@
+(juridical (legal (acts)) (cases (specific (examples*)))

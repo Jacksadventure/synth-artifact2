@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "name": "John Doe",
+  "profile": {
+    *age": 30,
+    "city": "New York"
+  }
+}

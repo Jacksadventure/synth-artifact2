@@ -64,7 +64,7 @@ public final class BRepairRepairerGrammarBasedImpl extends BRepairRepairer<Strin
 
     @Override
     String charAt(String s, int index) {
-        return Character.toString(s.charAt(index));
+        return Character.toString(s.charAt(index));                   
     }
 
     /**

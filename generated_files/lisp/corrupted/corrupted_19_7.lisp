@@ -1,0 +1,1 @@
+(fondness (for (chocolate)) (and (coffee))*

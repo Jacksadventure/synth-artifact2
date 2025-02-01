@@ -1,0 +1,1 @@
+(speleologist (explo%e (cave (system (chamber !rock formations))))))

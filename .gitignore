@@ -1,1 +1,4 @@
 /.git.old
+/.git/refs/heads
+/.brepair
+/.brepair2
