@@ -1,1 +1,0 @@
-((lambda (x) (x x)) (lambda (x) ((lambda (y) (list y)) uncompoundedly)*))

@@ -1,1 +1,0 @@
-*mountdirectory/mnt/datadevice 

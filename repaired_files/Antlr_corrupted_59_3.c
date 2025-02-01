@@ -1,1 +1,0 @@
-{ w = m = i = 73 ; while ( w ) if ( w < m ) m = m - w ; else w = w - m ; }

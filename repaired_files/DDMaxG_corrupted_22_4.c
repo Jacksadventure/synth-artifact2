@@ -1,1 +1,0 @@
-{ c = h = a = l = q = u = e = 42 ;         if ( c < h + a ) h = c - a ; else a = c + h ; }

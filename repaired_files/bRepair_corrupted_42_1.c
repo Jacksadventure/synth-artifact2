@@ -1,1 +1,0 @@
-{ a = 34; b = 29; while (a -   i )(a < b)    - a; e+l+s    - b; } 

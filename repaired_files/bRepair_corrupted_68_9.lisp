@@ -1,1 +1,0 @@
-(energeticist (adventures *exploring (new (ideas)))) 

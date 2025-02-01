@@ -1,1 +1,0 @@
-(geophagous (consumes (soil)) *habitat (terrestrial))

@@ -1,1 +1,0 @@
-timbermancutmove-leftmove-rightjump*

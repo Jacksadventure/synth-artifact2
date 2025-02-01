@@ -1,1 +1,0 @@
-                    while ( u - m + i < a + k ) { u = u + 1 ; m = m - 1 ; }

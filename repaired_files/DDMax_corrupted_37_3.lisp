@@ -1,1 +1,0 @@
- (leaf* (stem (branch) (branch)))

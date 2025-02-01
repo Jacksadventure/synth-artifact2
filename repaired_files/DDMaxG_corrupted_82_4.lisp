@@ -1,1 +1,0 @@
-          ( feathers ( color brown ) ( length 30 cm ) )          

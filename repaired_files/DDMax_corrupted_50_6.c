@@ -1,1 +1,0 @@
-{ v=i=g=i=l=42; if (v<i) g=g+v; else v=v+g; }

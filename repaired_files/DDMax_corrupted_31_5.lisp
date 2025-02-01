@@ -1,1 +1,0 @@
- (property (value high)* (effect (result negative)))

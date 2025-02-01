@@ -1,1 +1,0 @@
-{ k = 98 ; m = 43 ; while ( k - m ) ( k < m ) m - k ; k = k - m ; }

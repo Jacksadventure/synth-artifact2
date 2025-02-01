@@ -1,1 +1,0 @@
-{ a=45; b=33; while (a-b) if (a< b-a )e+l+s +a-b; }

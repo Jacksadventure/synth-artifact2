@@ -1,1 +1,0 @@
-{ k=93; m=46; while (k- i )(k<m) +m-k; e+l+s +k-m; }

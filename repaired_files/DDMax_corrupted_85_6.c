@@ -1,1 +1,0 @@
-{ b=o=w=s=p=1; if (b<o) w=w-b; else b=b-w; }

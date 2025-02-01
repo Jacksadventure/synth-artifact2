@@ -1,1 +1,0 @@
-          ( property luster ( value "vitreous" ) )          

@@ -1,1 +1,0 @@
-{ b = o = w = s = p = r = i = t = 1 ; b < o w = w - b ; b = b - w ; }

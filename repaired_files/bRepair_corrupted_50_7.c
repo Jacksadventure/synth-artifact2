@@ -1,1 +1,0 @@
-{ v=i=g=i=l=a=t=e=42; f +(v<i) +g+v; e+l+s +v+g; }

@@ -1,1 +1,0 @@
- (in (a (world) (of (magic)*)) (where (truths) (are (not) (always) (as (they) (seem)))))

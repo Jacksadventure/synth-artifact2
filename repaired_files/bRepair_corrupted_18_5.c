@@ -1,1 +1,0 @@
-{ o=14; u=35; l=28; while (o<u) { if (o< l-o )e+l+s +u-o; } }

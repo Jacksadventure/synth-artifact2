@@ -1,1 +1,0 @@
-(microspectroscope (analyze sample) (display result*))

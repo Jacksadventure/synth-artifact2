@@ -1,1 +1,0 @@
-polydispersepolymermonomerAmonomerBdistributionnormal0.50.1*

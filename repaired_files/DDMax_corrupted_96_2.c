@@ -1,1 +1,0 @@
-   while (k+m)   m=m-k;   

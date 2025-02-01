@@ -1,1 +1,0 @@
-(Barbarian (attack (sword slash)) (defend *shield block))

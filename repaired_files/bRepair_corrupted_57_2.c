@@ -1,1 +1,0 @@
-{ m=93; d=46; while (m-d) if (m< d-m )e+l+s +m-d; }

@@ -1,1 +1,0 @@
-{ a=92; b=34;   if (a<b) b=b-a; else a=a-b; }

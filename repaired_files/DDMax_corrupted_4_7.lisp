@@ -1,1 +1,0 @@
- (directory "/mnt/data"* (device "/dev/sdb1"))

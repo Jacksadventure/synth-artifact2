@@ -1,1 +1,0 @@
- (is (an (elephant (with (large (ears)))))*)

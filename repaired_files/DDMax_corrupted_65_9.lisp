@@ -1,1 +1,0 @@
- (is (a (type (of (wood)*))))

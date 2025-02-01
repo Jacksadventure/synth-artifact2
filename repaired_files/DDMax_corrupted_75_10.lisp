@@ -1,1 +1,0 @@
- (violin (piano (drum))* (flute))

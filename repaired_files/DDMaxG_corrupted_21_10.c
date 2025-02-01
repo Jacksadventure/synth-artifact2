@@ -1,1 +1,0 @@
-         while ( k - l ) if ( k < l ) l = l - k ; else k = k - l ;

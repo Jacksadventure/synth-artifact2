@@ -1,1 +1,0 @@
-{ "name" : "John Doe" , "age"    : { "street" : "123 Main St" , "city" : "Anytown" , "state" : "Anystate" } , "preferences" : { "color" : "blue" , "food" : "pizza" } }

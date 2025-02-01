@@ -1,1 +1,0 @@
-        (era (name "Mesozoic") (start 252.17) (end 66)*)

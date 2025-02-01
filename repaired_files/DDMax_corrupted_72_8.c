@@ -1,1 +1,0 @@
-{ w=o=n=d=e=r=e=r;  while ((n=n+o)<100) ; }

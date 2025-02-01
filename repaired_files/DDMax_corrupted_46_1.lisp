@@ -1,1 +1,0 @@
-       (trapezia (base 7) (top 3) (height 4)*)

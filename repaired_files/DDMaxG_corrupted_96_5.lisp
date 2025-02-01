@@ -1,1 +1,0 @@
-( chieftainship *leader ( name john ) ( age 35 ) )                          

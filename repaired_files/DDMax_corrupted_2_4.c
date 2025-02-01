@@ -1,1 +1,0 @@
-   while (g-h)   h=h-g;   

@@ -1,1 +1,0 @@
-{  1; do { if (e<10) f=e+2; else g=f-3; } while (g<5); }

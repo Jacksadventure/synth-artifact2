@@ -1,1 +1,0 @@
-bisporousspore1colorwhitesizesmallspore2colorblacksize 

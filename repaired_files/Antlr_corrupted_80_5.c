@@ -1,1 +1,0 @@
-{ k ; m = 30 ; while ( k - m ) if ( k < m ) m = m - k ; else k = k - m ; }

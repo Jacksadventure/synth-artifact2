@@ -1,1 +1,0 @@
-    ( atom2 atom3 )        

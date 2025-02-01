@@ -1,1 +1,0 @@
- (composition (carbonate* (zinc) (hydroxide)))

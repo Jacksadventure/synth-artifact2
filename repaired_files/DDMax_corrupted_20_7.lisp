@@ -1,1 +1,0 @@
- (title "A Tale of Two Cities"* (author "Charles Dickens") (year 1859))

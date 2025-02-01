@@ -1,1 +1,0 @@
-nicotizeatom1atom2   

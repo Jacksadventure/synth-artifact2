@@ -1,1 +1,0 @@
-   while (k-l)   l=l-k;  

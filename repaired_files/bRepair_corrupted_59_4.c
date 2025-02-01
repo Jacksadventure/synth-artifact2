@@ -1,1 +1,0 @@
-{ w=m=i=73; w+i+l +(w-m) +i +(w<m) +m-w; e+l+s +w-m; }

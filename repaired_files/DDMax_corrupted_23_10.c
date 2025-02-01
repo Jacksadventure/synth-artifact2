@@ -1,1 +1,0 @@
-{ h=7; a=m=o; if (h<a) m=a-h; else u=h-a; }

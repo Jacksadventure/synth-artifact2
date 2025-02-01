@@ -1,1 +1,0 @@
-{ c=h=a=l=q=u=e=42 +w+h+i+l+e+(c-h-a-l-q-u-e) +i+f+(c<h+a) +h-a; e+l+s +a+h; }

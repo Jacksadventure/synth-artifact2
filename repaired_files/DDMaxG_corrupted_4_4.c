@@ -1,1 +1,0 @@
-{ a = 14 ; b = 28 ; while ( a - b )     b = b - a ; a = a - b ; }

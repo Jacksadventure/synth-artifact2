@@ -1,1 +1,0 @@
-{ r=o=s=a=m=o=n=d; while(r-o) i+(r<s) +s-r; e+l+s +r-s; }

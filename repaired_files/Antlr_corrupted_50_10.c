@@ -1,1 +1,0 @@
-{ v = i = g = i = l = a = t = e = 42 ; v < i g = g + v ; v = v + g ; }

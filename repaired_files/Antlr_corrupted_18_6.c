@@ -1,1 +1,0 @@
-{ o = 14 ; u = 35 ; l = 28 ; while ( o < u ) { f ( o < l ) l = l - o ; u = u - o ; } }

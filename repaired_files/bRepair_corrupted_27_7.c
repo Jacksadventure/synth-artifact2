@@ -1,1 +1,0 @@
-{ t=98; e=r=r=y=34; w+h+i+l +(e) +i +(t<e) +e-t; e+l+s +t-e; }

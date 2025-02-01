@@ -1,1 +1,0 @@
-{ k = 93 ; l = 45 ; while ( k - l )  k <    l - k ; k = k - l ; }

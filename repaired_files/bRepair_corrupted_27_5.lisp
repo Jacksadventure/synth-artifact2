@@ -1,1 +1,0 @@
-(hoboism (is fun) (and (can be) (very interesting*)))

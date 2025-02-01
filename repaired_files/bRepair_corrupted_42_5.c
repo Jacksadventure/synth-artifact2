@@ -1,1 +1,0 @@
-{ a = 34; b = 29; while (a - b) { if   (b) b = b - a; else a = a - b; } }

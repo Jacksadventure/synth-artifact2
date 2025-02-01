@@ -1,1 +1,0 @@
-a=b=c=o-e-r-t-e-n-d-e-r-n-e-s-s<3;

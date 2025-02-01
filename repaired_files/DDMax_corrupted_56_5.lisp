@@ -1,1 +1,0 @@
- (is (an (order (of (insects)*))))

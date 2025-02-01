@@ -1,1 +1,0 @@
-{ c = h = a = l = q = u = e = 42 ; while ( c - h - a - l - q - u - e )  c < h     - a ; a = c + h ; }

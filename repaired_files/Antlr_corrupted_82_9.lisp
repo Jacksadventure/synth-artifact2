@@ -1,1 +1,0 @@
-( birdwoman ( wings ( left ) ( right ) ) ( feathers ( color brown ) ( length 30 cm ) ) ( habitat ( forest ) ( coast ) ) * <EOF>

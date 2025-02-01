@@ -1,1 +1,0 @@
-   h = a = l = q = u = e = 42    - h - a - l - q - u - e     < h + a     - a ;        
