@@ -3,7 +3,7 @@
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
- "brepair_size_statistics_sheet": {
+ "erepair_size_statistics_sheet": {
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
@@ -15,7 +15,7 @@
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
- "brepair_time_sheet": {
+ "erepair_time_sheet": {
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
@@ -91,7 +91,7 @@
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
- "brepair_subject_runs_statistics_sheet": {
+ "erepair_subject_runs_statistics_sheet": {
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
@@ -115,7 +115,7 @@
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
- "brepair_levenshtein_sheet": {
+ "erepair_levenshtein_sheet": {
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
@@ -123,7 +123,7 @@
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },
- "brepair_success_sheet": {
+ "erepair_success_sheet": {
   "sheetName": "TODO Insert a valid Google Sheets Sheet Identifier here",
   "sheetID": "TODO Insert a valid Google Sheets ID here"
  },

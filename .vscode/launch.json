@@ -15,7 +15,7 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
-            "mainClass": "fsynth.program.Main",
+            "mainClass": "erepair.program.Main",
             "projectName": "project"
         }
     ]

@@ -1,7 +1,7 @@
 FROM debian:bullseye
 LABEL maintainer="Anonymous"
 LABEL org.opencontainers.image.authors="Anonymous"
-LABEL description="A dockerfile that allows to run the FSynth experiments"
+LABEL description="A dockerfile that allows to run the erepair experiments"
 LABEL version="1.0"
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8 TERM='xterm-256color'
 ENV DEBIAN_FRONTEND noninteractive
@@ -53,14 +53,14 @@ RUN mv -v /home/project/bin/testfiles / && \
     gradle --version && \
     gradle deployJar --stacktrace --info
 
-RUN printf "#!/bin/bash\n\njava -jar /home/project/bin/fsynth.jar \$@\n" > /usr/bin/fsynth && \
-    chmod +x /usr/bin/fsynth && \
+RUN printf "#!/bin/bash\n\njava -jar /home/project/bin/erepair.jar \$@\n" > /usr/bin/erepair && \
+    chmod +x /usr/bin/erepair && \
     mkdir -p /home/repairer
 
 # Clean up build dependencies \
 RUN apt-get --purge remove -y curl unzip
 
-RUN java --version && fsynth --help
+RUN java --version && erepair --help
 
 #RUN mv -v /home/project/bin/testfiles /
 

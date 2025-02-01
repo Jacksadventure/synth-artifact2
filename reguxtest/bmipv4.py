@@ -74,7 +74,7 @@ def repair_test_case(broken_text: str,
                      algorithm: str,
                      fmt: str) -> str:
     """
-    Uses an external repair tool (e.g. `./brepair`) to attempt fixing the broken text.
+    Uses an external repair tool (e.g. `./erepair`) to attempt fixing the broken text.
     Writes `broken_text` into `input_filepath`, then calls the tool to produce
     `output_filepath`. Returns the repaired text, or an empty string on failure.
 
@@ -90,10 +90,10 @@ def repair_test_case(broken_text: str,
         category = dir_to_category.get(fmt, "Time")  # 若找不到就默认用 "Time" 或其它逻辑
         parser_path = f"python3 match.py {category}"
 
-        brepair_exe = "./brepair"
+        erepair_exe = "./erepair"
 
         # 3. 用 shell=True 执行命令，这里把 parser_path 当作一个整体字符串传给 C++。
-        command_str = f'{brepair_exe} "{parser_path}" "{input_filepath}" "{output_filepath}"'
+        command_str = f'{erepair_exe} "{parser_path}" "{input_filepath}" "{output_filepath}"'
         print(f"Running repair command (shell=True): {command_str}")
         subprocess.run(command_str, shell=True, timeout=240, check=True)
 
@@ -247,7 +247,7 @@ def process_format(fmt: str):
                 broken_text,
                 input_filepath=temp_broken_file,
                 output_filepath=repaired_file_path,
-                algorithm="bRepair",
+                algorithm="erepair",
                 fmt=fmt
             )
 
@@ -278,7 +278,7 @@ def process_format(fmt: str):
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 fmt,
-                "bRepair",
+                "erepair",
                 original_text,
                 broken_text,
                 repaired_text,

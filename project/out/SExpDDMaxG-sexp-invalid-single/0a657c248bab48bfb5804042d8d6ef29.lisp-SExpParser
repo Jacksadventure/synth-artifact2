@@ -1,1 +1,0 @@
-                    ( defun allergic-to-p ( score allergen ) "Returns true if given allergy score includes given allergen." )         

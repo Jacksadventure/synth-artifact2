@@ -6,7 +6,7 @@ from pathlib import Path
 assert len(sys.argv) == 6
 _, mode,subject,mutated_filename, test_out_folder, fileformat = sys.argv
 os.makedirs("_difffiles_ddmax/",exist_ok=True)
-os.makedirs("_difffiles_brepair/",exist_ok=True)
+os.makedirs("_difffiles_erepair/",exist_ok=True)
 
 def build_ddmax_diff_if_necessary(mutated_file, ddmax_output, diff_file):
     try:
@@ -36,9 +36,9 @@ def build_ddmax_diff_if_necessary(mutated_file, ddmax_output, diff_file):
 
 filename = os.path.basename(mutated_filename)
 ddmax_output_file   = Path(test_out_folder, fileformat + "DDMax-"   + Path(mutated_filename).parent.name, filename + "-" + subject).as_posix()
-brepair_output_file = Path(test_out_folder, fileformat + "bRepair-" + Path(mutated_filename).parent.name, filename + "-" + subject).as_posix()
+erepair_output_file = Path(test_out_folder, fileformat + "erepair-" + Path(mutated_filename).parent.name, filename + "-" + subject).as_posix()
 ddmax_diff_file     = build_ddmax_diff_if_necessary(mutated_filename,ddmax_output_file,   "_difffiles_ddmax/"   + os.path.basename(ddmax_output_file))
-brepair_diff_file   = build_ddmax_diff_if_necessary(mutated_filename,brepair_output_file, "_difffiles_brepair/" + os.path.basename(brepair_output_file))
+erepair_diff_file   = build_ddmax_diff_if_necessary(mutated_filename,erepair_output_file, "_difffiles_erepair/" + os.path.basename(erepair_output_file))
 ddmin_output_file   = Path(test_out_folder, fileformat + "DDMin-"   + Path(mutated_filename).parent.name, filename + "-" + subject).as_posix()
 
 
@@ -57,27 +57,27 @@ elif mode == "4": # How much percent of the DDMax Diff is contained in DDMin?
 elif mode == "5": # How much percent of DDMin is contained in the DDMax Output?
     path1 = ddmin_output_file
     path2 = ddmax_output_file
-elif mode == "6": # Size of the brepair-diff
-    print(os.path.getsize(brepair_diff_file))
+elif mode == "6": # Size of the erepair-diff
+    print(os.path.getsize(erepair_diff_file))
     sys.exit(0)
-elif mode == "7": # How much percent of the bRepair diff is contained in ddmin?
-    path1 = brepair_diff_file
+elif mode == "7": # How much percent of the erepair diff is contained in ddmin?
+    path1 = erepair_diff_file
     path2 = ddmin_output_file
-elif mode == "8": # How much percent of ddmin is contained in the bRepair output?
+elif mode == "8": # How much percent of ddmin is contained in the erepair output?
     path1 = ddmin_output_file
-    path2 = brepair_output_file
-elif mode == "9": # How much percent of the bRepair diff is contained in the ddmax diff?
-    path1 = brepair_diff_file
+    path2 = erepair_output_file
+elif mode == "9": # How much percent of the erepair diff is contained in the ddmax diff?
+    path1 = erepair_diff_file
     path2 = ddmax_diff_file
-elif mode == "10": # How much percent of the ddmax diff is contained in the bRepair diff?
+elif mode == "10": # How much percent of the ddmax diff is contained in the erepair diff?
     path1 = ddmax_diff_file
-    path2 = brepair_diff_file
-elif mode == "11": # How much percent of the bRepair diff is contained in the ddmax output?
-    path1 = brepair_diff_file
+    path2 = erepair_diff_file
+elif mode == "11": # How much percent of the erepair diff is contained in the ddmax output?
+    path1 = erepair_diff_file
     path2 = ddmax_output_file
-elif mode == "12": # How much percent of the ddmax diff is contained in the bRepair output?
+elif mode == "12": # How much percent of the ddmax diff is contained in the erepair output?
     path1 = ddmax_diff_file
-    path2 = brepair_output_file
+    path2 = erepair_output_file
 
 if not os.path.isfile(path1):
     print("The diff at " + path1 + " did not exist!")

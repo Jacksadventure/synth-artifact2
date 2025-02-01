@@ -14,14 +14,14 @@ REPAIR_OUTPUT_DIR = "repair_results"  # Directory where repair outputs are store
 os.makedirs(REPAIR_OUTPUT_DIR, exist_ok=True)
 
 # Possible repair algorithms you want to test
-REPAIR_ALGORITHMS = ["DDMax", "bRepair", "DDMaxG", "Antlr"]
+REPAIR_ALGORITHMS = ["DDMax", "erepair", "DDMaxG", "Antlr"]
 
 # Paths to the external format validators (adjust as needed)
 PROJECT_PATHS = {
-    "ini":  "project/fsynth-subjects/ini/ini",
-    "json": "project/fsynth-subjects/cjson/cjson",
-    "lisp": "project/fsynth-subjects/sexp-parser/sexp",
-    "c":    "project/fsynth-subjects/tiny/tiny"
+    "ini":  "project/erepair-subjects/ini/ini",
+    "json": "project/erepair-subjects/cjson/cjson",
+    "lisp": "project/erepair-subjects/sexp-parser/sexp",
+    "c":    "project/erepair-subjects/tiny/tiny"
 }
 
 # Valid formats/folders to process
@@ -255,13 +255,13 @@ def repair_and_update_entry(cursor, conn, row):
     repair_time = 0.0
 
     # Choose the repair command
-    if algorithm == "bRepair":
-        # Example usage of a hypothetical bRepair binary
-        cmd = ["./brepair", PROJECT_PATHS.get(format_key, ""), input_file, output_file]
+    if algorithm == "erepair":
+        # Example usage of a hypothetical erepair binary
+        cmd = ["./erepair", PROJECT_PATHS.get(format_key, ""), input_file, output_file]
     else:
-        # Example usage of your fsynth.jar approach
+        # Example usage of your erepair.jar approach
         cmd = [
-            "java", "-jar", "./project/bin/fsynth.jar",
+            "java", "-jar", "./project/bin/erepair.jar",
             "-r", "-a", algorithm,
             "-i", input_file,
             "-o", output_file

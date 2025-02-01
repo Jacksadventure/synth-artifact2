@@ -13,10 +13,10 @@ DATABASE_PATH = "result1_prefix.db"  # Path to your SQLite database
 
 # Paths to your executables/jar, etc. Adjust as needed.
 PROJECT_PATHS = {
-    "ini": "project/fsynth-subjects/ini/ini",
-    "json": "project/fsynth-subjects/cjson/cjson",
-    "lisp": "project/fsynth-subjects/sexp-parser/sexp",
-    "c": "project/fsynth-subjects/tiny/tiny"
+    "ini": "project/erepair-subjects/ini/ini",
+    "json": "project/erepair-subjects/cjson/cjson",
+    "lisp": "project/erepair-subjects/sexp-parser/sexp",
+    "c": "project/erepair-subjects/tiny/tiny"
 }
 
 # Choose the subfolder containing broken files (e.g., "prefix" or "corrupted")
@@ -29,8 +29,8 @@ BASE_DIR = "generated_files"
 VALID_FORMATS = ["ini", "json", "lisp", "c"]
 
 # Which repair algorithms to insert into the DB.  
-# If you only want to test one, you could just use ["bRepair"] or similar.
-REPAIR_ALGORITHMS = ["DDMax", "bRepair", "DDMaxG", "Antlr"]
+# If you only want to test one, you could just use ["erepair"] or similar.
+REPAIR_ALGORITHMS = ["DDMax", "erepair", "DDMaxG", "Antlr"]
 
 
 def populate_database():
@@ -202,13 +202,13 @@ def repair_and_update_entry(cursor, conn, entry):
 
     try:
         # Choose command based on algorithm
-        if algorithm == "bRepair":
-            # Example: local bRepair executable usage
-            cmd = ["./brepair", PROJECT_PATHS.get(fmt, ""), input_file, output_file]
+        if algorithm == "erepair":
+            # Example: local erepair executable usage
+            cmd = ["./erepair", PROJECT_PATHS.get(fmt, ""), input_file, output_file]
         else:
-            # Using the fsynth.jar approach
+            # Using the erepair.jar approach
             cmd = [
-                "java", "-jar", "./project/bin/fsynth.jar",
+                "java", "-jar", "./project/bin/erepair.jar",
                 "-r", "-a", algorithm,
                 "-i", input_file,
                 "-o", output_file

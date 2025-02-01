@@ -1,1 +1,0 @@
-(declare-server-command server-apply (fn-name &rest args))
