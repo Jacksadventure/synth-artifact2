@@ -4,17 +4,17 @@
 
 This repository is the artifact repository of epsilonRepair.
 
-***EpsilonRepair is an algorithm we proposed to help users repair corrupted text files, such as JSON, INI, TinyCdeng, etc., even when the exact format is unknown. It ensures high efficiency while minimizing information loss as much as possible.***
+***EpsilonRepair is an algorithm we proposed to help users repair corrupted text files, such as JSON, INI, TinyC, etc., even when the exact format is unknown. It ensures high efficiency while minimizing information loss as much as possible.***
 
 ## How to build and run the project
 We provide both C and Java versions of epsilonRepair. The C version includes more experimental features, runs faster, and is suitable for personal use, whereas the Java version provides more debugging information and is better suited for commercial use.
 
 ### 🏗️Install Java version
 Before installing epsilonRepair, please make sure the latest versions of JDK and Gradle are installed properly.
-```
-cd project
-gradle deployJar --stacktrace --info
-```
+
+> `cd project`
+> `gradle deployJar --stacktrace --info`
+
 ### 🔨Install C version
 You should have any C++ compiler(g++, clang++, msvc...) with at least C++17 support installed in your computer. Then, run:
 
