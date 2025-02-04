@@ -2,13 +2,15 @@
 
 ## Artifact repository
 
-This repository is the artifact repository of deltaRepair.
+This repository is the artifact repository of epsilonRepair.
+
+***EpsilonRepair is an algorithm we proposed to help users repair corrupted text files, such as JSON, INI, TinyCdeng, etc., even when the exact format is unknown. It ensures high efficiency while minimizing information loss as much as possible.***
 
 ## How to build and run the project
-We provide both C and Java versions of deltaRepair. The C version includes more experimental features, runs faster, and is suitable for personal use, whereas the Java version provides more debugging information and is better suited for commercial use.
+We provide both C and Java versions of epsilonRepair. The C version includes more experimental features, runs faster, and is suitable for personal use, whereas the Java version provides more debugging information and is better suited for commercial use.
 
 ### 🏗️Install Java version
-Before installing deltaRepair, please make sure the latest versions of JDK and Gradle are installed properly.
+Before installing epsilonRepair, please make sure the latest versions of JDK and Gradle are installed properly.
 ```
 cd project
 gradle deployJar --stacktrace --info
@@ -18,14 +20,14 @@ You should have any C++ compiler(g++, clang++, msvc...) with at least C++17 supp
 
 > `g++<or clang++ if use clang> -std=c++17 ./erepair.cpp -o erepair`
 
-Please note that there is another cpp file in the repo called erepair2.cpp, it applies same deltaRepair algorithm with more aggressive pruning strategy make it excellent at truncation completing task. You can also choose it to compile if needed.
+Please note that there is another cpp file in the repo called erepair2.cpp, it applies same epsilonRepair algorithm with more aggressive pruning strategy make it excellent at truncation completing task. You can also choose it to compile if needed.
 ## Command-Line Arguments
 
 ### 👀Usage
 
 #### Start with Java version
 ###### Repair a file using the given algorithm 
-> `java -jar erepair -r -i <inputfile> [-o <outputdir>] -a <algorithm,use erepair for lauch deltaRepair process>`
+> `java -jar erepair -r -i <inputfile> [-o <outputdir>] -a <algorithm,use erepair for lauch epsilonRepair process>`
 
 ###### Mutate all files in directory
 
