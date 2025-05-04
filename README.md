@@ -9,13 +9,13 @@ This repository is the artifact repository of epsilonRepair.
 ## How to build and run the project
 We provide both C and Java versions of epsilonRepair. The C version includes more experimental features, runs faster, and is suitable for personal use, whereas the Java version provides more debugging information and is better suited for commercial use.
 
-### 🏗️Install Java version
+### Install Java version
 Before installing epsilonRepair, please make sure the latest versions of JDK and Gradle are installed properly.
 
 > `cd project`
 > `gradle deployJar --stacktrace --info`
 
-### 🔨Install C version
+### Install C version
 You should have any C++ compiler(g++, clang++, msvc...) with at least C++17 support installed in your computer. Then, run:
 
 > `g++<or clang++ if use clang> -std=c++17 ./erepair.cpp -o erepair`
@@ -23,7 +23,7 @@ You should have any C++ compiler(g++, clang++, msvc...) with at least C++17 supp
 Please note that there is another cpp file in the repo called erepair2.cpp, it applies same epsilonRepair algorithm with more aggressive pruning strategy make it excellent at truncation completing task. You can also choose it to compile if needed.
 ## Command-Line Arguments
 
-### 👀Usage
+### Usage
 
 #### Start with Java version
 ###### Repair a file using the given algorithm 
@@ -45,7 +45,7 @@ First, you need to determine the target interpreter. You can use any interpreter
 Then run command:
 > `./erepair <PathtoIntepreter> <inputfile> <outputfile>`
 
-### 😍Build your own "interpreter" at ease
+### Build your own "interpreter" at ease
 
 You can also repair files whose grammar is defined by regular expressions. with [regex](https://pypi.org/project/regex/), for example:
 
@@ -129,7 +129,7 @@ You can obtain all tables in the paper with one command:
 Example:
 
 ```
-vevjack@softengacstudio erepair-artifact % python '/Users/jack/erepair-artifact/report.py'
+erepair-artifact % python '/Users/jack/erepair-artifact/report.py'
 ----------------Table 4-5(General)------------------------------------
 
 Processing database: result1_multiple.db
