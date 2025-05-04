@@ -1,0 +1,5 @@
+	<properties>
+		<jdk.classifier></jdk.classifier>
+		<target.jdk>1.7</target.jdk>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>

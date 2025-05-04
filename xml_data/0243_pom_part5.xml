@@ -1,0 +1,3 @@
+    <properties>
+        <jjwt.root>${basedir}/..</jjwt.root>
+    </properties>

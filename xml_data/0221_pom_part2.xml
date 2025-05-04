@@ -1,0 +1,6 @@
+    <properties>
+        <!-- 持久层 -->
+        <mybatis.version>3.4.1</mybatis.version>
+        <mybatis-spring.version>1.3.0</mybatis-spring.version>
+        <pagehelper.version>4.1.6</pagehelper.version>
+    </properties>

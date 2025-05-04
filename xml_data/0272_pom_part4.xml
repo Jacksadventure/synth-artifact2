@@ -1,0 +1,7 @@
+	<modules>
+		<module>pets-domain</module>
+		<module>pets-boot</module>
+		<module>pets-application</module>
+		<module>pets-adapters</module>
+		<module>pets-dto</module>
+	</modules>

@@ -1,0 +1,12 @@
+
+  <MetaRole name="analysisPeakList"
+   guid="www.ccpn.ac.uk_Fogh_2011-11-30-10:53:58_00011"
+   container="www.ccpn.ac.uk_Fogh_2011-11-16-17:07:15_00025"
+   baseName="analysisPeakList" changeability="frozen" hicard="1"
+   isAbstract="false" isAutomatic="false" isDerived="false"
+   isImplementation="false" isImplicit="false" isOrdered="false" isUnique="true"
+   locard="1" noDeleteIfSet="false" partitionsChildren="false"
+   scope="instance_level" visibility="public_vis">
+    <otherRole>www.ccpn.ac.uk_Fogh_2011-11-30-10:53:58_00012</otherRole>
+    <valueType>www.ccpn.ac.uk_Fogh_2011-11-16-17:07:15_00002</valueType>
+  </MetaRole>

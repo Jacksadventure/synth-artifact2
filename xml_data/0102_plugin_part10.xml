@@ -1,0 +1,7 @@
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <receiver android:name="com.cowbell.cordova.geofence.BootReceiver">
+                <intent-filter>
+                    <action android:name="android.intent.action.BOOT_COMPLETED" />
+                </intent-filter>
+            </receiver>
+        </config-file>

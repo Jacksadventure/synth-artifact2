@@ -1,0 +1,26 @@
+  <EffecterDef>
+    <defName>LLAnalyze</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <positionRadius>0.5</positionRadius>
+        <scale>0.5</scale>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <ticksBetweenMotes>160</ticksBetweenMotes>
+        <positionLerpFactor>1</positionLerpFactor>
+        <fleckDef>ResearchPage</fleckDef>
+        <angle>0~360</angle>
+        <speed>5</speed>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <spawnLocType>OnTarget</spawnLocType>
+        <scale>0.5</scale>
+        <ticksBetweenMotes>40</ticksBetweenMotes>
+        <positionLerpFactor>0.6</positionLerpFactor>
+        <positionRadius>0.6</positionRadius>
+        <moteDef>LLMoteExamineMagnify</moteDef>
+      </li>
+    </children>
+  </EffecterDef>
+</Defs>

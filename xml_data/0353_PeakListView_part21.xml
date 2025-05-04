@@ -1,0 +1,13 @@
+  <MetaAttribute name="isSymbolDrawn"
+   guid="www.ccpn.ac.uk_Fogh_2011-11-30-10:55:31_00013"
+   container="www.ccpn.ac.uk_Fogh_2011-11-16-17:07:15_00025"
+   baseName="isSymbolDrawn" changeability="changeable" hicard="1"
+   isAbstract="false" isAutomatic="false" isDerived="false"
+   isImplementation="false" isImplicit="false" isOrdered="false" isUnique="true"
+   locard="1" scope="instance_level" visibility="public_vis">
+    <documentation>Are peak symbols drawn?</documentation>
+    <valueType>www.ccpn.ac.uk_Fogh_2006-08-16-14:22:53_00028</valueType>
+    <defaultValue>
+      <item>true</item>
+    </defaultValue>
+  </MetaAttribute>

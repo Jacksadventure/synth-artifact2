@@ -1,0 +1,5 @@
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <mysql.version>5.1.47</mysql.version>
+    </properties>

@@ -1,0 +1,5 @@
+        <dependency>
+            <groupId>com.wetts</groupId>
+            <artifactId>module-spring</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>

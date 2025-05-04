@@ -1,0 +1,43 @@
+
+<catalog>
+  <book id="001">
+    <title>Java Programming
+</title>
+    <author>John Smith
+</author>
+    <publisher>Publisher A
+</publisher>
+    <price>29.99
+</price>
+  </book>
+  <book id="002">
+    <title>Python Basics
+</title>
+    <author>Sarah Johnson
+</author>
+    <publisher>Publisher B
+</publisher>
+    <price>19.99
+</price>
+  </book>
+  <book id="003">
+    <title>C# Advanced
+</title>
+    <author>Michael Brown
+</author>
+    <publisher>Publisher A
+</publisher>
+    <price>24.99
+</price>
+  </book>
+  <book id="004">
+    <title>JavaScript Fundamentals
+</title>
+    <author>Emily Davis
+</author>
+    <publisher>Publisher C
+</publisher>
+    <price>14.99
+</price>
+  </book>
+</catalog>

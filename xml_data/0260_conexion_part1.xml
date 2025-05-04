@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conexion>
+    <host>127.0.0.1</host>
+    <baseDatos>MaterialDeporte</baseDatos>
+    <user>root</user>
+    <password></password>
+</conexion>

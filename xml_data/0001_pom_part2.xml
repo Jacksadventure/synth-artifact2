@@ -1,0 +1,11 @@
+    <artifactId>lab-37</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lab-37-logging-demo</module>
+        <module>lab-37-logging-actuator</module>
+        <module>lab-37-logging-logback</module>
+        <module>lab-37-logging-debug</module>
+        <module>lab-37-logging-multi-env</module>
+        <module>lab-37-logging-log4j2</module>
+        <module>lab-37-logging-aop</module>
+    </modules>

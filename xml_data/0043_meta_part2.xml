@@ -1,0 +1,7 @@
+<dc:title id="epub-title-1">Making it Publik Report</dc:title>
+<meta refines="#epub-title-1" property="title-type">main</meta>
+<dc:publisher>PZI</dc:publisher>    
+<dc:date id="epub-date">2016-01</dc:date>
+<dc:language>en-US</dc:language>
+<dc:creator id="epub-creator-0">Author</dc:creator>
+<meta refines="#epub-creator-0" property="role" scheme="marc:relators">aut</meta>

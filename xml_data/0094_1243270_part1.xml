@@ -1,0 +1,219 @@
+<patientdata>
+<patient name="1243270">
+<meds>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">81</field2>
+	<start>Wed Jun 17 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Drug">aspirin</field1>
+	<field2 label="Daily Dose">81</field2>
+	<start>Wed Jun 17 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Drug">carvedilol</field1>
+	<field2 label="Daily Dose">25</field2>
+	<start>Wed Jun 17 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Drug">digoxin</field1>
+	<field2 label="Daily Dose">0.125</field2>
+	<start>Wed Jun 17 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Drug">enalapril</field1>
+	<field2 label="Daily Dose">10</field2>
+	<start>Wed Jun 17 00:00:00 PST 1936</start>
+</item>
+</meds>
+<dx>
+<item>
+	<field1 label="Dx">Cardiomyopathy</field1>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Dx">Heart_Failure</field1>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Dx">Hypertension</field1>
+	<start>Wed Jun 10 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Dx">Liver_Disease</field1>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+</dx>
+<clinicalSigns>
+<item>
+	<field1 label="Sign">Diastolic_BP</field1>
+	<field2 label="Value">88</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Sign">Height</field1>
+	<field2 label="Value">68</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Sign">Pulse</field1>
+	<field2 label="Value">120</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Sign">Systolic_BP</field1>
+	<field2 label="Value">128</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Sign">Weight</field1>
+	<field2 label="Value">162.9</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+</clinicalSigns>
+<adr>
+</adr>
+<labs>
+<item>
+	<field1 label="Lab">Albumen</field1>
+	<field2 label="Value">2.7</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Alkaline_phosphatase</field1>
+	<field2 label="Value">336</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">B 12</field1>
+	<field2 label="Value">>1000</field2>
+	<start>Thu Jun 11 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">BNP</field1>
+	<field2 label="Value">30</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">BUN</field1>
+	<field2 label="Value">5</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Calcium</field1>
+	<field2 label="Value">8.1</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Chloride</field1>
+	<field2 label="Value">104</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Cholesterol</field1>
+	<field2 label="Value">177</field2>
+	<start>Wed Jun 10 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Creatinine</field1>
+	<field2 label="Value">0.6</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Glycosylated_Hemoglobin</field1>
+	<field2 label="Value">4.6</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">HbA1C</field1>
+	<field2 label="Value">4.6</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">HCT</field1>
+	<field2 label="Value">42.1</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">HDL_Cholesterol</field1>
+	<field2 label="Value">53</field2>
+	<start>Wed Jun 10 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">HGB</field1>
+	<field2 label="Value">14.4</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">LDL_Cholesterol</field1>
+	<field2 label="Value">111</field2>
+	<start>Wed Jun 10 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Phosphorus</field1>
+	<field2 label="Value">3.3</field2>
+	<start>Wed Jun 17 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">PLT</field1>
+	<field2 label="Value">385</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Potassium</field1>
+	<field2 label="Value">3.9</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">SGOT</field1>
+	<field2 label="Value">145</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">SGPT</field1>
+	<field2 label="Value">76</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Sodium</field1>
+	<field2 label="Value">142</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Bilirubin</field1>
+	<field2 label="Value">0.6</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Total_Cholesterol</field1>
+	<field2 label="Value">177</field2>
+	<start>Wed Jun 10 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">Triglycerides</field1>
+	<field2 label="Value">83</field2>
+	<start>Wed Jun 10 00:00:00 PST 1936</start>
+</item>
+<item>
+	<field1 label="Lab">WBC</field1>
+	<field2 label="Value">17.6</field2>
+	<start>Tue Jun 30 00:00:00 PST 1936</start>
+</item>
+</labs>
+<demographics>
+<item>
+	<field1 label="Field Name">Age</field1>
+	<field2 label="Value">36</field2>
+</item>
+<item>
+	<field1 label="Field Name">Race</field1>
+	<field2 label="Value">White_Non-Hispanic</field2>
+</item>
+<item>
+	<field1 label="Field Name">Sex</field1>
+	<field2 label="Value">Male</field2>
+</item>
+</demographics>
+</patient>
+</patientdata>

@@ -1,0 +1,16 @@
+<profile>
+   <id>release</id>
+   <repositories>
+      <repository>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>
+        <id>maven-demo</id>
+        <name>maven-demo</name>
+        <url>http://${env.NEXUSSERVERIP}:8081/repository/maven-demo/</url>
+      </repository>
+    </repositories>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+</profile>

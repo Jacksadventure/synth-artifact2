@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "user.xsl"?>
+<details>
+  <user>
+    <acc>0000000001</acc>
+    <uname>Bob Dylan</uname>
+    <pwd>bobdyl</pwd>
+    <gender>Male</gender>
+    <dob>10/12/1988</dob>
+    <email>bobdylan@gmail.com</email>
+    <mobile>9785334924</mobile>
+  </user>
+  <user>
+    <acc>0000000002</acc>
+    <uname>Krish Sharma</uname>
+    <pwd>kkrrijcd</pwd>
+    <gender>Male</gender>
+    <dob>10/09/1994</dob>
+    <email>krishsahrma@gmail.com</email>
+    <mobile>9875462813</mobile>
+  </user>
+  <user>
+    <acc>0000000003</acc>
+    <uname>Kunal Chaudhary</uname>
+    <pwd>kunalmouhd</pwd>
+    <gender>Male</gender>
+    <dob>31/12/1988</dob>
+    <email>kcchaudhary@yahoo.com</email>
+    <mobile>8933700144</mobile>
+  </user>
+  <user>
+    <acc>0000000004</acc>
+    <uname>Sophie Turner</uname>
+    <pwd>sophiegot</pwd>
+    <gender>Female</gender>
+    <dob>01/01/1984</dob>
+    <email>sophiejonas@gmail.com</email>
+    <mobile>9630589799</mobile>
+  </user>
+  <user>
+    <acc>0000000005</acc>
+    <uname>Cristiano Ronaldo</uname>
+    <pwd>crisscr7</pwd>
+    <gender>Male</gender>
+    <dob>24/07/1979</dob>
+    <email>cristanocr7@gmail.com</email>
+    <mobile>7896587014</mobile>
+  </user>
+  <user>
+    <acc>0000000006</acc>
+    <uname>Peter Dinklage</uname>
+    <pwd>petty7din</pwd>
+    <gender>Male</gender>
+    <dob>08/04/1987</dob>
+    <email>peterdinklage@gmail.com</email>
+    <mobile>9632015700</mobile>
+  </user>
+  <user>
+    <acc>0000000007</acc>
+    <uname>Emilia Clarke</uname>
+    <pwd>ehbfdj</pwd>
+    <gender>Female</gender>
+    <dob>09/12/1972</dob>
+    <email>emiliaclarke@rediiffmail.com</email>
+    <mobile>8907456119</mobile>
+  </user>
+  <user>
+    <acc>0000000008</acc>
+    <uname>Salman Khan</uname>
+    <pwd>sbhaivh</pwd>
+    <gender>Male</gender>
+    <dob>05/04/1991</dob>
+    <email>sallubhai@gmail.com</email>
+    <mobile>70004198577</mobile>
+  </user>
+  <user>
+    <acc>0000000009</acc>
+    <uname>Kareena Kapoor</uname>
+    <pwd>kdvijdd</pwd>
+    <gender>Female</gender>
+    <dob>19/08/1979</dob>
+    <email>kareenakapoor@gmail.com</email>
+    <mobile>9756284105</mobile>
+  </user>
+  <user>
+    <acc>00000000010</acc>
+    <uname>Avi Jain</uname>
+    <pwd>ajain</pwd>
+    <gender>Male</gender>
+    <dob>03/02/1998</dob>
+    <email>avijain@gmail.com</email>
+    <mobile>8795641027</mobile>
+  </user>  
+</details>

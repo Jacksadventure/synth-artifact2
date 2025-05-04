@@ -1,0 +1,16 @@
+<widget>
+	<widgetType>textField</widgetType>
+	<fieldName>$field$</fieldName>
+	<label>$label$</label>
+	<visible>false</visible>
+	<validations>
+		<required>$required$</required>
+		<minLength>$minLength$</minLength>
+		<maxLength>$maxLength$</maxLength>
+	</validations>
+	<fieldLayout>
+		<layoutOrientation>$layoutOrientation$</layoutOrientation>
+		<labelPossition>$labelPossition$</labelPossition>
+		<layout>$layout$</layout>
+	</fieldLayout>
+</widget>

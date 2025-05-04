@@ -1,0 +1,4 @@
+    <path id="ear-components">
+        <filelist dir="./servlet-stateless-ejb" files="build.xml" />
+        <filelist dir="./servlet-stateless-war" files="build.xml" />
+    </path>

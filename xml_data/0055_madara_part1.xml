@@ -1,0 +1,4 @@
+<npc name="Madara" script="" walkinterval="0" speed="0" floorchange="0">
+    <health now="1000" max="1000"/>
+<look type="1207" head="0" body="86" legs="0" feet="38" addons="1"/>
+</npc>  

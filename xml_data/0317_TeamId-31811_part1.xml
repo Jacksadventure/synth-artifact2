@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<maxi-xml>
+  <teamId>31811</teamId>
+  <teamName>comedians</teamName>
+  <owner>superbin</owner>
+  <founded>2009-08-22T01:15:18+02:00</founded>
+  <youthFounded>2017-11-12T00:44:37+01:00</youthFounded>
+  <arenaId>20585</arenaId>
+  <arenaName>mountaineers stadium</arenaName>
+  <leagueId>6</leagueId>
+  <youthLeagueId>113</youthLeagueId>
+  <nationId>1</nationId>
+  <regionId>11</regionId>
+  <maxitrainer>1</maxitrainer>
+</maxi-xml>

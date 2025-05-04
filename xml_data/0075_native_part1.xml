@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+   <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+      <interface>
+         <GigabitEthernet>
+            <name>1</name>
+            <vrf>
+               <forwarding>CustomerA</forwarding>
+            </vrf>
+            <ip>
+               <address>
+                  <primary>
+                     <address>10.1.10.77</address>
+                     <mask>255.255.255.0</mask>
+                  </primary>
+               </address>
+            </ip>
+            <logging>
+               <event>
+                  <link-status />
+               </event>
+            </logging>
+            <mop>
+               <enabled>false</enabled>
+               <sysid>false</sysid>
+            </mop>
+            <negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+               <auto>true</auto>
+            </negotiation>
+         </GigabitEthernet>
+         <GigabitEthernet>
+            <name>2</name>
+            <vrf>
+               <forwarding>CustomerB</forwarding>
+            </vrf>
+            <ip>
+               <address>
+                  <primary>
+                     <address>10.20.20.77</address>
+                     <mask>255.255.255.0</mask>
+                  </primary>
+               </address>
+            </ip>
+            <logging>
+               <event>
+                  <link-status />
+               </event>
+            </logging>
+            <mop>
+               <enabled>false</enabled>
+               <sysid>false</sysid>
+            </mop>
+            <negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+               <auto>true</auto>
+            </negotiation>
+         </GigabitEthernet>
+         <GigabitEthernet>
+            <name>3</name>
+            <ip>
+               <address>
+                  <primary>
+                     <address>10.20.30.1</address>
+                     <mask>255.255.255.0</mask>
+                  </primary>
+               </address>
+            </ip>
+            <ipv6>
+               <address>
+                  <prefix-list>
+                     <prefix>2001:DB8:C18:1:260:3EFF:FE47:1530/64</prefix>
+                  </prefix-list>
+               </address>
+            </ipv6>
+            <logging>
+               <event>
+                  <link-status />
+               </event>
+            </logging>
+            <mop>
+               <enabled>false</enabled>
+               <sysid>false</sysid>
+            </mop>
+            <negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+               <auto>true</auto>
+            </negotiation>
+         </GigabitEthernet>
+         <GigabitEthernet>
+            <name>4</name>
+            <description>Configured by Yangsuite</description>
+            <mpls>
+               <ip xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mpls" />
+            </mpls>
+            <ip>
+               <address>
+                  <primary>
+                     <address>10.10.1.1</address>
+                     <mask>255.255.255.0</mask>
+                  </primary>
+               </address>
+            </ip>
+            <ipv6>
+               <address>
+                  <prefix-list>
+                     <prefix>2001:DB8:C18:2:260:3EFF:FE47:1530/64</prefix>
+                  </prefix-list>
+               </address>
+            </ipv6>
+            <logging>
+               <event>
+                  <link-status />
+               </event>
+            </logging>
+            <mop>
+               <enabled>false</enabled>
+               <sysid>false</sysid>
+            </mop>
+            <cdp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-cdp">
+               <enable>true</enable>
+               <tlv>
+                  <app />
+                  <server-location />
+                  <location />
+               </tlv>
+            </cdp>
+            <negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+               <auto>true</auto>
+            </negotiation>
+         </GigabitEthernet>
+      </interface>
+   </native>
+</data>

@@ -1,0 +1,6 @@
+	<properties>
+		<java.version>11</java.version>
+		<spring-boot.version>2.7.4</spring-boot.version>
+		<lombok.version>1.18.24</lombok.version>
+		<org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
+	</properties>

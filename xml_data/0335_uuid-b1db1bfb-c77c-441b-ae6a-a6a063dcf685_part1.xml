@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xmlns:tls="http://hxwd.org/ns/1.0" type="topic" xml:id="uuid-b1db1bfb-c77c-441b-ae6a-a6a063dcf685" subtype="substance">
+  <head>SE 櫻桃葉</head>
+  <div type="definition">cherry leaf (Pruni Pseudocerasi Folium)</div>
+  <div type="pointers">
+    <list type="hypernymy">
+      <item>
+        <ref target="#uuid-42a8724f-316c-11eb-ba56-a9a90876f6fd">MATERIA MEDICA</ref>
+      </item>
+    </list>
+  </div>
+  <div type="words">
+    <entry type="word" xml:id="uuid-abd03fd5-4e06-493c-891c-9c7d6a3a5dd0">
+      <form xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
+<orth>櫻桃葉</orth>
+<pron xml:lang="zh-Latn-x-pinyin">yīng táo yè</pron>
+</form>
+      <def>cherry leaf (Pruni Pseudocerasi Folium)</def>
+      <sense xml:id="uuid-4e73283d-513d-4f4c-a1bd-8a0922654399">
+        <gramGrp>
+          <pos>N</pos>
+          <tls:syn-func corresp="#uuid-a8e89bab-49e1-4426-b230-0ec7887fd8b4">NP</tls:syn-func>
+        </gramGrp>
+        <def>Substance entry</def>
+      </sense>
+      <sense xml:id="uuid-5c1ba750-f6b8-4a4b-aa2a-8651ba6c6f54">
+        <gramGrp>
+          <pos>N</pos>
+          <tls:syn-func corresp="#uuid-a8e89bab-49e1-4426-b230-0ec7887fd8b4">NP</tls:syn-func>
+        </gramGrp>
+        <def>mentioned</def>
+      </sense>
+    </entry>
+  </div>
+</div>

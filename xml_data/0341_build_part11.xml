@@ -1,0 +1,5 @@
+        <target name="run" depends="ExemploVetor1Gersonpt2-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>

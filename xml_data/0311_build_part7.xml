@@ -1,0 +1,6 @@
+    <target name="all" unless="netbeans.home">
+        <antcall target="ear"/>
+        <antcall target="deploy"/>
+        <antcall target="client-jar"/>
+        <antcall target="run" />
+    </target>

@@ -1,0 +1,3 @@
+<configuration>
+    <logger name="com.baidu.brpc" level="WARNING"> </logger>
+</configuration>

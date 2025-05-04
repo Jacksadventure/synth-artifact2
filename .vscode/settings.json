@@ -54,6 +54,9 @@
         "variant": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "map": "cpp"
-    }
+        "map": "cpp",
+        "0001_C_part3.C": "cpp",
+        "sxml.h": "c"
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
 }

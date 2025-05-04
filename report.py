@@ -3,7 +3,7 @@ import math
 from typing import Tuple
 
 # Paths to SQLite databases
-DATABASES = ["result1_multiple.db", "result1_prefix.db", "result1.db"]
+DATABASES = ["multiple.db", "truncated.db", "single.db"]
 DEFAULT_TIMEOUT = 240.0  # Default time (4 minutes) for missing repair times
 
 def calculate_and_display_detailed_metrics():
@@ -110,6 +110,7 @@ def all_distances():
         conn.close()
     
     def calculate_stats(values):
+        values = [float(v) for v in values if v is not None]  # 添加 float 转换
         n = len(values)
         mean = sum(values) / n if n > 0 else 0
         stdev = math.sqrt(sum((x - mean) ** 2 for x in values) / n) if n > 1 else 0

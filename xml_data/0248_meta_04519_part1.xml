@@ -1,0 +1,100 @@
+<mets:mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:mets="http://www.loc.gov/METS/"
+           xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.xsd">
+   <mets:metsHdr CREATEDATE="2017-11-28T01:36:28Z">
+      <mets:agent OTHERTYPE="SOFTWARE" ROLE="CREATOR" TYPE="OTHER">
+         <mets:name>CHJ</mets:name>
+         <mets:note>XSLT</mets:note>
+      </mets:agent>
+   </mets:metsHdr>
+   <mets:dmdSec ID="DMDLOG_0000">
+      <mets:mdWrap MDTYPE="MODS">
+         <mets:xmlData>
+            <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+               <recordInfo xmlns="http://www.loc.gov/mods/v3"
+                           xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">
+                  <recordIdentifier source="http://www.kenom.de">record_DE-15_kenom_195957</recordIdentifier>
+                  <recordCreationDate encoding="iso8601">2017-11-28T01:36:28Z</recordCreationDate>
+                  <recordContentSource valueURI="http://www.kenom.de"/>
+                  <recordOrigin>Record has been transformed into MODS from a Dublin Core record received from http://www.kenom.de/oai. Metadata originally created and stored at the KENOM Portal (http://www.kenom.de/) using the LIDO data format. See original LIDO file alongside with this MODS record for fully qualified metadata.</recordOrigin>
+               </recordInfo>
+               <titleInfo xmlns="http://www.loc.gov/mods/v3"
+                          xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">
+                  <title>Pfennig, 1290-1310</title>
+               </titleInfo>
+               <genre xmlns="http://www.loc.gov/mods/v3"
+                      xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">münze</genre>
+               <typeOfResource xmlns="http://www.loc.gov/mods/v3"
+                               xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">three dimensional object</typeOfResource>
+               <genre xmlns="http://www.loc.gov/mods/v3"
+                      xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/"
+                      authority="dct">physical object</genre>
+               <originInfo xmlns="http://www.loc.gov/mods/v3"
+                           xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">
+                  <dateOther>1290-01-01</dateOther>
+               </originInfo>
+               <location xmlns="http://www.loc.gov/mods/v3"
+                         xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">
+                  <url>http://hdl.handle.net/428894.vzg/299df2f9-c8a2-4d8f-83a1-7e4899465fed</url>
+               </location>
+               <identifier xmlns="http://www.loc.gov/mods/v3"
+                           xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/"
+                           type="uri">http://hdl.handle.net/428894.vzg/299df2f9-c8a2-4d8f-83a1-7e4899465fed</identifier>
+               <name xmlns="http://www.loc.gov/mods/v3"
+                     xmlns:OAI-PMH="http://www.openarchives.org/OAI/2.0/">
+                  <role>
+                     <roleTerm authority="marcrelator"
+                               type="code"
+                               valueURI="http://id.loc.gov/vocabulary/relators/fnd">fnd</roleTerm>
+                  </role>
+                  <displayForm>LDP Sachsen</displayForm>
+               </name>
+            </mods:mods>
+         </mets:xmlData>
+      </mets:mdWrap>
+   </mets:dmdSec>
+   <mets:dmdSec ID="DMDPHYS_0000">
+      <mets:mdWrap MDTYPE="MODS">
+         <mets:xmlData>
+            <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+               <mods:location>
+                  <mods:physicalLocation authority="marcorg"
+                                         displayLabel="Leipzig University Library, Leipzig, Germany">DE-15</mods:physicalLocation>
+               </mods:location>
+            </mods:mods>
+         </mets:xmlData>
+      </mets:mdWrap>
+   </mets:dmdSec>
+   <mets:fileSec>
+      <mets:fileGrp USE="ORIGINAL">
+         <mets:file ID="FILE_0001_ORIGINAL" MIMETYPE="image/jpeg">
+            <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink"
+                         LOCTYPE="URL"
+                         xlink:href="record_DE-15_kenom_195957_media/record_DE-15_kenom_195957_vs.jpg"/>
+         </mets:file>
+         <mets:file ID="FILE_0002_ORIGINAL" MIMETYPE="image/jpeg">
+            <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink"
+                         LOCTYPE="URL"
+                         xlink:href="record_DE-15_kenom_195957_media/record_DE-15_kenom_195957_rs.jpg"/>
+         </mets:file>
+      </mets:fileGrp>
+   </mets:fileSec>
+   <mets:structMap TYPE="PHYSICAL">
+      <mets:div DMDID="DMDPHYS_0000" ID="PHYS_0000" TYPE="physSequence">
+         <mets:div ID="PHYS_0001" ORDER="1" ORDERLABEL=" - " TYPE="page">
+            <mets:fptr FILEID="FILE_0001_ORIGINAL"/>
+         </mets:div>
+         <mets:div ID="PHYS_0002" ORDER="2" ORDERLABEL=" - " TYPE="page">
+            <mets:fptr FILEID="FILE_0002_ORIGINAL"/>
+         </mets:div>
+      </mets:div>
+   </mets:structMap>
+   <mets:structLink>
+      <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink"
+                   xlink:to="PHYS_0001"
+                   xlink:from="LOG_0000"/>
+      <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink"
+                   xlink:to="PHYS_0002"
+                   xlink:from="LOG_0000"/>
+   </mets:structLink>
+</mets:mets>
