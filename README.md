@@ -102,7 +102,7 @@ Save it as match.py, then, you can use the full command to run this file as the 
 
 > `./erepair 'python3 match.py <category>' <inputfile> <outputfile>`
 
-### 🐎 Evaluation
+### Evaluation
 
 Once you have been satisfied all steps above, you can also have your own benchmark, for sure!
 
@@ -400,4 +400,4 @@ DDMaxG         4800           569.04
 erepair        4660           897.31              
 ```
 
-## Shall we start?  Try it out.❤️❤️❤️ 
+## Shall we start?  Try it out.
