@@ -26,7 +26,6 @@ import java.util.stream.Collectors;
  * This class provides static methods used for parsing input files using ANTLR.
  * It aims to abstract the whole parsing process.
  *
- * @author Lukas Kirschner
  */
 public final class Parsing {
 

@@ -5,9 +5,7 @@
  * API available in TypeScript & JavaScript.
  * 
  * @package dataStructure
- * @author Keramot UL Islam [Abm Sourav]
  * @email <keramotul.islam@gmail.com>
- * @authorUrl https://abmsourav.com
  * @sourceCode https://github.com/AbmSourav/dataStructure
  * @version 1.2.1
  * 

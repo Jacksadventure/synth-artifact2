@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
-run_repairs_resume.py – 可断点续跑的批量修复基准脚本
+run_repairs_resume.py 
 ----------------------------------------------------
-1. 每个源库最多取 N 条原始行；默认 N=1000。
-2. 四种算法并行写入同一张 results 表；
-   若脚本意外中断，可再次运行，它会 **跳过 repair_time>0 的已完成行**。
+
 """
 
 from __future__ import annotations
@@ -50,7 +48,6 @@ ALGORITHM_CMDS = {
 # ───────────────────────── DB helpers ──────────────────────────── #
 
 def create_results_db(path: str) -> None:
-    """新建 results 表；若已存在则保持字段一致"""
     conn = sqlite3.connect(path)
     conn.execute(textwrap.dedent("""
         CREATE TABLE IF NOT EXISTS results(

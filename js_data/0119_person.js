@@ -2,7 +2,6 @@
  * Learning Backbone
  * -> Syncing Models with Views
  *
- * @author: MPeg [marco(dot)pegoraro(at)gmail(dot)com]
  *
  * PersonModel
  * This model rapresents a single person information structure handling name, surname and even more data.

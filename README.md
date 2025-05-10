@@ -106,298 +106,146 @@ Save it as match.py, then, you can use the full command to run this file as the 
 
 Once you have been satisfied all steps above, you can also have your own benchmark, for sure!
 
-#### Start evaluation
+#### Fetech the dataset from github
+You can use the following command to fetch file file you desire from the Github:
+> `python3 fetch_dataset.py -e <extension> -q <query> -size <size> -out <outputdir>`
+##### Start mutation
+> `python3 mutation_[single|double|truncated].py --folder <Path to Original file> --validator <target intepreter>> --database <database to save>`
 
 ##### Single mutation
 
-> `python3 benchmark_single.py`
+> `python3 benchmark_single.py -f <format> -d <database to store the result>`
 
 ##### double mutation
 
-> `python3 benchmark_multiple.py`
+> `python3 benchmark_multiple.py -f <format> -d <database to store the result>`
 
 ##### Truncation mutation
 
-> `python3 benchmark_prefix.py`
+> `python3 benchmark_prefix.py -f <format> -d <database to store the result>`
 
 #### Obtain statistical report
 
 You can obtain all tables in the paper with one command:
 
-> `python3 report.py`
+```
+python3 report.py --single <database> --double <database> --truncated <database> --output <outputdir>
+```
 
 Example:
-
 ```
-erepair-artifact % python '/Users/jack/erepair-artifact/report.py'
-----------------Table 4-5(General)------------------------------------
+fsynth-artifact % python '/Users/jack/fsynth-artifact/report.py' --single '/Users/jack/fsynth-artifact/single.db' --double '/Users/jack/fsynth-artifact/double.db' --truncated '/Users/jack/fsynth-artifact/truncated.db'
 
-Processing database: result1_multiple.db
+**TABLE III: Number of corrupt inputs**
 
-Metrics for result1_multiple.db
-----------------------------------------------------------------------------------------------------------------------------------
-Format     Algorithm  Avg BR     Stdev BR   Avg OR     Stdev OR   Avg Time     Stdev Time   Successes  Total     
-----------------------------------------------------------------------------------------------------------------------------------
-ini        DDMax      2.99       3.36       4.84       3.04       0.49         0.19         100        100       
-ini        erepair    1.52       0.85       3.52       0.85       0.70         0.90         100        100       
-ini        DDMaxG     26.59      6.82       28.22      6.75       0.36         0.01         100        100       
-ini        Antlr      24.84      5.73       26.64      5.74       0.31         0.01         91         100       
-json       DDMax      42.95      52.10      43.68      51.62      10.85        13.23        99         100       
-json       erepair    7.04       24.29      7.82       24.22      4.81         10.78        98         100       
-json       DDMaxG     50.14      32.59      50.66      32.39      0.92         1.54         98         100       
-json       Antlr      39.97      27.01      40.62      26.97      0.31         0.01         68         100       
-lisp       DDMax      10.89      16.72      12.48      16.34      1.58         2.43         100        100       
-lisp       erepair    11.97      19.49      13.29      19.28      1.91         4.75         94         100       
-lisp       DDMaxG     39.49      27.34      39.32      27.42      5.29         5.55         100        100       
-lisp       Antlr      0.00       0.00       0.00       0.00       0.32         0.01         0          100       
-c          DDMax      27.56      15.39      27.56      15.39      3.23         2.91         98         100       
-c          erepair    6.64       5.15       6.52       5.20       9.14         8.04         100        100       
-c          DDMaxG     27.33      12.53      27.06      12.52      2.59         3.95         98         100       
-c          Antlr      20.71      10.83      20.36      10.66      0.32         0.01         28         100       
+| Format | Record Len.     | Single Corr. | Double Corr. | Truncated   |
+|--------|-----------------|--------------|--------------|-------------|
+| DOT    | 2716.7 σ 2047.1 | 3096         | 400          | 400 (12.9%) |
+| INI    | 2950.3 σ 2255.7 | 2320         | 400          | 400 (17.2%) |
+| JSON   | 3635.1 σ 2389.3 | 3932         | 400          | 400 (10.2%) |
+| LISP   | 131.6 σ 65.0    | 4000         | 400          | 400 (10.0%) |
+| OBJ    | 3468.2 σ 2691.8 | 1932         | 400          | 400 (20.7%) |
 
-Processing database: result1_prefix.db
+**TABLE IV: Distance between corrupt data and repaired data**
 
-Metrics for result1_prefix.db
-----------------------------------------------------------------------------------------------------------------------------------
-Format     Algorithm  Avg BR     Stdev BR   Avg OR     Stdev OR   Avg Time     Stdev Time   Successes  Total     
-----------------------------------------------------------------------------------------------------------------------------------
-ini        DDMax      2.07       1.92       30.59      16.17      0.41         0.06         100        100       
-ini        erepair    1.00       0.00       28.14      15.89      0.41         0.17         100        100       
-ini        DDMaxG     18.60      5.04       45.45      15.64      0.35         0.02         100        100       
-ini        Antlr      17.80      4.62       44.65      15.03      0.30         0.02         100        100       
-json       DDMax      74.32      29.59      111.93     35.34      12.34        9.93         90         100       
-json       erepair    3.26       1.47       35.12      23.09      29.29        27.17        82         100       
-json       DDMaxG     83.18      34.64      121.76     41.62      5.44         3.20         100        100       
-json       Antlr      0.00       0.00       0.00       0.00       0.32         0.02         0          100       
-lisp       DDMax      22.24      18.66      40.13      23.95      2.54         2.64         100        100       
-lisp       erepair    1.77       0.42       15.67      11.38      8.86         14.19        39         100       
-lisp       DDMaxG     35.16      22.08      51.12      27.13      3.13         3.50         100        100       
-lisp       Antlr      0.00       0.00       0.00       0.00       0.29         0.02         0          100       
-c          DDMax      22.34      8.98       36.60      13.41      1.56         1.53         77         100       
-c          erepair    1.88       0.77       7.77       7.59       20.66        43.04        82         100       
-c          DDMaxG     28.01      9.70       39.08      11.71      3.60         3.08         77         100       
-c          Antlr      0.00       0.00       0.00       0.00       0.28         0.01         0          100       
+| Format |         Format-free         |          Format-dependent         |
+|        | εREPAIR       | DDMax       | DDMaxG          | ANTLR           |
+|--------|---------------|-------------|-----------------|-----------------|
+| DOT    | 7.3 σ 90.3    | 5.1 σ 14.3  | 653.1 σ 612.2   | 1256.2 σ 975.7  |
+| INI    | 24.4 σ 62.2   | 24.1 σ 62.0 | 1304.3 σ 1654.5 | 1363.1 σ 1721.2 |
+| JSON   | 48.0 σ 424.3  | 8.4 σ 20.8  | 1060.0 σ 1176.8 | 1056.4 σ 1157.1 |
+| LISP   | 68.7 σ 65.5   | 21.1 σ 24.2 | 70.8 σ 47.1     | n.a             |
+| OBJ    | 137.5 σ 502.6 | 43.0 σ 83.9 | n.a             | n.a             |
+| Format |          Format-free          |          Format-dependent         |
+|        | εREPAIR       | DDMax         | DDMaxG          | ANTLR           |
+|--------|---------------|---------------|-----------------|-----------------|
+| DOT    | 5.9 σ 17.0    | 5.6 σ 2.6     | 718.0 σ 593.8   | n.a             |
+| INI    | 17.1 σ 41.4   | 15.9 σ 41.2   | 1244.3 σ 1541.8 | 1316.3 σ 1649.2 |
+| JSON   | 70.8 σ 304.2  | 221.9 σ 641.7 | 1106.2 σ 1136.5 | 1111.3 σ 1102.4 |
+| LISP   | 49.2 σ 58.9   | 37.2 σ 40.8   | 85.9 σ 57.3     | n.a             |
+| OBJ    | 155.8 σ 581.0 | 47.1 σ 93.0   | n.a             | n.a             |
+| Format |           Format-free           |          Format-dependent         |
+|        | εREPAIR       | DDMax           | DDMaxG          | ANTLR           |
+|--------|---------------|-----------------|-----------------|-----------------|
+| DOT    | 6.6 σ 16.5    | n.a             | n.a             | n.a             |
+| INI    | 17.1 σ 41.4   | 15.9 σ 41.2     | 1244.3 σ 1541.8 | 1316.3 σ 1649.2 |
+| JSON   | 70.8 σ 304.2  | 1303.4 σ 2258.8 | 1153.5 σ 1170.0 | 1111.3 σ 1102.4 |
+| LISP   | 49.2 σ 58.9   | 37.2 σ 40.8     | 85.9 σ 57.3     | n.a             |
+| OBJ    | 159.0 σ 578.9 | 47.1 σ 93.0     | n.a             | n.a             |
+|--------|---------------|-----------------|-----------------|-----------------|
+| Average | 55.1 σ 295.4  | 37.5 σ 250.2    | 745.8 σ 1141.0  | 1194.9 σ 1432.5 |
+| Recovery | 90% σ 29.47   | 63% σ 48.15     | 73% σ 44.54     | 31% σ 46.23     |
 
-Processing database: result1.db
+**TABLE V: Distance from original data to repaired data**
 
-Metrics for result1.db
-----------------------------------------------------------------------------------------------------------------------------------
-Format     Algorithm  Avg BR     Stdev BR   Avg OR     Stdev OR   Avg Time     Stdev Time   Successes  Total     
-----------------------------------------------------------------------------------------------------------------------------------
-c          DDMax      9.17       13.51      9.17       13.51      1.35         1.88         984        1000      
-c          erepair    4.16       6.51       4.10       6.54       4.39         5.05         1000       1000      
-c          DDMaxG     25.14      11.71      24.99      11.75      1.49         3.22         984        1000      
-c          Antlr      21.77      10.42      21.44      10.40      0.32         0.01         481        1000      
-json       DDMax      25.96      43.71      26.15      43.63      6.87         10.47        971        1000      
-json       erepair    5.15       18.95      5.27       19.01      5.00         13.87        999        1000      
-json       DDMaxG     48.51      31.45      48.45      31.49      0.95         1.67         982        1000      
-json       Antlr      40.47      24.30      40.37      24.34      0.31         0.01         703        1000      
-ini        DDMax      2.46       3.04       3.34       2.73       0.43         0.12         1000       1000      
-ini        erepair    1.42       0.78       2.42       0.78       0.62         0.88         1000       1000      
-ini        DDMaxG     26.62      6.41       27.33      6.36       0.36         0.03         1000       1000      
-ini        Antlr      24.92      5.57       25.76      5.59       0.31         0.03         884        1000      
-lisp       DDMax      7.63       14.69      8.55       14.54      1.07         1.96         1000       1000      
-lisp       erepair    10.31      19.08      11.02      19.22      0.97         1.52         966        1000      
-lisp       DDMaxG     36.87      27.23      37.35      26.97      4.85         5.04         1000       1000      
-lisp       Antlr      0.00       0.00       0.00       0.00       0.31         0.01         0          1000      
+| Format |         Format-free         |          Format-dependent         |
+|        | εREPAIR       | DDMax       | DDMaxG          | ANTLR           |
+|--------|---------------|-------------|-----------------|-----------------|
+| DOT    | 7.3 σ 90.3    | 5.8 σ 14.3  | 653.0 σ 612.3   | 1256.5 σ 975.6  |
+| INI    | 26.4 σ 62.2   | 25.8 σ 62.1 | 1305.4 σ 1654.1 | 1364.3 σ 1720.7 |
+| JSON   | 47.9 σ 424.4  | 9.6 σ 20.6  | 1060.0 σ 1176.9 | 1056.3 σ 1157.2 |
+| LISP   | 69.8 σ 65.3   | 22.5 σ 23.9 | 70.8 σ 47.1     | n.a             |
+| OBJ    | 138.1 σ 502.6 | 44.3 σ 83.9 | n.a             | n.a             |
+| Format |          Format-free          |          Format-dependent         |
+|        | εREPAIR       | DDMax         | DDMaxG          | ANTLR           |
+|--------|---------------|---------------|-----------------|-----------------|
+| DOT    | 6.0 σ 17.0    | 6.2 σ 1.9     | 717.8 σ 593.8   | n.a             |
+| INI    | 19.0 σ 41.4   | 17.8 σ 41.2   | 1245.5 σ 1541.4 | 1317.5 σ 1648.8 |
+| JSON   | 70.9 σ 304.2  | 223.3 σ 641.3 | 1106.0 σ 1136.5 | 1111.2 σ 1102.5 |
+| LISP   | 50.3 σ 58.8   | 38.4 σ 40.3   | 85.8 σ 57.4     | n.a             |
+| OBJ    | 156.2 σ 580.9 | 48.4 σ 93.1   | n.a             | n.a             |
+| Format |           Format-free           |          Format-dependent         |
+|        | εREPAIR       | DDMax           | DDMaxG          | ANTLR           |
+|--------|---------------|-----------------|-----------------|-----------------|
+| DOT    | 375.3 σ 521.9 | n.a             | n.a             | n.a             |
+| INI    | 19.0 σ 41.4   | 17.8 σ 41.2     | 1245.5 σ 1541.4 | 1317.5 σ 1648.8 |
+| JSON   | 70.9 σ 304.2  | 1304.3 σ 2258.3 | 1153.3 σ 1170.0 | 1111.2 σ 1102.5 |
+| LISP   | 50.3 σ 58.8   | 38.4 σ 40.3     | 85.8 σ 57.4     | n.a             |
+| OBJ    | 159.3 σ 578.8 | 48.4 σ 93.1     | n.a             | n.a             |
+|--------|---------------|-----------------|-----------------|-----------------|
+| Average | 61.0 σ 304.2  | 38.9 σ 250.1    | 746.0 σ 1141.0  | 1195.4 σ 1432.4 |
+| Recovery | 90% σ 29.47   | 63% σ 48.15     | 73% σ 44.54     | 31% σ 46.23     |
 
-Combined Metrics Across All Databases
-----------------------------------------------------------------------------------------------------------------------------------
-Format     Algorithm  Avg BR     Stdev BR   Avg OR     Stdev OR   Avg Time     Stdev Time   Successes  Total     
-----------------------------------------------------------------------------------------------------------------------------------
-ini        DDMax      2.47       3.00       5.73       9.23       0.43         0.13         1200       1200      
-ini        erepair    1.39       0.77       4.65       8.48       0.61         0.85         1200       1200      
-ini        DDMaxG     25.95      6.72       28.91      9.10       0.36         0.03         1200       1200      
-ini        Antlr      24.25      5.88       27.59      8.91       0.31         0.03         1075       1200      
-json       DDMax      31.16      45.59      34.30      49.48      7.66         10.84        1160       1200      
-json       erepair    5.18       18.81      7.56       21.20      7.01         16.63        1179       1200      
-json       DDMaxG     51.59      33.25      54.84      38.39      1.32         2.22         1180       1200      
-json       Antlr      40.43      24.55      40.39      24.58      0.31         0.02         771        1200      
-lisp       DDMax      9.12       15.76      11.51      17.94      1.24         2.11         1200       1200      
-lisp       erepair    10.14      18.85      11.38      19.03      1.71         5.03         1099       1200      
-lisp       DDMaxG     36.94      26.86      38.66      27.28      4.74         5.00         1200       1200      
-lisp       Antlr      0.00       0.00       0.00       0.00       0.31         0.01         0          1200      
-c          DDMax      11.60      14.65      12.55      15.94      1.53         2.03         1159       1200      
-c          erepair    4.21       6.25       4.56       6.61       6.14         14.21        1182       1200      
-c          DDMaxG     25.52      11.70      26.10      12.33      1.76         3.34         1159       1200      
-c          Antlr      21.71      10.45      21.38      10.42      0.32         0.02         509        1200      
-----------------Table 4-5(Data Survive)-------------------------------
+**TABLE VI: Number of corrupt records repaired**
 
- Surviving Data Ratio (OR)
+| Scenario  | Format | erepair | DDMax | DDMaxG | Antlr |
+|-----------|--------|---------|-------|--------|-------|
+| Single    | DOT    | 705     | 198   | 524    | 4     |
+| Single    | INI    | 580     | 580   | 580    | 503   |
+| Single    | JSON   | 852     | 245   | 868    | 681   |
+| Single    | LISP   | 796     | 901   | 863    | 0     |
+| Single    | OBJ    | 481     | 483   | 0      | 0     |
+| Double    | DOT    | 94      | 9     | 90     | 0     |
+| Double    | INI    | 100     | 100   | 100    | 85    |
+| Double    | JSON   | 94      | 17    | 89     | 67    |
+| Double    | LISP   | 100     | 100   | 100    | 0     |
+| Double    | OBJ    | 99      | 100   | 0      | 0     |
+| Truncated | DOT    | 62      | 0     | 0      | 0     |
+| Truncated | INI    | 100     | 100   | 100    | 85    |
+| Truncated | JSON   | 94      | 26    | 91     | 67    |
+| Truncated | LISP   | 100     | 100   | 100    | 0     |
+| Truncated | OBJ    | 100     | 100   | 0      | 0     |
+| Total     |        | 4357    | 3059  | 3505   | 1492  |
 
-Results for result1_multiple.db:
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.7272               0.2999          397       
-erepair         0.9136               0.1880          392       
-DDMaxG          0.7886               0.2198          396       
-Antlr           0.9000               0.1192          187       
+**TABLE VII: Number of perfectly repaired files**
 
-Results for result1_prefix.db:
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.4283               0.2334          367       
-erepair         0.7752               0.1419          303       
-DDMaxG          0.4452               0.2469          377       
-Antlr           0.7408               0.1323          100       
+| Scenario  | Format | erepair | DDMax | DDMaxG | Antlr |
+|-----------|--------|---------|-------|--------|-------|
+| Single    | DOT    | 46      | 1     | 0      | 0     |
+| Single    | INI    | 0       | 1     | 0      | 0     |
+| Single    | JSON   | 83      | 0     | 0      | 0     |
+| Single    | OBJ    | 19      | 1     | 0      | 0     |
+| Double    | JSON   | 2       | 0     | 0      | 0     |
+| Double    | OBJ    | 9       | 0     | 0      | 0     |
+| Truncated | JSON   | 2       | 0     | 0      | 0     |
+| Truncated | OBJ    | 9       | 0     | 0      | 0     |
 
-Results for result1.db:
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.8634               0.2279          3955      
-erepair         0.9370               0.1645          3965      
-DDMaxG          0.8201               0.2098          3966      
-Antlr           0.9117               0.1284          2068      
+**TABLE VIII: Efficiency of data repair (Average)**
 
-Overall Results Across All Databases (OR):
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.8181               0.2638          4719      
-erepair         0.9245               0.1700          4660      
-DDMaxG          0.7876               0.2365          4739      
-Antlr           0.9035               0.1324          2355      
-
- Surviving Data Ratio (CR)
-
-Results for result1_multiple.db:
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.7272               0.2999          397       
-erepair         0.9136               0.1880          392       
-DDMaxG          0.7887               0.2200          396       
-Antlr           0.9001               0.1192          187       
-
-Results for result1_prefix.db:
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.5825               0.2841          367       
-erepair         1.0000               0.0000          303       
-DDMaxG          0.5985               0.2933          377       
-Antlr           0.9941               0.0092          100       
-
-Results for result1.db:
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.8634               0.2279          3955      
-erepair         0.9370               0.1645          3965      
-DDMaxG          0.8200               0.2099          3966      
-Antlr           0.9118               0.1284          2068      
-
-Overall Results Across All Databases (CR):
-----------------------------------------------------------------------
-Algorithm       Avg Surviving Ratio  Stdev           Count     
-----------------------------------------------------------------------
-DDMax           0.8301               0.2529          4719      
-erepair         0.9391               0.1622          4660      
-DDMaxG          0.7998               0.2266          4739      
-Antlr           0.9143               0.1261          2355      
-----------------Table 4-5(levenshtein distances)----------------------
-
-Overall Distance Metrics Across All Databases
---------------------------------------------------------------------------------
-Algorithm       Avg BR     Stdev BR   Avg OR     Stdev OR  
---------------------------------------------------------------------------------
-DDMax           13.46      27.25      15.90      29.75     
-erepair         5.13       13.90      6.95       15.37     
-DDMaxG          35.01      24.80      37.15      27.19     
-Antlr           29.00      17.36      30.44      17.65     
-----------------Table 6(Count repaired)-------------------------------
-
-Results for result1_multiple.db:
-----------------------------------------
-Algorithm       Fixed Count    
-----------------------------------------
-Antlr           187            
-DDMax           397            
-DDMaxG          396            
-erepair         392            
-
-Results for result1_prefix.db:
-----------------------------------------
-Algorithm       Fixed Count    
-----------------------------------------
-Antlr           100            
-DDMax           367            
-DDMaxG          377            
-erepair         303            
-
-Results for result1.db:
-----------------------------------------
-Algorithm       Fixed Count    
-----------------------------------------
-Antlr           2068           
-DDMax           3955           
-DDMaxG          3966           
-erepair         3965           
-
-Total Fixed Files Across All Databases:
-----------------------------------------
-Algorithm       Fixed Count    
-----------------------------------------
-Antlr           2355           
-DDMax           4719           
-DDMaxG          4739           
-erepair         4660           
-----------------Table 7(Perfectly repaire)----------------------------
-Perfect Repairs by Algorithm in result1_multiple.db:
-  No perfect repairs found.
-Perfect Repairs by Algorithm in result1_prefix.db:
-  Format: c, Algorithm: erepair, Perfect Repairs: 12
-  Format: json, Algorithm: erepair, Perfect Repairs: 2
-  Format: lisp, Algorithm: erepair, Perfect Repairs: 7
-Perfect Repairs by Algorithm in result1.db:
-  Format: c, Algorithm: erepair, Perfect Repairs: 51
-  Format: json, Algorithm: erepair, Perfect Repairs: 23
-----------------Table 8(Efficiency)-----------------------------------
-
-Average Runtime for result1_multiple.db (Successful Repairs Only):
---------------------------------------------------
-Algorithm       Avg Time (s)    Count     
---------------------------------------------------
-Antlr           0.32            400       
-DDMax           4.04            400       
-DDMaxG          2.29            400       
-erepair         4.14            400       
-
-Average Runtime for result1_prefix.db (Successful Repairs Only):
---------------------------------------------------
-Algorithm       Avg Time (s)    Count     
---------------------------------------------------
-Antlr           0.30            400       
-DDMax           4.21            400       
-DDMaxG          3.13            400       
-erepair         14.81           400       
-
-Average Runtime for result1.db (Successful Repairs Only):
---------------------------------------------------
-Algorithm       Avg Time (s)    Count     
---------------------------------------------------
-Antlr           0.31            4000      
-DDMax           2.43            4000      
-DDMaxG          1.91            4000      
-erepair         2.75            4000      
-
-Overall Average Runtime Across All Databases:
---------------------------------------------------
-Algorithm       Avg Time (s)    Count     
---------------------------------------------------
-Antlr           0.31            4800      
-DDMax           2.71            4800      
-DDMaxG          2.05            4800      
-erepair         3.87            4800      
-Algorithm      Total Count    Average Iterations  
---------------------------------------------------
-Antlr          4800           1.00                
-DDMax          4800           786.73              
-DDMaxG         4800           569.04              
-erepair        4660           897.31              
+| Metric | erepair   | DDMax     | DDMaxG    | Antlr     |
+|--------|-----------|-----------|-----------|-----------|
+| Runtime | 3.61 secs | 3.83 secs | 4.54 secs | 0.36 secs |
+| #Execs | 2591539   | 2542675   | 3218364   | 1492      |
 ```
 
 ## Shall we start?  Try it out.

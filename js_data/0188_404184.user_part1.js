@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name         Get High Resolution Android App Icon
 // @description  Click on the app icon on google play to download its high resolution copy
-// @author       wenLiangcan
 // @version      0.1
 // @namespace    https://github.com/wenLiangcan
 // @homepage     https://github.com/wenLiangcan/Userscripts

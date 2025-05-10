@@ -1,7 +1,6 @@
 /**
  * che.js - Compact Half Edge data structure in JavaScript
  *
- * @author Marcos Lage <mlage@ic.uff.br>
  *
  * Federal Fluminense University
  * Computer Science Institute
