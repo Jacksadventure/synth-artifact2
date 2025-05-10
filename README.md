@@ -107,7 +107,7 @@ Save it as match.py, then, you can use the full command to run this file as the 
 Once you have been satisfied all steps above, you can also have your own benchmark, for sure!
 
 #### Fetech the dataset from github
-You can use the following command to fetch file file you desire from the Github:
+You can use the following command to fetch typef of files you desire from the Github:
 > `python3 fetch_dataset.py -e <extension> -q <query> -size <size> -out <outputdir>`
 ##### Start mutation
 > `python3 mutation_[single|double|truncated].py --folder <Path to Original file> --validator <target intepreter>> --database <database to save>`
