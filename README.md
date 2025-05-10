@@ -45,7 +45,7 @@ First, you need to determine the target interpreter. You can use any interpreter
 Then run command:
 > `./erepair <PathtoIntepreter> <inputfile> <outputfile>`
 
-### Build your own "interpreter" at ease
+### Build your own "interpreter" as target
 
 You can also repair files whose grammar is defined by regular expressions. with [regex](https://pypi.org/project/regex/), for example:
 
@@ -247,5 +247,3 @@ fsynth-artifact % python '/Users/jack/fsynth-artifact/report.py' --single '/User
 | Runtime | 3.61 secs | 3.83 secs | 4.54 secs | 0.36 secs |
 | #Execs | 2591539   | 2542675   | 3218364   | 1492      |
 ```
-
-## Shall we start?  Try it out.
