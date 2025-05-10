@@ -1,9 +1,0 @@
-  <depend>message_generation</depend>
-  <depend>octomap_msgs</depend>
-  <depend>actionlib_msgs</depend>
-  <depend>sensor_msgs</depend>
-  <depend>geometry_msgs</depend>
-  <depend>trajectory_msgs</depend>
-  <depend>shape_msgs</depend>
-  <depend>object_recognition_msgs</depend>
-  <depend>std_msgs</depend>

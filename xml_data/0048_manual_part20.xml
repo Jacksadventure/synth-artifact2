@@ -1,9 +1,0 @@
-    <para>This chapter provides an introduction to neon, giving an
-overview of the range of features offered, and some general guidelines
-for using the neon API.</para>
-    
-    <para>neon aims to provide a modern, flexible, and simple API
-in the C programming language for implementing HTTP and WebDAV
-support.  The WebDAV functionality is entirely separate from the basic
-HTTP functionality; neon can be used simply as an HTTP client library,
-ignoring the WebDAV support if desired.</para>

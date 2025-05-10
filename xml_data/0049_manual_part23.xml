@@ -1,4 +1,0 @@
-    <para>The documentation for the &neon; interface is split between
-    this chapter, which gives a broad introduction to the abstractions
-    exposed by the library, and <xref linkend="ref"/>, which gives a
-    function-by-function breakdown of the interface.</para>

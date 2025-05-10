@@ -1,8 +1,0 @@
-		<x:template match="project">
-			<x:value-of select="../../../@hostname" />
-			<x:text>	</x:text>
-			<x:value-of select="master_url" />
-			<x:text>	</x:text>
-			<x:value-of select="project_name" />
-		</x:template>
-	</x:stylesheet>'

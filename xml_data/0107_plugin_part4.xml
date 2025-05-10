@@ -1,3 +1,0 @@
-    <js-module src="www/geofence.js" name="geofence">
-        <clobbers target="geofence" />
-    </js-module>

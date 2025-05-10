@@ -1,5 +1,0 @@
-	<requiredProperties>
-		<requiredProperty key="softleader-boot-version">
-			<defaultValue>2.0.0-SNAPSHOT</defaultValue>
-		</requiredProperty>
-	</requiredProperties>

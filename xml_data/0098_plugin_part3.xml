@@ -1,3 +1,0 @@
-    <js-module src="www/TransitionType.js" name="TransitionType">
-        <clobbers target="TransitionType" />
-    </js-module>

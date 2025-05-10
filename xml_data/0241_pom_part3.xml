@@ -1,6 +1,0 @@
-    <parent>
-        <groupId>io.jsonwebtoken</groupId>
-        <artifactId>jjwt-root</artifactId>
-        <version>0.11.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>

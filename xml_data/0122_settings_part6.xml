@@ -1,8 +1,0 @@
-<mirrors>
-   <mirror>
-      <id>maven-public</id>
-      <name>maven-public</name>
-      <url>http://${env.NEXUSSERVERIP}:8081/repository/maven-public/</url>
-      <mirrorOf>*</mirrorOf>
-   </mirror>
-</mirrors>
