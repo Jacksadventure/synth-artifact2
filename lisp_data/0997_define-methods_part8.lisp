@@ -1,1 +1,0 @@
-(gem-method :CHARACTER-WIDTH (root-window font character))

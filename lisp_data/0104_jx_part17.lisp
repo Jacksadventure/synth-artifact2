@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_StopEngine" stop-engine) :void)

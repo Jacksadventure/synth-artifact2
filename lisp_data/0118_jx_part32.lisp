@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_GetDouble" get-double) :double (result :pointer))

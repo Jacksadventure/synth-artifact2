@@ -1,1 +1,0 @@
-(defexport-fun "SDL_MemoryBarrierReleaseFunction" :void)

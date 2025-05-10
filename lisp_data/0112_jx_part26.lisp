@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_IsObject" is-object) :boolean (result :pointer))

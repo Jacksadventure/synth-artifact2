@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_GetInt32" get-int32) :int32 (result :pointer))

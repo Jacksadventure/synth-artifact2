@@ -1,1 +1,0 @@
-(defvar *quicklisp-path* (merge-pathnames "quicklisp/" (this-directory)))

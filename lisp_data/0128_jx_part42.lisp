@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_SetNull" set-null) :void (value :pointer))

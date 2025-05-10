@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_GetGlobalObject" get-global-object) :void (out :pointer))

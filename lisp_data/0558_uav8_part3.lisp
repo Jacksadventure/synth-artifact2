@@ -1,5 +1,0 @@
-        (:operator (!navigate_uav ?v ?y ?z)
-                   (	(uav ?v)  (area ?y)  (area ?z) (at ?v ?y)	)
-                   (	(at ?v ?y)	) 
-		   (	(at ?v ?z)	)
-        )

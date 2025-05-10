@@ -1,7 +1,0 @@
-(defun v2dist (a b)
-  (declare (type v2 a b))
-  (let* ((d (v2- a b))
-         (l (v2. d d)))
-    (if (minusp l)
-        (error "complex length?")
-        (sqrt l))))

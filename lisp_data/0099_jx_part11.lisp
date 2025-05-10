@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_DefineMainFile" define-main-file) :void (data :string))

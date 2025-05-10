@@ -1,5 +1,0 @@
-	(:operator (!take_picture ?v ?a ?d)
-		   ( (area ?a) (disaster ?d) (visible_from ?d ?a) (at ?v ?a)	)
-		   ()
-		   (	(have_picture ?v ?d)	)
-	)

@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_SetDouble" set-double) :void (value :pointer) (val :double))

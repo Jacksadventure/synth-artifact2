@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_SetInt32" set-int32) :void (value :pointer) (val :int32))

@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_IsFunction" is-function) :boolean (result :pointer))

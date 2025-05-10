@@ -1,6 +1,0 @@
-(defun p5-program (file &key (scale 0.3))
-  (with-program (file)
-    (with-named-pass ("p5")
-      (with-transform ((scaling-matrix scale))
-	(with-tool (*pcb-tool*)
-	  (load-file file))))))

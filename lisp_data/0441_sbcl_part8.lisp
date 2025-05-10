@@ -1,5 +1,0 @@
-(defmethod signal-process (process (signal symbol))
-  (let ((sig (assoc signal *signal-mapping*)))
-    (if (not sig)
-        (error "Symbolic signal ~A not supported." signal)
-        (signal-process process (cdr sig)))))

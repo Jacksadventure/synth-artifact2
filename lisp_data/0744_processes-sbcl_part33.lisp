@@ -1,1 +1,0 @@
-(defvar %incf-mutext% (make-lock "Incf mutex for incf, decf, ush & replacef"))

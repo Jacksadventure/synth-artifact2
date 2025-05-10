@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_SetBoolean" set-boolean) :void (value :pointer) (val :boolean))

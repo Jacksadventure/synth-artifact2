@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_SetUndefined" set-undefined) :void (value :pointer))

@@ -1,1 +1,0 @@
-(defparameter x (make-tree2 :val 1 :right (make-tree2 :val 2)))

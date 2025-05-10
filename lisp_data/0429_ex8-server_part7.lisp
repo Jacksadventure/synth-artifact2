@@ -1,1 +1,0 @@
-    (format t "Created socket: ~A[fd=~A]~%" server (socket-os-fd server))

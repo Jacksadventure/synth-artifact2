@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_SetNamedProperty" set-named-property) :void (host :pointer) (name :string) (value :pointer))

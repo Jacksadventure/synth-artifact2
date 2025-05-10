@@ -1,5 +1,0 @@
-(defun v2n (v)
-  (declare (type v2 v))
-  (let ((l (v2mag v)))
-    (assert (not (zerop l)))
-    (v2scale v (/ l))))

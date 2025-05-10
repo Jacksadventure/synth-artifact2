@@ -1,1 +1,0 @@
-(defstruct (door2 (:conc-name dr-)) knob-color width material)

@@ -1,6 +1,0 @@
-(defmethod run-failed-on-commit-p ((channel channel:channel)
-                                   (commit string))
-  (loop for failed-run in (failed-runs-for-channel channel)
-        if (equal (failed-run-commit failed-run)
-                  commit)
-          return t))

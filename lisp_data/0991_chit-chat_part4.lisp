@@ -1,1 +1,0 @@
-(define (rulename rule) (intern (symbol-name rule) %meta-package))

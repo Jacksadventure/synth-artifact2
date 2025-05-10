@@ -1,1 +1,0 @@
-(make-hacker-v :skillz-v 0 :sellout-lvl-v (make-hacker-v :skillz-v 2))

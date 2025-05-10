@@ -1,1 +1,0 @@
-(define (as-message-send charlist) (intern (charlist-to-string charlist) %message-package))

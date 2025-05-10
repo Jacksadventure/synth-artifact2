@@ -1,1 +1,0 @@
-      (setf (wm-selection-manager port) wm-sn-manager)

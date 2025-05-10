@@ -1,7 +1,0 @@
-(defsection @gpr-manual (:title "GPR Manual")
-  (mgl-gpr asdf:system)
-  (@gpr-gp-links section)
-  (@gpr-background section)
-  (@gpr-ea section)
-  (@gpr-gp section)
-  (@gpr-de section))

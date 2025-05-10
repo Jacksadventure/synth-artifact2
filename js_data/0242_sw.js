@@ -1,1 +1,0 @@
-prompt();alert(1);

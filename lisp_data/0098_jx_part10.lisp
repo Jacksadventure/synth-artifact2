@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_InitializeNewEngine" initialize-new-engine)  :void)

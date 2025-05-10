@@ -1,1 +1,0 @@
-(function get (thing key) (inline "$thing[$key]"))

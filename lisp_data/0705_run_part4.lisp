@@ -1,6 +1,0 @@
-(defun make-all ()
-  (asdf::run-program "rm -rf ~/.cache/common-lisp")
-  (ql:quickload :arrowgrams/esa-compiler)
-  (create-esa-compiler)
-  (compile-esa :from "esa.dsl" :to "esa.lisp")
-  (create-arrowgrams-builder))

@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_GetBoolean" get-boolean) :boolean (result :pointer))

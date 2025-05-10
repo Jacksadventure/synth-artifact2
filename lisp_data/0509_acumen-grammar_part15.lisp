@@ -1,1 +1,0 @@
-(include-grammar-module  *standard-syntactic-categories*)

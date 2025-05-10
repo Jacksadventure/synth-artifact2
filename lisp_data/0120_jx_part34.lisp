@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_CallFunction" call-function) :void (fnc :pointer) (params :pointer) (argc :int) (out :pointer))
