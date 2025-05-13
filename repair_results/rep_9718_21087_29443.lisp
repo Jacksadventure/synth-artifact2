@@ -1,0 +1,1 @@
+(function get (thing key& (inline "$thing[$key]")rq#40!.\z~

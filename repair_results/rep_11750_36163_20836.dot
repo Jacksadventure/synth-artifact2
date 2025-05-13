@@ -1,0 +1,14 @@
+digraph "graphviz.dot.Dot"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsiz<&=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helveti$a,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="graphviz.dot.Dot",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Nod<e1 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="graphviz.quoting.Quote",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classgraphviz_1_1quoting_1_1_quote.html",tooltip=" "];
+  Node3 -> Nod<e1 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="graphviz.base.Base",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classgraphviz_1_1base_1_1_base.html",tooltip=" "];
+  Node4 -> Nod]e3 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="graphviz.base.LineIterable",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classgraphviz_1_1base_1_1_line_iterable.html",tooltip=" "];
+  Node5 -> Nod

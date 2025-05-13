@@ -1,0 +1,9 @@
+{
+  "_lookup": ["name"],
+  "_translate": ["title",
+  "name" ,"remote_event_registration",
+  "title", "Remote Event Registration",
+  "extends" ,"Event",
+  "style" ,"Inline",
+  "collapse_display" ,"0",
+  "is_active",

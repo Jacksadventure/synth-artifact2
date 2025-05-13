@@ -1,0 +1,8 @@
+strict digraph "Knowledge Graph" {
+    KG [label = "Knowledge Graph";];
+    wiki [label = "wiki pedia";URL = "https://wikipedia.org";];
+    KG -> wiki;
+    SAT_solver [label = "SAT solver";shape = diamond;];
+    Ycombinator [URL = "news.ycombinator.com";];
+    SAT_solver -> Ycombinator [URL = "https://news.ycombinator.com/item?id=36087464";];
+n

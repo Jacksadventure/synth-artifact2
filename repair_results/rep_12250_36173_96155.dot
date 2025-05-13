@@ -1,0 +1,33 @@
+digraph prolog {
+
+# *************
+# Graph options
+# *************
+
+newrank=true;
+concentrate=true;
+compound=true;
+graph [rankdir=LR,fontname=Helvetica,fontsize=10,ranksep=1.5];#, ranksep=2.5, nodesep=0.2];
+edge  [arrowhead=vee];
+node  [fontname=Helvetica,fontsize=10];
+
+# **********
+# The ebuild
+# **********
+
+subgraph cluster_leftcol {
+color=gray;
+label=<<i>ebuild</i>>;
+id [label="portage://dev-php/PEAR-Image_GraphViz-1.3.0_p20151104", color=red, width=4, href="../dev-php/PEAR-Image_GraphViz-1.3.0_p20151104.svg"];
+}
+
+# ****************
+# The dependencies
+# ****************
+
+subgraph cluster_midcol {
+color=gray;
+label=<<i>dependencies</i>>;
+subgraph cluster_compile {
+fillcolor="#eeeeee";
+style=filled 

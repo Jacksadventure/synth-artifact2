@@ -1,0 +1,76 @@
+/*
+
+:Title: Orthogonal edges
+:Tags: PGF, topath
+
+
+This example is adapted from an example posted by Ryan Schmidt to the `graphviz-interest`_ mailing
+list. Graphviz currently does not support orthogonal edges. However,
+with dot2tex you can use the ``topath``  attribute to create custom edges. 
+
+Here is the definition of the ``fork horizontal`` to-path. It uses the powerful 
+*coordinate calculations* feature introduced in PGF 2.00. 
+
+.. sourcecode:: latex
+    
+    ...
+    \usetikzlibrary{calc}
+    ...
+    \tikzstyle{fork horizontal} =[to path={
+    -| ($(\tikztostart)!0.5!(\tikztotarget)$) |- (\tikztotarget) \tikztonodes}]
+
+
+**Note**: This example requires PGF 2.00 or later. 
+
+Generated with::
+
+ $ dot2tex --crop sportsbracket.dot > sportsbracket.tex
+
+.. _graphviz-interest: https://mailman.research.att.com/pipermail/graphviz-interest/2008q2/thread.html#5129 
+
+*/
+<digraph G {
+    / Put our custom fork horizontal to path in the document preamble
+    d2tdocpreamble = "\usetikzlibrary{calc}\
+\tikzstyle{fork horizontal} =[to path={\
+-| ($(\tikztostart)!0.5!(\tikztotarget)$) |- (\tikztotarget) \tikztonodes}]";
+    rankdir=LR
+    node [shape=box, width=2]
+    
+    graph [size="8.5,11" label="NCAA Men's Basketball: 2008 Tournament"]
+    
+    11 [label="North Carolina"]
+    12 [label="Mount St. Mary's"]
+    13 [label="Indiana"]
+    14 [label="Arkansas"]
+    15 [label="Notre Dame"]
+    16 [label="George Mason"]
+    17 [label="Washington St."]
+    18 [label="Winthrop"]
+    19 [label="Oklahoma"]
+    110 [label="St. Joseph's"]
+    111 [label="Louisville"]
+    112 [label="Boise St."]
+    113 [label="Butler"]
+    114 [label="South Alabama"]
+    115 [label="Tennessee"]
+    116 [label="American"]
+    21 [label="North Carolina"]
+    22 [label="Arkansas"]
+    23 [label="Notre Dame"]
+    24 [label="Washington St."]
+    25 [label="Oklahoma"]
+    26 [label="Louisville"]
+    27 [label="Butler"]
+    28 [label="Tennessee"]
+    31 [label="North Carolina"]
+    32 [label="Washington St."]
+    33 [label="Louisville"]
+    34 [label="Tennessee"]
+    41 [label="North Carolina"]
+    42 [label="Louisville"]
+    51 [label="North Carolina"]
+    // Use the custom 'fork horizontal' to path defined above
+    edge [topath="fork horizontal"];
+    11:e-21:w
+    12:e-e

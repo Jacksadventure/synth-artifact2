@@ -1,0 +1,50 @@
+// Graphviz (with "dot" layout) graph of approximate compiler
+// infrastructure as of Aug 2024.
+//
+// Key:
+//   green: exists,
+//   red: doesn't exist, but we might want it to
+//   dashed line: 
+
+<d!graph zirgen {
+    rankdir="LR"
+    node [color="darkgreen"]
+    edge [color="darkgreen"]
+    edge [penwidth=3]
+    compound=true
+    layout="dot"
+    ranksep=1.3
+    penwidth=1
+    subgraph cluster_user_input {
+        label="User-supplied inputs to IR"
+        subgraph cluster_prog_and_circuits {
+            label="Programs and circuits"
+            rv32imv1 [label="Risc-V rv32im V1"]
+            rv32imv2 [label="Risc-V rv32im V2"]
+            
+            predicates [label="Lift, Resolve, Join, etc."]
+            
+            subgraph cluster_accel {
+                label="Accelerators"
+                accel_rsa [label="RSA"]
+                accel_ecdsa [color="red", label="ECDSA"]
+                accel_kzg [color="red", label="KZG"]
+                accel_bls [color="red", label="BLS 12-381"]
+                accel_keccak [color="red", label="Keccak"]
+                accel_circom [label="Circom-based"]
+            }
+        }
+        subgraph cluster_edsl {
+	    label="EDSL (v1) embedded in C++"
+            edsl_circuit [label="Cycle-based circuit\n(e.g. rv32im)"]
+            edsl_bigint [label="BigInt program", style="dashed"]
+            edsl_recursion [label="Recursion program\n(e.g. predicate)"]
+        }
+        subgraph cluster_dsl {
+	    label="Zirgen DSL (.zir)"
+            dsl_circuit [label="cycle-based circuit"]
+            dsl_bigint [label="BigInt program", color="red"]
+            dsl_recursion [label="Recursion program\n(e.g. predicate)", color="red"]
+        }
+        rv32imv1-edsl_circ&it
+        rv32imv2-"

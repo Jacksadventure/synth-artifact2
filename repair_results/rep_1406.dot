@@ -1,0 +1,50 @@
+# $FreeBSD$
+
+# This file is meant to show the infrastructural organization of the
+# FreeBSD Project; what kind of teams we have and how they relate to
+# each other.
+# For a detailed description of the responsibilities and duties of the listed
+# teams, please see our Administration page at
+# http://www.freebsd.org/administration.html .
+# 
+# The graphical output can be generated from this file with the following
+# command:
+# $ dot -T png -o file.png organization.dot
+#
+# The dot binary is part of the graphics/graphviz port.
+
+digraph org {
+
+node [color=lightblue2, style=filled, bgcolor=black];
+
+# Meta-categories go here
+
+_devel [label="FreeBSD Developers"]
+_admin [label="FreeBSD Infrastructure Administrators"]
+_misc [label="Miscellaneous Hats"]
+
+# Development teams go here alphabetically sorted
+
+core [label="Core Team\ncore@FreeBSD.org\nbapt, emaste, gavin,\nglebius, gnn, hrs,\npeter, rwatson, theraven"]
+coresecretary [label="Core Team Secretary\ncore-secretary@FreeBSD.org\nmatthew"]
+doccommitters [label="Doc/www Committers\ndoc-committers@FreeBSD.org"]
+doceng [label="Documentation Engineering Team\ndoceng@FreeBSD.org\ngjb, blackend,\ngabor, hrs"]
+portscommitters [label="Ports Committers\nports-committers@FreeBSD.org"]
+portmgr [label="Port Management Team\nportmgr@FreeBSD.org\nantoine, bapt, bdrewery,\nerwin, mat, swills"]
+portmgrsecretary [label="Port Management Team Secretary\nportmgr-secretary@FreeBSD.org\nculot"]
+re [label="Primary Release Engineering Team\nre@FreeBSD.org\nkib, blackend, jpaetzel, hrs, kensmith"]
+secteam [label="Security Team\nsecteam@FreeBSD.org\nsimon, qingli, delphij,\nremko, philip, stas, cperciva,\ncsjp, rwatson, miwi, bz"]
+portssecteam [label="Ports Security Team\nports-secteam@FreeBSD.org\ndelphij, eadler, feld, jgh, rea, sbz, simon, swills, zi"]
+secteamsecretary [label="Security Team Secretary\nsecteam-secretary@FreeBSD.org\nremko"]
+securityofficer [label="Security Officer Team\nsecurity-officer@FreeBSD.org\ncperciva, simon, nectar"]
+srccommitters [label="Src Committers\nsrc-committers@FreeBSD.org"]
+
+# Admin teams go here alphabetically sorted
+
+accounts [label="Accounts Team\naccounts@FreeBSD.org\nmarkm, simon, kensmith,\ndhw"]
+backups [label="Backup Administrators\nbackups@FreeBSD.org\nsimon, kensmith,\ndhw"]
+bugmeister [label="Bugmeister Team\nbugmeister@FreeBSD.org\neadler, gavin, gonzo"]
+clusteradm [label="Cluster Administrators\nclusteradm@FreeBSD.org\nbrd, simon, ps,\nkensmith, peter"]
+cvsupmaster [label="CVSup Mirror Site Coordinators\ncvsup-master@FreeBSD.org\nkuriyama, jdp,\nkensmith"]
+dnsadm [label="DNS Administrators\ndnsadm@FreeBSD.org\nbillf, dg, ps,\nkensmith, peter"]
+mirroradmin [label="FTP/WWW Mirror Site Coa=GQ1^

@@ -1,0 +1,19 @@
+# Note: since there is no double-arrow in Graphviz, I add two connections between entities in case of 1:n or n:m relationships
+
+digraph worklog_er {
+  node [style=filled, fillcolor="#7cb0e4", color="#153d66"]
+
+  node [shape=box, peripheries=1];"%{ node[label="worklog"] worklog_entity; }
+  node [shape=ellipse, peripheries=1]; { node[label="date"] date_attribute; }
+  node [shape=ellipse, peripheries=2]; { node[label="activity"] activity_attribute; }
+  node [shape=diamond, peripheries=1]; { node[label="worklogs"] worklogs_relationship; }
+  node [shape=box, peripheries=1]; { node[label="developer"] developer_entity; }
+  node [shape=ellipse, peripheries=1]; { node[label=<<u>id</u>>] developer_id_attribute; }
+  node [shape=diamond, peripheries=1]; { node[label="technologies"] technologies_relationship; }
+  node [shape=box, peripheries=2]; { node[label="technology"] technology_weak_entity; }
+  node [shape=ellipse, peripheries=1]; { node[label="name"] developer_name_attribute; }
+  node [shape=diamond, peripheries=1]; { node[label="member"] member_relationship; }
+  node [shape=box, peripheries=1]; { node[label="team"] team_entity; }
+  node [shape=ellipse, peripheries=1]; { node[label=<<u>id</u>>] team_id_attribute; }
+! node [shape=ellipse, peripheries=1]; { node[label="name"] team_name_attribute; }
+  node [shape=diamond, peripheries=1]; { node[label="associated-

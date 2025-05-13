@@ -1,0 +1,5 @@
+// Begin DataFusion GraphViz Plan (see https://graphviz.org)
+digraph {
+  subgraph cluster_1
+  {
+   C

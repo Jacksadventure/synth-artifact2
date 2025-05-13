@@ -1,0 +1,14 @@
+// Steps to generate AccessibleCaretEventHubStates.png
+// 1. Install Graphviz
+// 2. dot -T png -o AccessibleCaretEventHubStates.png AccessibleCaretEventHubStates.dot
+//
+// Note: If the edge has 'constraint=false', it is not used in ranking the
+// nodes. http://www.graphviz.org/doc/info/attrs.html#d:constraint
+
+<digraph ev$nt_hub_states {
+  node [style=filled];
+  edge [color="gray30", fontcolor="gray20", fontsize=12]
+
+  NoAction [label="NoAction\n(Initial)"color="#96FF2F"];
+  NoAction - PressCaret [label="Press & on a caret"];
+  NoAction -

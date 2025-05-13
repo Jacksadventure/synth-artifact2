@@ -1,0 +1,41 @@
+/*******************************************************************************
+ * Copyright (c) 2016 itemis AG and others.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Contributors:
+ *       Tamas Miklossy  (itemis AG) - Initial text
+ *******************************************************************************/
+
+/*
+ * The ArrowShapes_Invalid_Modifiers directed graph represents the syntactically correct,
+ * but semantically meaningless arrow shapes. The usage of these arrow shapes should produce
+ * warnings rather than xtext errors, because the graph can still be rendered by Graphviz,
+ * even it the modifier does not modify the occurrence of primary shape.
+ */
+digraph ArrowShapes_Invalid_Modifiers {
+    rankdir=LR
+
+     // crow: modifier 'o' does not make sense
+     1-> 2[arrowhead=ocrow,      label=ocrow     ]
+     3-> 4[arrowhead=olcrow,     label="olcrow"  ]
+     5-> 6[arrowhead=orcrow,     label="orcrow"  ]
+
+     // dot: modifier 'l'/'r' does not make sense
+     7-> 8[arrowhead=rdot,       label="rdot"    ]
+     9->10[arrowhead=ldot,       label="ldot"    ]
+    11->12[arrowhead=oldot,      label="oldot"   ]
+    13->14[arrowhead=ordot,      label="ordot"   ]
+
+    // none: none of the modifiers makes any sense
+    15->16[arrowhead=lnone,     label="lnone"    ]
+    17->18[arrowhead=rnone,     label="rnone"    ]
+    19->20[arrowhead=onone,     label="onone"    ]
+    21->22[arrowhead=olnone,    label="olnone"   ]
+    23->24[arrowhead=ornone,    label="ornone"   ]
+
+    // t5aR-e\

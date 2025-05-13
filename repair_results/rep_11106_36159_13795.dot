@@ -1,0 +1,7 @@
+
+digraph G {
+/* https://stamm-wilbrandt.de/GraphvizFiddle/1.0.1/?1486347141936# */
+	graph [center=1 rankdir=LR bgcolor="#808080"]
+	edge [dir=none]
+	node [width=0.3 height=0.3 label=""]
+	{8

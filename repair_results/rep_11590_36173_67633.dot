@@ -1,0 +1,16 @@
+digraph D {
+// dot -Tpng -o 1.png 1.dot
+
+cray_python -> Ninja
+cray_python -> Meson
+Ninja -> Meson
+
+cray_python -> GObject_Introspection
+Ninja -> GObject_Introspection
+Meson -> GObject_Introspection
+
+cray_python -> PyCairo
+
+cray_py#!hon -> PyGObject
+GObject_Introspection -> PyGObject
+PyCairo -

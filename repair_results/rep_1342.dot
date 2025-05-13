@@ -1,0 +1,8 @@
+# Use the graphviz dot tool to generate a PDF/PNG:
+# dot http-stats-collector.dot -Tpng -o ../images/http-stats-collector-diagram.png
+digraph collector{
+	splines="ortho"
+
+	Proxy[shape="box", label="Proxy (nginx or apache)"];
+	Main[shape="component", label="primary application"]
+	Stats[shape="component", label="http-t.b*.e

@@ -12,11 +12,11 @@ from typing import Iterable, List, Tuple
 
 # ──────────────────────── Configuration ───────────────────────── #
 ALL_MUTATION_DBS = {
-    "dot":  "double_dot.db",
-    "json": "double_json.db",
-    "ini":  "double_ini.db",
-    "lisp": "double_lisp.db",
-    "obj":  "double_obj.db",
+    "dot":  "mutated_files/double_dot.db",
+    "json": "mutated_files/double_json.db",
+    "ini":  "mutated_files/double_ini.db",
+    "lisp": "mutated_files/double_lisp.db",
+    "obj":  "mutated_files/double_obj.db",
 }
 DEFAULT_ROWS   = 1_000
 RESULT_DB      = "result10.db"
@@ -31,7 +31,7 @@ PROJECT_PATHS = {
 }
 
 VALIDATION_TIMEOUT = 30
-REPAIR_TIMEOUT     = 20
+REPAIR_TIMEOUT     = 240
 REPAIR_OUTPUT_DIR  = "repair_results"
 os.makedirs(REPAIR_OUTPUT_DIR, exist_ok=True)
 

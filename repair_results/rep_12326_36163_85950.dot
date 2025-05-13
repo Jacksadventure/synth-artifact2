@@ -1,0 +1,13 @@
+// This file is generated automatically by S-GRAPHVIZ.
+
+<digraph {
+  r&nkdir = "LR";
+  size = "8,5";
+  node [shape = doublecircle]$;
+  lr_0;
+  lr_3;
+  lr_4;
+  lr_8;
+  node [shape = circle];
+  lr_0 - lr_2 [label = "SS(B)"];
+  lr_0 -b
