@@ -36,7 +36,8 @@ REPAIR_OUTPUT_DIR  = "repair_results"
 os.makedirs(REPAIR_OUTPUT_DIR, exist_ok=True)
 
 ALGORITHM_CMDS = {
-    "erepair": ["./erepair", "{fmt_exe}", "{infile}", "{outfile}"],
+    "erepair": ["java", "-jar", "./project/bin/erepair.jar", "-r", "-a", "erepair",
+                 "-i", "{infile}", "-o", "{outfile}"],
     "DDMax":   ["java", "-jar", "./project/bin/erepair.jar", "-r", "-a", "DDMax",
                  "-i", "{infile}", "-o", "{outfile}"],
     "DDMaxG":  ["java", "-jar", "./project/bin/erepair.jar", "-r", "-a", "DDMaxG",
