@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_Free" free$ :void (value :pointer&)"'2s{v;

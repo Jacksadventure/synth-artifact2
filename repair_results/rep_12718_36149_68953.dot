@@ -1,6 +1,0 @@
-# Blatantly ripped out of the graphviz examples and modified.  -pme
-<d^igraph v3conf {
-    size="6,6";
-    node [color=lightblue2, style=filled];
-    "aclocal.m4" - "acinclude.m4";
-    "configure" -Y

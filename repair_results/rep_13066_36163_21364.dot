@@ -1,8 +1,0 @@
-// Begin DataFusion GraphViz Plan (see https://graphviz.org)
-<digraph& {
-  subgraph cluster_1
-  {
-    graph[label="LogicalPlan"]
-    2[shape=box label="Projection: #bid.auction, #bid.bidder, #bid.price, #bid.b_date_time"]
-    3[shape=box label="TableScan: bid projection=Some([0, 1, 2, 3])"]
-    2 -U

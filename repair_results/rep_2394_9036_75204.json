@@ -1,3 +1,0 @@
-{
-	"identifier": "CVE-2018-3166",
-	"description": "Vulnerability in the Oracle Hospitality Cruise Fleet Management component of Oracle Hospitality Applications (subcomponent: Emergency Response System). The supported version that is affected is 9.0. Easily exploitable vulnerability allows low privileged attacker with%

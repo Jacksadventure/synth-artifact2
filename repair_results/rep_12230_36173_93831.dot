@@ -1,8 +1,0 @@
-"$/ This file is generated automatically by S-GRAPHVIZ.
-
-digraph {
-  subgraph cluster_0{
-    style = filled;
-    node [style = filled, color = white];
-    a0 -> a1 -> a2 -> a3;
-    label = process #1	

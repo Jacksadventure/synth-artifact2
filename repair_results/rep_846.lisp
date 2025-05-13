@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_New" new! :boolean (value :pointer)%96{Qbd.\Ap

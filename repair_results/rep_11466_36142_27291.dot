@@ -1,5 +1,0 @@
-// This file is generated automatically by S-GRAPHVIZ.
-
-digraph {
-  node1 [label = "nice node", shape = box, "!ontname = "Arial", fontc&lor = "#AA0000"];
-4

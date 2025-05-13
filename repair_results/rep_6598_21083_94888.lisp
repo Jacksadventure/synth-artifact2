@@ -1,1 +1,0 @@
-(cffi:defcfun ("JX_Evaluate" evaluate% :boolean (script-code :string) (script-name :string) (result :pointer)&ZXeq
